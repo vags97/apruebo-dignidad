@@ -62,7 +62,7 @@ collections:
           - { label: "Descripcion", name: "description", widget: "markdown" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - label: "Candidatos\as Senadores\as"
-    name: "diputados"
+    name: "senadores"
     folder: "docs/candidatos-senadores"
     create: true
     fields:
