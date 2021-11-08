@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: vags97/alena-diputada
+  repo: vags97/apruebo-dignidad
 media_folder: "docs/.vuepress/public/media"
 public_folder: "/media"
 publish_mode: editorial_workflow
