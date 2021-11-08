@@ -42,7 +42,10 @@ collections:
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
       - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
-      - { label: "Distrito", name: "distrito", widget: "select", min: 1, max: 28 }
+      - label: "Distrito"
+        name: "distrito"
+        widget: "select"
+        options: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ]
       - { label: "Papeleta", name: "papeleta", widget: "string" }
       - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
       - { label: "Facebook", name: "facebook", widget: "string", required: false }
@@ -68,7 +71,10 @@ collections:
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
       - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
-      - { label: "Circunscripcion Senatorial", name: "circunscripcionSenatorial", widget: "select", min: 1, max: 16 }
+      - label: "Circunscripcion Senatorial"
+        name: "circunscripcionSenatorial"
+        widget: "select"
+        options: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ]
       - { label: "Papeleta", name: "papeleta", widget: "string" }
       - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
       - { label: "Facebook", name: "facebook", widget: "string", required: false }
@@ -85,7 +91,7 @@ collections:
         - { label: "Descripcion", name: "description", widget: "markdown" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - label: "Candidatos\as CORES"
-    name: "diputados"
+    name: "cores"
     folder: "docs/candidatos-cores"
     create: true
     fields:
@@ -94,7 +100,77 @@ collections:
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
       - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
-      - { label: "Circunscripcion Provincial", name: "circunscripcionProvincial", widget: "select", min: 1, max: 16 }
+      - label: "Circunscripcion Provincial"
+        name: "circunscripcionProvincial"
+        widget: "select"
+        options: [
+            'Antartica Chilena',
+            'Magallanes',
+            'Tierra Del Fuego',
+            'Ultima Esperanza',
+            'Aysen',
+            'Capitan Prat',
+            'Coyhaique',
+            'General Carrera',
+            'Llanquihue',
+            'Osorno',
+            'Chiloe',
+            'Palena',
+            'Ranco',
+            'Valdivia',
+            'Cautin II',
+            'Malleco',
+            'Cautin I',
+            'Concepcion I',
+            'Concepcion II',
+            'Concepcion III',
+            'Arauco',
+            'Biobio',
+            'Diguillin',
+            'Itata',
+            'Punilla',
+            'Curico',
+            'Talca',
+            'Cauquenes',
+            'Linares',
+            'Cachapoal I',
+            'Cachapoal II',
+            'Cardenal Caro',
+            'Colchagua',
+            'Chacabuco',
+            'Santiago I',
+            'Santiago III',
+            'Santiago II',
+            'Santiago IV',
+            'Santiago V',
+            'Cordillera',
+            'Santiago VI',
+            'Maipo',
+            'Melipilla',
+            'Talagante',
+            'Los Andes',
+            'Marga Marga',
+            'Petorca',
+            'Quillota',
+            'San Felipe',
+            'Valparaiso I',
+            'Isla De Pascua',
+            'San Antonio',
+            'Valparaiso II',
+            'Choapa',
+            'Elqui',
+            'Limari',
+            'Chañaral',
+            'Copiapo',
+            'Huasco',
+            'Antofagasta',
+            'El Loa',
+            'Tocopilla',
+            'Iquique',
+            'Tamarugal',
+            'Arica',
+            'Parinacota'
+        ]
       - { label: "Papeleta", name: "papeleta", widget: "string" }
       - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
       - { label: "Facebook", name: "facebook", widget: "string", required: false }
