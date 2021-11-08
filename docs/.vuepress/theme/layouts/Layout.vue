@@ -1,0 +1,147 @@
+<template>
+  <v-app style="height: 100vh">
+      <Navbar
+          v-if="shouldShowNavbar"
+          @toggle-sidebar="toggleSidebar"
+      />
+      <v-main>
+        <v-container
+          :class="pageClasses"
+          @touchstart="onTouchStart"
+          @touchend="onTouchEnd"
+          class="py-6"
+        >
+          <Home v-if="$page.frontmatter.home" />
+          <Candidatos v-else-if="$page.frontmatter.candidatos" />
+          <Blogs v-else-if="$page.frontmatter.blogs" />
+          <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
+          <Blog
+            v-else
+            :sidebar-items="sidebarItems"
+          >
+            <template #top>
+              <slot name="page-top" />
+            </template>
+            <template #bottom>
+              <slot name="page-bottom" />
+            </template>
+          </Blog>
+        </v-container>
+      </v-main>
+      <Footer />
+  </v-app>
+</template>
+
+<script>
+import Home from '@theme/components/Home.vue'
+import Navbar from '@theme/components/Navbar.vue'
+import Blog from '@theme/components/Noticia.vue'
+import Sidebar from '@theme/components/Sidebar.vue'
+import { resolveSidebarItems } from '../util'
+import Footer from "../components/Footer";
+import Blogs from "../components/Noticias";
+import Candidatos from "../components/Candidatos";
+import Candidato from "../components/Candidato";
+
+export default {
+  name: 'Layout',
+  components: {
+    Candidatos,
+    Candidato,
+    Home,
+    Blog,
+    Sidebar,
+    Navbar,
+    Footer,
+    Blogs
+  },
+
+  data () {
+    return {
+      isSidebarOpen: false
+    }
+  },
+
+  computed: {
+    shouldShowNavbar () {
+      const { themeConfig } = this.$site
+      const { frontmatter } = this.$page
+      if (
+        frontmatter.navbar === false
+        || themeConfig.navbar === false) {
+        return false
+      }
+      return (
+        this.$title
+        || themeConfig.logo
+        || themeConfig.repo
+        || themeConfig.nav
+        || this.$themeLocaleConfig.nav
+      )
+    },
+
+    shouldShowSidebar () {
+      const { frontmatter } = this.$page
+      return (
+        !frontmatter.home
+        && frontmatter.sidebar !== false
+        && this.sidebarItems.length
+      )
+    },
+
+    sidebarItems () {
+      return resolveSidebarItems(
+        this.$page,
+        this.$page.regularPath,
+        this.$site,
+        this.$localePath
+      )
+    },
+
+    pageClasses () {
+      const userPageClass = this.$page.frontmatter.pageClass
+      return [
+        {
+          'no-navbar': !this.shouldShowNavbar,
+          'sidebar-open': this.isSidebarOpen,
+          'no-sidebar': !this.shouldShowSidebar
+        },
+        userPageClass
+      ]
+    }
+  },
+
+  mounted () {
+    this.$router.afterEach(() => {
+      this.isSidebarOpen = false
+    })
+  },
+
+  methods: {
+    toggleSidebar (to) {
+      this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
+      this.$emit('toggle-sidebar', this.isSidebarOpen)
+    },
+
+    // side swipe
+    onTouchStart (e) {
+      this.touchStart = {
+        x: e.changedTouches[0].clientX,
+        y: e.changedTouches[0].clientY
+      }
+    },
+
+    onTouchEnd (e) {
+      const dx = e.changedTouches[0].clientX - this.touchStart.x
+      const dy = e.changedTouches[0].clientY - this.touchStart.y
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+        if (dx > 0 && this.touchStart.x <= 80) {
+          this.toggleSidebar(true)
+        } else {
+          this.toggleSidebar(false)
+        }
+      }
+    }
+  }
+}
+</script>

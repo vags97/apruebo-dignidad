@@ -1,0 +1,82 @@
+[
+  {
+    "region": "Región Metropolitana de Santiago",
+    "number": 0,
+    "circunscripcion": 7
+  },
+  {
+    "region": "I. Región de Tarapacá",
+    "number": 1,
+    "circunscripcion": 2
+  },
+  {
+    "region": "II. Región de Antofagasta",
+    "number": 2,
+    "circunscripcion": 3
+  },
+  {
+    "region": "III. Región de Atacama",
+    "number": 3,
+    "circunscripcion": 4
+  },
+  {
+    "region": "IV. Región de Coquimbo",
+    "number": 4,
+    "circunscripcion": 5
+  },
+  {
+    "region": "V. Región de Valparaíso",
+    "number": 5,
+    "circunscripcion": 6
+  },
+  {
+    "region": "VI. Región del Libertador General Bernardo O'Higgins",
+    "number": 6,
+    "circunscripcion": 8
+  },
+  {
+    "region": "VII. Región del Maule",
+    "number": 7,
+    "circunscripcion": 9
+  },
+  {
+    "region": "VIII. Región del Biobío",
+    "number": 8,
+    "circunscripcion": 10
+  },
+  {
+    "region": "IX. Región de la Araucanía",
+    "number": 9,
+    "circunscripcion": 11
+  },
+  {
+    "region": "X. Región de Los Lagos",
+    "number": 10,
+    "circunscripcion": 13
+  },
+  {
+    "region": "XI. Región de Aysén del General Carlos Ibáñez del Campo",
+    "number": 11,
+    "circunscripcion": 14
+  },
+  {
+    "region": "XII. Región de Magallanes y la Antártica Chilena",
+    "number": 12,
+    "circunscripcion": 15
+  },
+  {
+    "region": "XIV. Región de Los Ríos",
+    "number": 14,
+    "circunscripcion": 12
+  },
+  {
+    "region": "XV. Región de Arica y Parinacota",
+    "number": 15,
+    "circunscripcion": 1
+  },
+  {
+    "region": "XVI. Región de Ñuble",
+    "number": 16,
+    "circunscripcion": 16
+  }
+]

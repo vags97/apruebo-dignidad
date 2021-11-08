@@ -1,0 +1,106 @@
+backend:
+  name: github
+  repo: vags97/alena-diputada
+media_folder: "docs/.vuepress/public/media"
+public_folder: "/media"
+publish_mode: editorial_workflow
+collections:
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "docs/index.md"
+        delete: false
+        fields:
+          - { label: "Home", name: "home", widget: "hidden", default: true }
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Imagen", name: "image", widget: "image", default: "/media/logo.png" }
+          - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Hero image", name: "heroImage", widget: "image", required: false }
+          - { label: "Hero text", name: "heroText", widget: "string" }
+          - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+          - { label: "Cuerpo", name: body, widget: markdown, required: false }
+  - label: "Noticias"
+    name: "noticias"
+    folder: "docs/_noticias"
+    create: true
+    fields:
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+      - { label: "Fecha", name: "date", widget: "date" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Descripción", name: "description", widget: "string" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
+  - label: "Candidatos\as Diputados\as"
+      name: "diputados"
+      folder: "docs/candidatos-diputados"
+      create: true
+      fields:
+        - { label: "Diputado", name: "diputado", widget: "hidden", default: true }
+        - { label: "Nombre", name: "title", widget: "string" }
+        - { label: "Descripción Corta", name: "description", widget: "string" }
+        - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+        - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+        - { label: "Distrito", name: "distrito", widget: "select", min: 1, max: 28 }
+        - { label: "Papeleta", name: "papeleta", widget: "string" }
+        - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
+        - { label: "Facebook", name: "facebook", widget: "string", required: false }
+        - { label: "Twitter", name: "twitter", widget: "string", required: false }
+        - { label: "Instagram", name: "instagram", widget: "string", required: false }
+        - { label: "Youtube", name: "youtube", widget: "string", required: false }
+        - { label: "TikTok", name: "tiktok", widget: "string", required: false }
+        - label: Propuestas
+            name: propuestas
+            widget: list
+            required: false
+            fields:
+              - { label: "Título", name: "title", widget: "markdown" }
+              - { label: "Descripcion", name: "description", widget: "markdown" }
+        - { label: "Cuerpo", name: "body", widget: "markdown" }
+  - label: "Candidatos\as Senadores\as"
+      name: "diputados"
+      folder: "docs/candidatos-senadores"
+      create: true
+      fields:
+        - { label: "Senador", name: "senador", widget: "hidden", default: true }
+        - { label: "Nombre", name: "title", widget: "string" }
+        - { label: "Descripción Corta", name: "description", widget: "string" }
+        - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
+        - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+        - { label: "Circunscripcion Senatorial", name: "circunscripcionSenatorial", widget: "select", min: 1, max: 16 }
+        - { label: "Papeleta", name: "papeleta", widget: "string" }
+        - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
+        - { label: "Facebook", name: "facebook", widget: "string", required: false }
+        - { label: "Twitter", name: "twitter", widget: "string", required: false }
+        - { label: "Instagram", name: "instagram", widget: "string", required: false }
+        - { label: "Youtube", name: "youtube", widget: "string", required: false }
+        - { label: "TikTok", name: "tiktok", widget: "string", required: false }
+        - label: Propuestas
+            name: propuestas
+            widget: list
+            required: false
+            fields:
+              - { label: "Título", name: "title", widget: "markdown" }
+              - { label: "Descripcion", name: "description", widget: "markdown" }
+        - { label: "Cuerpo", name: "body", widget: "markdown" }
+  - label: "Candidatos\as CORES"
+      name: "diputados"
+      folder: "docs/candidatos-cores"
+      create: true
+      fields:
+        - { label: "CORE", name: "core", widget: "hidden", default: true }
+        - { label: "Nombre", name: "title", widget: "string" }
+        - { label: "Descripción Corta", name: "description", widget: "string" }
+        - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
+        - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+        - { label: "Circunscripcion Provincial", name: "circunscripcionProvincial", widget: "select", min: 1, max: 16 }
+        - { label: "Papeleta", name: "papeleta", widget: "string" }
+        - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
+        - { label: "Facebook", name: "facebook", widget: "string", required: false }
+        - { label: "Twitter", name: "twitter", widget: "string", required: false }
+        - { label: "Instagram", name: "instagram", widget: "string", required: false }
+        - { label: "Youtube", name: "youtube", widget: "string", required: false }
+        - { label: "TikTok", name: "tiktok", widget: "string", required: false }
+        - { label: "Cuerpo", name: "body", widget: "markdown" }
+        - { label: "Contactado/a", name: "contactado",  widget: "boolean" }

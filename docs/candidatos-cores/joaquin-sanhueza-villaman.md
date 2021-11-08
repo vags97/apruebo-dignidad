@@ -1,0 +1,39 @@
+---
+core: true
+title: Joaquin Sanhueza Villaman
+description: Candidato/a a Consejero/a Regional por la Circunscripción de Biobio
+image: /media/noProfile.png
+tags:
+- CORE
+- Consejero Regional
+- Apruebo Dignidad
+- Biobio
+- AV199
+- Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Independientes
+- Alto Biobio
+- Antuco
+- Cabrero
+- Laja
+- Los Angeles
+- Mulchen
+- Nacimiento
+- Negrete
+- Quilaco
+- Quilleco
+- San Rosendo
+- Santa Barbara
+- Tucapel
+- Yumbel
+circunscripcionProvincial: Biobio
+papeleta: AV199
+partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Independientes
+paginaWeb:
+facebook:
+twitter:
+instagram:
+youtube:
+tiktok:
+---
+Hola, mi nombre es Joaquin Sanhueza Villaman y soy candidato/a a Consejero/a Regional por la circunscripcion de Biobio.
+
+Vota AV199.

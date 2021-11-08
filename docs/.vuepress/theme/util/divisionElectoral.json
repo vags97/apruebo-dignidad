@@ -1,0 +1,2078 @@
+[
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Antartica Chilena",
+    "comuna":"Antartica"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Antartica Chilena",
+    "comuna":"Cabo De Hornos(Ex-Navarino)"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Magallanes",
+    "comuna":"Laguna Blanca"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Magallanes",
+    "comuna":"Punta Arenas"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Magallanes",
+    "comuna":"Rio Verde"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Magallanes",
+    "comuna":"San Gregorio"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Tierra Del Fuego",
+    "comuna":"Porvenir"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Tierra Del Fuego",
+    "comuna":"Primavera"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Tierra Del Fuego",
+    "comuna":"Timaukel"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Ultima Esperanza",
+    "comuna":"Natales"
+  },
+  {
+    "circunscripcionSenatorial":15,
+    "distrito":28,
+    "circunscripcionProvincial":"Ultima Esperanza",
+    "comuna":"Torres Del Paine"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Aysen",
+    "comuna":"Aysen"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Aysen",
+    "comuna":"Cisnes"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Aysen",
+    "comuna":"Guaitecas"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Capitan Prat",
+    "comuna":"Cochrane"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Capitan Prat",
+    "comuna":"O’Higgins"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Capitan Prat",
+    "comuna":"Tortel"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Coyhaique",
+    "comuna":"Coyhaique"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"Coyhaique",
+    "comuna":"Lago Verde"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"General Carrera",
+    "comuna":"Chile Chico"
+  },
+  {
+    "circunscripcionSenatorial":14,
+    "distrito":27,
+    "circunscripcionProvincial":"General Carrera",
+    "comuna":"Rio Ibañez"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Fresia"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Frutillar"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Llanquihue"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Los Muermos"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Puerto Varas"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"Osorno"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"Puerto Octay"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"Purranque"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"Puyehue"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"Rio Negro"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"San Juan De La Costa"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":25,
+    "circunscripcionProvincial":"Osorno",
+    "comuna":"San Pablo"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Ancud"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Castro"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Chonchi"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Curaco De Velez"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Dalcahue"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Puqueldon"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Queilen"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Quellon"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Quemchi"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Chiloe",
+    "comuna":"Quinchao"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Calbuco"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Cochamo"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Maullin"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Llanquihue",
+    "comuna":"Puerto Montt"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Palena",
+    "comuna":"Chaiten"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Palena",
+    "comuna":"Futaleufu"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Palena",
+    "comuna":"Hualaihue"
+  },
+  {
+    "circunscripcionSenatorial":13,
+    "distrito":26,
+    "circunscripcionProvincial":"Palena",
+    "comuna":"Palena"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Ranco",
+    "comuna":"Futrono"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Ranco",
+    "comuna":"La Union"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Ranco",
+    "comuna":"Lago Ranco"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Ranco",
+    "comuna":"Rio Bueno"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Corral"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Lanco"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Los Lagos"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Mafil"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Mariquina"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Paillaco"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Panguipulli"
+  },
+  {
+    "circunscripcionSenatorial":12,
+    "distrito":24,
+    "circunscripcionProvincial":"Valdivia",
+    "comuna":"Valdivia"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Galvarino"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Lautaro"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Melipeuco"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Perquenco"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Vilcun"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Angol"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Collipulli"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Curacautin"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Ercilla"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Lonquimay"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Los Sauces"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Lumaco"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Puren"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Renaico"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Traiguen"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":22,
+    "circunscripcionProvincial":"Malleco",
+    "comuna":"Victoria"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin I",
+    "comuna":"Padre Las Casas"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin I",
+    "comuna":"Temuco"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Carahue"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Cholchol"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Cunco"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Curarrehue"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Freire"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Gorbea"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Loncoche"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Nueva Imperial"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Pitrufquen"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Pucon"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Saavedra"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Teodoro Schmidt"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Tolten"
+  },
+  {
+    "circunscripcionSenatorial":11,
+    "distrito":23,
+    "circunscripcionProvincial":"Cautin II",
+    "comuna":"Villarrica"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion I",
+    "comuna":"Hualpen"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion I",
+    "comuna":"Penco"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion I",
+    "comuna":"Talcahuano"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion I",
+    "comuna":"Tome"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion II",
+    "comuna":"Chiguayante"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion II",
+    "comuna":"Concepcion"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion II",
+    "comuna":"Florida"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion III",
+    "comuna":"Coronel"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion III",
+    "comuna":"Hualqui"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion III",
+    "comuna":"San Pedro De La Paz"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":20,
+    "circunscripcionProvincial":"Concepcion III",
+    "comuna":"Santa Juana"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Arauco"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Cañete"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Contulmo"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Curanilahue"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Lebu"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Los Alamos"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Arauco",
+    "comuna":"Tirua"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Alto Biobio"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Antuco"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Cabrero"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Laja"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Los Angeles"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Mulchen"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Nacimiento"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Negrete"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Quilaco"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Quilleco"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"San Rosendo"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Santa Barbara"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Tucapel"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Biobio",
+    "comuna":"Yumbel"
+  },
+  {
+    "circunscripcionSenatorial":10,
+    "distrito":21,
+    "circunscripcionProvincial":"Concepcion III",
+    "comuna":"Lota"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Bulnes"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Chillan"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Chillan Viejo"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"El Carmen"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Pemuco"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Pinto"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Quillon"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"San Ignacio"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Diguillin",
+    "comuna":"Yungay"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Cobquecura"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Coelemu"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Ninhue"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Portezuelo"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Quirihue"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Ranquil"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Itata",
+    "comuna":"Trehuaco"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Punilla",
+    "comuna":"Coihueco"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Punilla",
+    "comuna":"Ñiquen"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Punilla",
+    "comuna":"San Carlos"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Punilla",
+    "comuna":"San Fabian"
+  },
+  {
+    "circunscripcionSenatorial":16,
+    "distrito":19,
+    "circunscripcionProvincial":"Punilla",
+    "comuna":"San Nicolas"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Curico"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Hualañe"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Licanten"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Molina"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Rauco"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Romeral"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Sagrada Familia"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Teno"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Curico",
+    "comuna":"Vichuquen"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Constitucion"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Curepto"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Empedrado"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Maule"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Pelarco"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Pencahue"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Rio Claro"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"San Clemente"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"San Rafael"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":17,
+    "circunscripcionProvincial":"Talca",
+    "comuna":"Talca"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Cauquenes",
+    "comuna":"Cauquenes"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Cauquenes",
+    "comuna":"Chanco"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Cauquenes",
+    "comuna":"Pelluhue"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Colbun"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Linares"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Longavi"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Parral"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Retiro"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"San Javier"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Villa Alegre"
+  },
+  {
+    "circunscripcionSenatorial":9,
+    "distrito":18,
+    "circunscripcionProvincial":"Linares",
+    "comuna":"Yerbas Buenas"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal I",
+    "comuna":"Rancagua"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Codegua"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Coinco"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Coltauco"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Doñihue"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Graneros"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Machali"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Malloa"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Mostazal"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Olivar"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Quinta De Tilcoco"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Rengo"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":15,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Requinoa"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Las Cabras"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Peumo"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"Pichidegua"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cachapoal II",
+    "comuna":"San Vicente"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"La Estrella"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"Litueche"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"Marchigue"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"Navidad"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"Paredones"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Cardenal Caro",
+    "comuna":"Pichilemu"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Chepica"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Chimbarongo"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Lolol"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Nancagua"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Palmilla"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Peralillo"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Placilla"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Pumanque"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"San Fernando"
+  },
+  {
+    "circunscripcionSenatorial":8,
+    "distrito":16,
+    "circunscripcionProvincial":"Colchagua",
+    "comuna":"Santa Cruz"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Chacabuco",
+    "comuna":"Colina"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Chacabuco",
+    "comuna":"Lampa"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Chacabuco",
+    "comuna":"Tiltil"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Santiago I",
+    "comuna":"Pudahuel"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Santiago I",
+    "comuna":"Quilicura"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Santiago III",
+    "comuna":"Cerrillos"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Santiago III",
+    "comuna":"Estacion Central"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":8,
+    "circunscripcionProvincial":"Santiago III",
+    "comuna":"Maipu"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago I",
+    "comuna":"Conchali"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago I",
+    "comuna":"Huechuraba"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago I",
+    "comuna":"Renca"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Cerro Navia"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Independencia"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Lo Prado"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Quinta Normal"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":9,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Recoleta"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago II",
+    "comuna":"Santiago"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"Ñuñoa"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"Providencia"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago V",
+    "comuna":"La Granja"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago V",
+    "comuna":"Macul"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":10,
+    "circunscripcionProvincial":"Santiago V",
+    "comuna":"San Joaquin"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":11,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"La Reina"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":11,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"Las Condes"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":11,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"Lo Barnechea"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":11,
+    "circunscripcionProvincial":"Santiago IV",
+    "comuna":"Vitacura"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":11,
+    "circunscripcionProvincial":"Santiago V",
+    "comuna":"Peñalolen"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":12,
+    "circunscripcionProvincial":"Cordillera",
+    "comuna":"Pirque"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":12,
+    "circunscripcionProvincial":"Cordillera",
+    "comuna":"Puente Alto"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":12,
+    "circunscripcionProvincial":"Cordillera",
+    "comuna":"San Jose De Maipo"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":12,
+    "circunscripcionProvincial":"Santiago V",
+    "comuna":"La Florida"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":12,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"La Pintana"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"El Bosque"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"La Cisterna"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"Lo Espejo"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"Pedro Aguirre Cerda"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"San Miguel"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":13,
+    "circunscripcionProvincial":"Santiago VI",
+    "comuna":"San Ramon"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Maipo",
+    "comuna":"Buin"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Maipo",
+    "comuna":"Calera De Tango"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Maipo",
+    "comuna":"Paine"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Maipo",
+    "comuna":"San Bernardo"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Melipilla",
+    "comuna":"Alhue"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Melipilla",
+    "comuna":"Curacavi"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Melipilla",
+    "comuna":"Maria Pinto"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Melipilla",
+    "comuna":"Melipilla"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Melipilla",
+    "comuna":"San Pedro"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Talagante",
+    "comuna":"El Monte"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Talagante",
+    "comuna":"Isla De Maipo"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Talagante",
+    "comuna":"Padre Hurtado"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Talagante",
+    "comuna":"Peñaflor"
+  },
+  {
+    "circunscripcionSenatorial":7,
+    "distrito":14,
+    "circunscripcionProvincial":"Talagante",
+    "comuna":"Talagante"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Los Andes",
+    "comuna":"Calle Larga"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Los Andes",
+    "comuna":"Los Andes"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Los Andes",
+    "comuna":"Rinconada"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Los Andes",
+    "comuna":"San Esteban"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Marga Marga",
+    "comuna":"Limache"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Marga Marga",
+    "comuna":"Olmue"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Marga Marga",
+    "comuna":"Quilpue"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Marga Marga",
+    "comuna":"Villa Alemana"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Petorca",
+    "comuna":"Cabildo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Petorca",
+    "comuna":"La Ligua"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Petorca",
+    "comuna":"Papudo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Petorca",
+    "comuna":"Petorca"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Petorca",
+    "comuna":"Zapallar"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Quillota",
+    "comuna":"Calera"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Quillota",
+    "comuna":"Hijuelas"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Quillota",
+    "comuna":"La Cruz"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Quillota",
+    "comuna":"Nogales"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Quillota",
+    "comuna":"Quillota"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"Catemu"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"Llaillay"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"Panquehue"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"Putaendo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"San Felipe"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"San Felipe",
+    "comuna":"Santa Maria"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Valparaiso I",
+    "comuna":"Puchuncavi"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":6,
+    "circunscripcionProvincial":"Valparaiso I",
+    "comuna":"Quintero"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Isla De Pascua",
+    "comuna":"Isla De Pascua"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"Algarrobo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"Cartagena"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"El Quisco"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"El Tabo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"San Antonio"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"San Antonio",
+    "comuna":"Santo Domingo"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Valparaiso I",
+    "comuna":"Concon"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Valparaiso I",
+    "comuna":"Viña Del Mar"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Valparaiso II",
+    "comuna":"Casablanca"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Valparaiso II",
+    "comuna":"Juan Fernandez"
+  },
+  {
+    "circunscripcionSenatorial":6,
+    "distrito":7,
+    "circunscripcionProvincial":"Valparaiso II",
+    "comuna":"Valparaiso"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Choapa",
+    "comuna":"Canela"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Choapa",
+    "comuna":"Illapel"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Choapa",
+    "comuna":"Los Vilos"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Choapa",
+    "comuna":"Salamanca"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"Andacollo"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"Coquimbo"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"La Higuera"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"La Serena"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"Paiguano"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Elqui",
+    "comuna":"Vicuña"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Limari",
+    "comuna":"Combarbala"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Limari",
+    "comuna":"Monte Patria"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Limari",
+    "comuna":"Ovalle"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Limari",
+    "comuna":"Punitaqui"
+  },
+  {
+    "circunscripcionSenatorial":5,
+    "distrito":5,
+    "circunscripcionProvincial":"Limari",
+    "comuna":"Rio Hurtado"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Chañaral",
+    "comuna":"Chañaral"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Chañaral",
+    "comuna":"Diego De Almagro"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Copiapo",
+    "comuna":"Caldera"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Copiapo",
+    "comuna":"Copiapo"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Copiapo",
+    "comuna":"Tierra Amarilla"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Huasco",
+    "comuna":"Alto Del Carmen"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Huasco",
+    "comuna":"Freirina"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Huasco",
+    "comuna":"Huasco"
+  },
+  {
+    "circunscripcionSenatorial":4,
+    "distrito":4,
+    "circunscripcionProvincial":"Huasco",
+    "comuna":"Vallenar"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Antofagasta",
+    "comuna":"Antofagasta"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Antofagasta",
+    "comuna":"Mejillones"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Antofagasta",
+    "comuna":"Sierra Gorda"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Antofagasta",
+    "comuna":"Taltal"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"El Loa",
+    "comuna":"Calama"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"El Loa",
+    "comuna":"Ollague"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"El Loa",
+    "comuna":"San Pedro De Atacama"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Tocopilla",
+    "comuna":"Maria Elena"
+  },
+  {
+    "circunscripcionSenatorial":3,
+    "distrito":3,
+    "circunscripcionProvincial":"Tocopilla",
+    "comuna":"Tocopilla"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Iquique",
+    "comuna":"Alto Hospicio"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Iquique",
+    "comuna":"Iquique"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Tamarugal",
+    "comuna":"Camiña"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Tamarugal",
+    "comuna":"Colchane"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Tamarugal",
+    "comuna":"Huara"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Tamarugal",
+    "comuna":"Pica"
+  },
+  {
+    "circunscripcionSenatorial":2,
+    "distrito":2,
+    "circunscripcionProvincial":"Tamarugal",
+    "comuna":"Pozo Almonte"
+  },
+  {
+    "circunscripcionSenatorial":1,
+    "distrito":1,
+    "circunscripcionProvincial":"Arica",
+    "comuna":"Arica"
+  },
+  {
+    "circunscripcionSenatorial":1,
+    "distrito":1,
+    "circunscripcionProvincial":"Arica",
+    "comuna":"Camarones"
+  },
+  {
+    "circunscripcionSenatorial":1,
+    "distrito":1,
+    "circunscripcionProvincial":"Parinacota",
+    "comuna":"General Lagos"
+  },
+  {
+    "circunscripcionSenatorial":1,
+    "distrito":1,
+    "circunscripcionProvincial":"Parinacota",
+    "comuna":"Putre"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "name": "apruebo-dignidad-web",
+  "version": "1.0.0",
+  "description": "Página de Apruebo Dignidad",
+  "author": "Vicente Gamboa",
+  "scripts": {
+    "build": "vuepress build docs",
+    "deploy": "npm run build && npx gh-pages -d docs/.vuepress/dist",
+    "dev": "vuepress dev docs"
+  },
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "directory-tree": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "glob": "^7.2.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-meta": "^0.0.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mdi-vue": "^3.0.11",
+    "roboto-fontface": "*",
+    "showdown": "^1.9.1",
+    "vue-tweet-embed": "^2.4.0",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuetify": "^2.5.12"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.3",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-seo": "^0.1.4",
+    "vuetify-loader": "^1.7.0"
+  },
+  "homepage": "https://vuepress-template.netlify.com",
+  "keywords": [
+    "VuePress",
+    "Netlify",
+    "Netlify CMS",
+    "Netlify template"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p440davis/VuePress-with-Netlify-CMS.git"
+  }
+}
