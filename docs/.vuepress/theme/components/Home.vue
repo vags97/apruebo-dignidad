@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" md="10" lg="10">
+    <v-col cols="12" md="10" lg="8">
       <header class="hero">
         <v-carousel
             height="100%"
@@ -52,21 +52,34 @@
         <v-col
             cols="12"
             md="6"
+            :order="this.currentBreakpoint === 'sm' || this.currentBreakpoint=== 'xs'? 'first': 'last'"
         >
           <h1 class="pt-2">
             Noticias
           </h1>
-          <HomeNoticiaCard
-              v-for="(noticia, index) in noticias"
-              :key="index"
-              :title="noticia.title"
-              :description="noticia.description"
-              :image="noticia.image"
-              :route="noticia.route"
-          />
-          <a href="/noticias" class="px-4">
-            Ver todos
-          </a>
+          <v-row>
+            <v-col
+                cols="12"
+                sm="6"
+                md="12"
+                v-for="(noticia, index) in noticias"
+                :key="index"
+            >
+              <HomeNoticiaCard
+                  :title="noticia.title"
+                  :description="noticia.description"
+                  :image="noticia.image"
+                  :route="noticia.route"
+              />
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <a href="/noticias" class="px-4">
+                Ver todos
+              </a>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-col>
@@ -77,7 +90,7 @@
 import NavLink from '@theme/components/NavLink.vue'
 import mdToHtml from "../util/mdToHtml";
 import {Timeline} from 'vue-tweet-embed'
-import HomeNoticiaCard from "./HomeNoticiaCard";
+import HomeNoticiaCard from "./NoticiaCard";
 
 export default {
   name: 'Home',
@@ -89,6 +102,9 @@ export default {
     }
   },
   computed: {
+    currentBreakpoint() {
+      return this.$vuetify.breakpoint.name;
+    },
     noticias () {
       return this.$site.themeConfig.noticias.slice(0,2);
     },

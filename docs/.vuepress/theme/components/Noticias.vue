@@ -1,20 +1,33 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" md="10">
-      <h1>
-        Noticias
-      </h1>
-      <div class="blogs-container">
-        <HomeNoticiaCard
+    <v-col
+        cols="12"
+        md="10"
+    >
+      <v-row>
+        <v-col>
+          <h1>
+            Noticias
+          </h1>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+            cols="12"
+            sm="6"
+            md="4"
+            lg="3"
             v-for="(noticia, index) in noticias"
             :key="index"
-            :title="noticia.title"
-            :description="noticia.description"
-            :image="noticia.image"
-            :route="noticia.route"
-            class="blog-card"
-        />
-      </div>
+        >
+          <HomeNoticiaCard
+              :title="noticia.title"
+              :description="noticia.description"
+              :image="noticia.image"
+              :route="noticia.route"
+          />
+        </v-col>
+      </v-row>
       <div class="page-stepper">
         <MdiIcon
             :icon="mdiChevronLeft"
@@ -33,7 +46,7 @@
 </template>
 
 <script>
-import HomeNoticiaCard from "./HomeNoticiaCard";
+import HomeNoticiaCard from "./NoticiaCard";
 import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 

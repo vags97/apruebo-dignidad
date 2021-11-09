@@ -1,8 +1,11 @@
 <template>
   <v-row justify="center">
-    <v-col cols="10">
+    <v-col
+        cols="12"
+        md="10"
+    >
       <v-row>
-        <v-col cols="3">
+        <v-col cols="6">
           <v-select
               v-model="tiposCandidaturasSeleccionadas"
               :items="tiposCandidaturas"
@@ -20,7 +23,7 @@
             </template>
           </v-select>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="6">
           <v-autocomplete
               v-model="comunaSeleccionada"
               :items="comunas"
@@ -38,23 +41,21 @@
       <v-row>
         <v-col
             cols="12"
-            md="6"
-            lg="4"
+            sm="6"
+            md="4"
+            lg="3"
             v-for="(candidato, index) in candidatos"
             :key="index"
         >
-          <div
-          >
-            <CandidatoCard
-                :image="candidato.image"
-                :nombre="candidato.title"
-                :papeleta="candidato.papeleta"
-                :candidatura-distrito-circunscripcion="candidaturaDistritoCircunscripcion(candidato)"
-                :candidatura-territorio="candidaturaTerritorio(candidato)"
-                :route="candidato.route"
-                :tipo-candidatura="candidato.tipoCandidatura"
-            />
-          </div>
+          <CandidatoCard
+              :image="candidato.image"
+              :nombre="candidato.title"
+              :papeleta="candidato.papeleta"
+              :candidatura-distrito-circunscripcion="candidaturaDistritoCircunscripcion(candidato)"
+              :candidatura-territorio="candidaturaTerritorio(candidato)"
+              :route="candidato.route"
+              :tipo-candidatura="candidato.tipoCandidatura"
+          />
         </v-col>
       </v-row>
     </v-col>
@@ -125,7 +126,6 @@ export default {
   },
   methods: {
     candidaturaDistritoCircunscripcion(candidato){
-      let texto = ""
       switch (candidato.tipoCandidatura){
         case 1:
           return "Diputado/a Distrito " + candidato.distrito;

@@ -1,11 +1,37 @@
 <template>
   <div>
-
-
+    <v-navigation-drawer
+        app
+        v-model="drawer"
+        temporary
+        absolute
+    >
+      <v-list
+          nav
+          dense
+      >
+        <v-list-item
+            v-for="item in userLinks"
+            :key="item.link"
+        >
+          <v-list-item-title>
+            <NavLink
+                :item="item"
+                class="primary--text"
+            />
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-app-bar
         app
         color="primary"
     >
+      <v-app-bar-nav-icon
+          color="white"
+          @click="drawer = true"
+          class="d-sm-flex d-md-none"
+      />
       <RouterLink
           :to="$localePath"
           class="home-link"
@@ -29,7 +55,10 @@
             :options="algolia"
         />
         <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
-        <NavLinks class="can-hide" />
+        <NavLinks
+            class="can-hide"
+            :user-links="userLinks"
+        />
       </div>
     </v-app-bar>
   </div>
@@ -38,26 +67,67 @@
 <script>
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
-import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
+import {resolveNavLinkItem} from "../util";
+import NavLink from "./NavLink";
 
 export default {
   name: 'Navbar',
-
   components: {
-    SidebarButton,
     NavLinks,
+    NavLink,
     SearchBox,
     AlgoliaSearchBox
   },
-
   data () {
     return {
-      linksWrapMaxWidth: null
+      linksWrapMaxWidth: null,
+      drawer: false
     }
   },
 
   computed: {
+    nav () {
+      const { locales } = this.$site
+      if (locales && Object.keys(locales).length > 1) {
+        const currentLink = this.$page.path
+        const routes = this.$router.options.routes
+        const themeLocales = this.$site.themeConfig.locales || {}
+        const languageDropdown = {
+          text: this.$themeLocaleConfig.selectText || 'Languages',
+          ariaLabel: this.$themeLocaleConfig.ariaLabel || 'Select language',
+          items: Object.keys(locales).map(path => {
+            const locale = locales[path]
+            const text = themeLocales[path] && themeLocales[path].label || locale.lang
+            let link
+            // Stay on the current page
+            if (locale.lang === this.$lang) {
+              link = currentLink
+            } else {
+              // Try to stay on the same page
+              link = currentLink.replace(this.$localeConfig.path, path)
+              // fallback to homepage
+              if (!routes.some(route => route.path === link)) {
+                link = path
+              }
+            }
+            return { text, link }
+          })
+        }
+        return [...this.userNav, languageDropdown]
+      }
+      return this.userNav
+    },
+    userNav () {
+      return this.$themeLocaleConfig.nav || this.$site.themeConfig.nav || []
+    },
+    userLinks () {
+      return (this.nav || []).map(link => {
+        return Object.assign(resolveNavLinkItem(link), {
+          items: (link.items || []).map(resolveNavLinkItem)
+        })
+      })
+    },
     algolia () {
       return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
     },
@@ -99,8 +169,8 @@ $navbar-horizontal-padding = 1.5rem
 a, span, img
   display inline-block
 .logo
-  height $navbarHeight - 1.4rem
-  min-width $navbarHeight - 1.4rem
+  height $navbarHeight - 1rem
+  min-width $navbarHeight - 1rem
   margin-right 0.8rem
   vertical-align top
 .site-name
@@ -116,13 +186,12 @@ a, span, img
   font-size 0.9rem
   position absolute
   right $navbar-horizontal-padding
-  top $navbar-vertical-padding
   display flex
   .search-box
     flex: 0 0 auto
     vertical-align top
 
-@media (max-width: $MQMobile)
+@media (max-width: $MQNarrow)
   .can-hide
     display none
   .links

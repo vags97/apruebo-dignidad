@@ -1,5 +1,10 @@
 <template>
-  <v-footer color="primary">
+  <v-footer
+      app
+      absolute
+      color="primary"
+      padless
+  >
     <v-container>
       <v-row justify="center" class="py-4">
         <v-col cols="8">
@@ -26,9 +31,9 @@
         </v-col>
       </v-row>
       <v-row justify="space-around" class="pa-2">
-        <button class="conglomerado" @click="openInNewTab('https://boricpresidente.cl/')">
+        <a @click="openInNewTab('https://boricpresidente.cl/')">
           <div class="boric-logo"/>
-        </button>
+        </a>
       </v-row>
     </v-container>
   </v-footer>
@@ -77,26 +82,5 @@ export default {
 </script>
 
 <style lang="stylus">
-.rrss
-  padding-top 15px
-  padding-bottom 15px
-  width 20rem
-  margin 0 auto
-  display flex
-  justify-content space-around
-.conglomerado-container
-  padding-top 15px
-  padding-bottom 15px
-  width 40rem
-  margin 0 auto
-  display flex
-  justify-content space-around
-  max-height 5rem
-
-
-@media (max-width: $MQMobile)
-  .conglomerado-container
-    display flex
-    width 100vw
 
 </style>

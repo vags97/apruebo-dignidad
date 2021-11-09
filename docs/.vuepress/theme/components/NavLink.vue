@@ -2,7 +2,6 @@
   <RouterLink
     v-if="isInternal"
     class="nav-link"
-    style="color: white"
     :to="link"
     :exact="exact"
     @focusout.native="focusoutAction"
@@ -14,11 +13,10 @@
     :href="link"
     class="nav-link external"
     :target="target"
-    style="color: white"
     :rel="rel"
     @focusout="focusoutAction"
   >
-    {{ item.text }}
+      {{ item.text }}
     <OutboundLink v-if="isBlankTarget" />
   </a>
 </template>
@@ -32,7 +30,11 @@ export default {
   props: {
     item: {
       required: true
-    }
+    },
+    color:{
+      type: String,
+      default: "secondary"
+    },
   },
 
   computed: {
@@ -87,3 +89,11 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.nav-link
+  color white
+  text-decoration none
+  font-family 'Roboto Slab', serif
+  text-transform uppercase
+</style>

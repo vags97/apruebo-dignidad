@@ -1,8 +1,5 @@
 <template>
-  <v-card
-      class="mx-auto"
-      max-width="344"
-  >
+  <v-card>
     <v-img
         :src="image?image: '/media/noProfile.png'"
         height="200px"

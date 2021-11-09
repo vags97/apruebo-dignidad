@@ -14,18 +14,14 @@
       </h3>
     </div>
     <Content class="blog-content" />
-    <PageEdit />
 
     <slot name="bottom" />
   </main>
 </template>
 
 <script>
-import PageEdit from '@theme/components/PageEdit.vue'
-import PageNav from '@theme/components/PageNav.vue'
 
 export default {
-  components: { PageEdit, PageNav },
   computed: {
     data() {
       return this.$page.frontmatter
@@ -35,7 +31,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../styles/wrapper.styl'
 
 .blog-info
   img

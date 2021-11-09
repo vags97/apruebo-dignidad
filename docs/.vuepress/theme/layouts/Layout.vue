@@ -1,34 +1,28 @@
 <template>
-  <v-app style="height: 100vh">
-      <Navbar
-          v-if="shouldShowNavbar"
-          @toggle-sidebar="toggleSidebar"
-      />
-      <v-main>
-        <v-container
-          :class="pageClasses"
-          @touchstart="onTouchStart"
-          @touchend="onTouchEnd"
-          class="py-6"
+  <v-app>
+    <Navbar
+        v-if="shouldShowNavbar"
+    />
+    <v-main>
+      <v-container class="py-6" fluid>
+        <Home v-if="$page.frontmatter.home" />
+        <Candidatos v-else-if="$page.frontmatter.candidatos" />
+        <Blogs v-else-if="$page.frontmatter.blogs" />
+        <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
+        <Blog
+          v-else
+          :sidebar-items="sidebarItems"
         >
-          <Home v-if="$page.frontmatter.home" />
-          <Candidatos v-else-if="$page.frontmatter.candidatos" />
-          <Blogs v-else-if="$page.frontmatter.blogs" />
-          <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
-          <Blog
-            v-else
-            :sidebar-items="sidebarItems"
-          >
-            <template #top>
-              <slot name="page-top" />
-            </template>
-            <template #bottom>
-              <slot name="page-bottom" />
-            </template>
-          </Blog>
-        </v-container>
-      </v-main>
-      <Footer />
+          <template #top>
+            <slot name="page-top" />
+          </template>
+          <template #bottom>
+            <slot name="page-bottom" />
+          </template>
+        </Blog>
+      </v-container>
+    </v-main>
+    <Footer />
   </v-app>
 </template>
 
@@ -36,7 +30,6 @@
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Blog from '@theme/components/Noticia.vue'
-import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 import Footer from "../components/Footer";
 import Blogs from "../components/Noticias";
@@ -50,7 +43,6 @@ export default {
     Candidato,
     Home,
     Blog,
-    Sidebar,
     Navbar,
     Footer,
     Blogs

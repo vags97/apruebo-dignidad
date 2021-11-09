@@ -79,13 +79,11 @@
           ¿Eres el/la candidato/a? Escríbenos a <a href="mailto:candidatos.apruebo.dignidad@gmail.com">candidatos.apruebo.dignidad@gmail.com</a>
         </v-card-text>
       </v-card>
-      <PageEdit />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import PageEdit from '@theme/components/PageEdit.vue'
 import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import {
   mdiFacebook,
@@ -97,7 +95,6 @@ import {
 } from '@mdi/js';
 
 export default {
-  components: { PageEdit},
   data(){
     return {
       mdiFacebook,
