@@ -32,7 +32,7 @@ collections:
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Descripción", name: "description", widget: "string" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos\as Diputados\as"
+  - label: "Candidatos Diputados"
     name: "diputados"
     folder: "docs/candidatos-diputados"
     create: true
@@ -53,15 +53,9 @@ collections:
       - { label: "Instagram", name: "instagram", widget: "string", required: false }
       - { label: "Youtube", name: "youtube", widget: "string", required: false }
       - { label: "TikTok", name: "tiktok", widget: "string", required: false }
-      - label: Propuestas
-        name: propuestas
-        widget: list
-        required: false
-        fields:
-          - { label: "Título", name: "title", widget: "markdown" }
-          - { label: "Descripcion", name: "description", widget: "markdown" }
+      - { label: "Contactado", name: "contactado",  widget: "boolean" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos\as Senadores\as"
+  - label: "Candidatos Senadores"
     name: "senadores"
     folder: "docs/candidatos-senadores"
     create: true
@@ -82,15 +76,9 @@ collections:
       - { label: "Instagram", name: "instagram", widget: "string", required: false }
       - { label: "Youtube", name: "youtube", widget: "string", required: false }
       - { label: "TikTok", name: "tiktok", widget: "string", required: false }
-      - label: Propuestas
-        name: propuestas
-        widget: list
-        required: false
-        fields:
-        - { label: "Título", name: "title", widget: "markdown" }
-        - { label: "Descripcion", name: "description", widget: "markdown" }
+      - { label: "Contactado", name: "contactado",  widget: "boolean" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos\as CORES"
+  - label: "Candidatos CORES"
     name: "cores"
     folder: "docs/candidatos-cores"
     create: true
@@ -178,5 +166,5 @@ collections:
       - { label: "Instagram", name: "instagram", widget: "string", required: false }
       - { label: "Youtube", name: "youtube", widget: "string", required: false }
       - { label: "TikTok", name: "tiktok", widget: "string", required: false }
+      - { label: "Contactado", name: "contactado",  widget: "boolean" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-      - { label: "Contactado/a", name: "contactado",  widget: "boolean" }
