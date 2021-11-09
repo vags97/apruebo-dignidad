@@ -98,9 +98,6 @@ module.exports = {
               }
           })
       }],
-      ['@vuepress/google-analytics', {
-          ga: 'UA-212306154-1'
-      }]
   ],
   locales: {
       /* This is where you place your general locale config */
@@ -115,7 +112,21 @@ module.exports = {
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/media/favicons/apple-touch-icon.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/media/favicons/favicon-32x32.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/media/favicons/favicon-16x16.png"}],
-    ['meta', { name: "viewport", content: "width=device-width, initial-scale=1.0"} ]
+    ['meta', { name: "viewport", content: "width=device-width, initial-scale=1.0"} ],
+    [
+        'script',
+        {
+            async: true,
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-ET19WB2WXP',
+        },
+    ],
+    [
+        'script',
+        {},
+        [
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-ET19WB2WXP');",
+        ],
+    ],
   ],
   themeConfig: {
     author: 'Apruebo Dignidad',
