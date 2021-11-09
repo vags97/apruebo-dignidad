@@ -52,7 +52,7 @@
         <v-col
             cols="12"
             md="6"
-            :order="this.currentBreakpoint === 'sm' || this.currentBreakpoint=== 'xs'? 'first': 'last'"
+            :order="['lg', 'md'].includes(this.currentBreakpoint) ? 'last':'first'"
         >
           <h1 class="pt-2">
             Noticias
