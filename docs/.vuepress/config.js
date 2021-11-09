@@ -90,7 +90,7 @@ const candidatos = [
 module.exports = {
   plugins: {
       'sitemap': {
-          hostname: 'http://b143-181-43-37-141.ngrok.io',
+          hostname: 'https://www.apruebo-dignidad.cl/',
           urls: candidatos.map(candidato=> {
               return {
                   url: candidato.route,
