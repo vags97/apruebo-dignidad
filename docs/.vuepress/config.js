@@ -155,7 +155,7 @@ module.exports = {
     domain: "https://www.apruebo-dignidad.cl",
     logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
-    twitter: '@ADignidadCL',
+    twitter: 'ADignidadCL',
     instagram: 'adignidadcl'
   },
 };
