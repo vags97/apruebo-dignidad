@@ -88,8 +88,8 @@ const candidatos = [
 ]
 
 module.exports = {
-  plugins: {
-      'sitemap': {
+  plugins: [
+      ['sitemap', {
           hostname: 'https://www.apruebo-dignidad.cl/',
           urls: candidatos.map(candidato=> {
               return {
@@ -97,11 +97,11 @@ module.exports = {
                   changeFreq: 'daily'
               }
           })
-      },
-      '@vuepress/google-analytics': {
+      }],
+      ['@vuepress/google-analytics', {
           ga: 'UA-212306154-1'
-      }
-  },
+      }]
+  ],
   locales: {
       /* This is where you place your general locale config */
       '/': {
