@@ -25,7 +25,17 @@ module.exports = (options, ctx) => {
 
     plugins: [
       ['@vuepress/active-header-links', options.activeHeaderLinks],
-      ['seo'],
+      ['seo', {
+        type: $page => ['noticias/', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+        customMeta: (add, context) => {
+          const {
+            $site,
+            $page
+          } = context
+          add('twitter:site', $site.themeConfig.twitter)
+          add('twitter:creator', $page.frontmatter.twitter? $page.frontmatter.twitter: $site.themeConfig.twitter)
+        },
+      }],
       '@vuepress/search',
       '@vuepress/plugin-nprogress',
       ['container', {

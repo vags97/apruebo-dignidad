@@ -87,13 +87,25 @@ const candidatos = [
     ...candidaturasCores
 ]
 
+const mainPages = [
+    {route: '/candidatos'},
+    {route: '/noticias'},
+    {route: '/'}
+]
+
+const allPages = [
+    ...candidatos,
+    ...noticias,
+    ...mainPages
+]
+
 module.exports = {
   plugins: [
       ['sitemap', {
           hostname: 'https://www.apruebo-dignidad.cl/',
-          urls: candidatos.map(candidato=> {
+          urls: allPages.map(page=> {
               return {
-                  url: candidato.route,
+                  url: page.route,
                   changeFreq: 'daily'
               }
           })
@@ -140,9 +152,10 @@ module.exports = {
     ],
     noticias,
     candidatos,
+    domain: "https://www.apruebo-dignidad.cl",
     logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
-    twitter: 'ADignidadCL',
+    twitter: '@ADignidadCL',
     instagram: 'adignidadcl'
   },
 };
