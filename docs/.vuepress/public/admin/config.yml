@@ -17,9 +17,12 @@ collections:
           - { label: "Titulo", name: "title", widget: "string" }
           - { label: "Imagen", name: "image", widget: "image", default: "/media/logo.png" }
           - { label: "Descripción", name: "description", widget: "string" }
-          - { label: "Hero image", name: "heroImage", widget: "image", required: false }
-          - { label: "Hero text", name: "heroText", widget: "string" }
           - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+          - label: "Videos Youtube URL"
+            name: "carruselVideo"
+            required: false
+            fields:
+              - { label: "Video Youtube URL", name: "video", widget: "string" }
           - { label: "Cuerpo", name: body, widget: markdown, required: false }
   - label: "Noticias"
     name: "noticias"

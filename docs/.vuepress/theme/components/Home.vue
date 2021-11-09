@@ -13,23 +13,16 @@
               reverse-transition="fade-transition"
               transition="fade-transition"
           >
-            <video
-                :ref="'heroVideo' + i"
-                v-if="item.video && currentVideo===i"
-                autoplay
-                muted
-                :src="item.video"
-                controls
-                style="width: 100%"
+            <iframe
+                v-if="currentVideo === i"
+                style="width: 100%; aspect-ratio: 16/9"
+                :src="'https://www.youtube.com/embed/'+ getVideoId(item.video) + '?autoplay=1&mute=1'"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
             >
-              hola
-            </video>
-            <div
-                class="overlay-video fade-out"
-                :ref="'heroTitle' + i"
-            >
-              {{item.title}}
-            </div>
+            </iframe>
           </v-carousel-item>
         </v-carousel>
       </header>
@@ -121,6 +114,13 @@ export default {
       return this.data.carruselVideo[this.currentVideo].video;
     },
   },
+  methods:{
+    getVideoId(youtubeUrl){
+      const url = new URL(youtubeUrl);
+      const urlParams = new URLSearchParams(url.search);
+      return urlParams.get('v');
+    }
+  }
 }
 </script>
 

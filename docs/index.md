@@ -14,11 +14,7 @@ tags:
 - Apruebo Dignidad
 - CORES
 carruselVideo:
-  - video: /media/franja1.webm
-    title: Franja Electoral - Capítulo 1
-  - video: /media/franja2.webm
-    title: Franja Electoral - Capítulo 2
-  - video: /media/franja3.webm
-    title: Franja Electoral - Capítulo 3
-date: 2021-11-07
+  - video: "https://www.youtube.com/watch?v=qjkW8M_E7do"
+  - video: "https://www.youtube.com/watch?v=VRPMALNLfzU"
+  - video: "https://www.youtube.com/watch?v=ZX2WW5E--bw"
 ---
