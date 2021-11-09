@@ -32,21 +32,6 @@
             cols="12"
             md="6"
         >
-          <Timeline
-              class="twitter"
-              v-if="twitter"
-              :id="twitter"
-              sourceType="profile"
-              :options="{ tweetLimit: '3' }"
-          >
-            Cargado Twitter ...
-          </Timeline>
-        </v-col>
-        <v-col
-            cols="12"
-            md="6"
-            :order="['lg', 'md'].includes(this.currentBreakpoint) ? 'last':'first'"
-        >
           <h1 class="pt-2">
             Noticias
           </h1>
@@ -73,6 +58,20 @@
               </a>
             </v-col>
           </v-row>
+        </v-col>
+        <v-col
+            cols="12"
+            md="6"
+        >
+          <Timeline
+              class="twitter"
+              v-if="twitter"
+              :id="twitter"
+              sourceType="profile"
+              :options="{ tweetLimit: '3' }"
+          >
+            Cargado Twitter ...
+          </Timeline>
         </v-col>
       </v-row>
     </v-col>

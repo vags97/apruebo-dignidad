@@ -109,8 +109,8 @@ module.exports = {
       },
   },
   title: "Apruebo Dignidad",
-  description:
-    "Candidatura Apruebo Dignidad",
+  description: "Página de Conglomerado Apruebo Dignidad",
+  image: "/media/logo-apruebo-dignidad.png",
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/media/favicons/apple-touch-icon.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/media/favicons/favicon-32x32.png"}],
@@ -129,7 +129,7 @@ module.exports = {
     ],
     noticias,
     candidatos,
-    logo: '/media/logo.png',
+    logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
     twitter: 'ADignidadCL',
     instagram: 'adignidadcl'

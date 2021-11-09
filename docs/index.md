@@ -2,7 +2,7 @@
 home: true
 title: Página de Inicio Apruebo Dignidad
 description: Página de Inicio del Conglomerado Apruebo Dignidad Presidenciales, Parlamentarias y CORES 2021
-image: /media/logo.png
+image: /media/logo-apruebo-dignidad.png
 tags: 
 - Parlamentarias
 - 2021

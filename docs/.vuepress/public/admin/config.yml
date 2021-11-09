@@ -15,7 +15,7 @@ collections:
         fields:
           - { label: "Home", name: "home", widget: "hidden", default: true }
           - { label: "Titulo", name: "title", widget: "string" }
-          - { label: "Imagen", name: "image", widget: "image", default: "/media/logo.png" }
+          - { label: "Imagen", name: "image", widget: "image", default: "/media/logo-apruebo-dignidad.png" }
           - { label: "Descripción", name: "description", widget: "string" }
           - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
           - label: "Videos Youtube URL"
