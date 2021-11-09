@@ -1,5 +1,5 @@
 ---
-title: Presenetación de Programa para un Nuevo Chile
+title: Presentación de Programa para un Nuevo Chile
 tags:
   - Apruebo Dignidad
   - Programa

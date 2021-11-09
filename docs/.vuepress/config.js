@@ -21,13 +21,13 @@ function getFiles (pathRead) {
   return dirTree(path.join(__dirname, pathRead), {extensions: /\.md/}).children;
 }
 
-const noticias = getFiles('../_noticias')
+const noticias = getFiles('../noticias')
     .map(file => {
       const fileInfo = fileToMdMetaFileName(file);
       if ( fileInfo.fileName === 'README') return;
       const mdMeta = fileInfo.mdMeta;
       return {
-        route: fileInfo.fileName + '.html',
+        route: '/noticias/' + fileInfo.fileName + '.html',
         title: mdMeta.title,
         description: mdMeta.description,
         image: mdMeta.image,
