@@ -98,6 +98,9 @@ module.exports = {
               }
           })
       },
+      '@vuepress/google-analytics': {
+          ga: 'UA-212306154-1'
+      }
   },
   locales: {
       /* This is where you place your general locale config */
