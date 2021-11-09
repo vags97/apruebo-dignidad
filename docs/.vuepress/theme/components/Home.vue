@@ -69,7 +69,7 @@
           <v-row>
             <v-col>
               <a href="/noticias" class="px-4">
-                Ver todos
+                Ver todas las Noticias
               </a>
             </v-col>
           </v-row>
@@ -99,7 +99,7 @@ export default {
       return this.$vuetify.breakpoint.name;
     },
     noticias () {
-      return this.$site.themeConfig.noticias.slice(0,2);
+      return this.$site.themeConfig.noticias.slice(0,3);
     },
     twitter () {
       return this.$site.themeConfig.twitter;
