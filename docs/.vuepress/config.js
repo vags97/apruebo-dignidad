@@ -99,6 +99,8 @@ const allPages = [
     ...mainPages
 ]
 
+const googleAnalyticsId = 'G-HX30FV5WLV'
+
 module.exports = {
   plugins: [
       ['sitemap', {
@@ -129,14 +131,14 @@ module.exports = {
         'script',
         {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-ET19WB2WXP',
+            src: 'https://www.googletagmanager.com/gtag/js?id='+googleAnalyticsId,
         },
     ],
     [
         'script',
         {},
         [
-            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-ET19WB2WXP');",
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '" + googleAnalyticsId + "');",
         ],
     ],
   ],
