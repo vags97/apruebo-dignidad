@@ -12,16 +12,17 @@
   "author": "Vicente Gamboa",
   "main": "index.js",
   "dependencies": {
+    "@mdi/js": "^6.4.95",
     "@vuepress/plugin-active-header-links": "1.5.2",
     "@vuepress/plugin-nprogress": "1.5.2",
     "@vuepress/plugin-search": "1.5.2",
     "docsearch.js": "^2.5.2",
     "lodash": "^4.17.15",
+    "minify-css-string": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3",
-    "@mdi/js": "^6.4.95"
+    "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
   "publishConfig": {
     "access": "public"

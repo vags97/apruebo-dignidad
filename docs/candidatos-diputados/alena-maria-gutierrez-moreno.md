@@ -26,11 +26,11 @@ tags:
 distrito: 14
 papeleta: AR100
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
-youtube:
+paginaWeb: https://alenagutierrezdiputada.cl/
+facebook: AlenaGutierrezDiputada
+twitter: "@alenamorenaa"
+instagram: https://www.instagram.com/alena_gutierrez_/
+youtube: https://www.youtube.com/channel/UCBznXO2O3t9wutvysHR-2TA
 tiktok:
 ---
 Hola, mi nombre es Alena Maria Gutierrez Moreno y soy candidato a diputado por el distrito 14.

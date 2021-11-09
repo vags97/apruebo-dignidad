@@ -1,6 +1,7 @@
 import Vuetify from 'vuetify'
-import "vuetify/dist/vuetify.min.css";
 import es from 'vuetify/lib/locale/es'
+import "vuetify/dist/vuetify.min.css";
+import minifyTheme from 'minify-css-string'
 
 export default ({
                     Vue,      // the version of Vue being used in the VuePress app
@@ -18,6 +19,10 @@ export default ({
             iconfont: 'mdiSvg',
         },
         theme: {
+            options: {
+                minifyTheme,
+                customProperties: true
+            },
             themes: {
                 light: {
                     primary: '#ff1f81',

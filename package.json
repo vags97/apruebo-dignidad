@@ -17,6 +17,7 @@
     "markdown-it-meta": "^0.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "mdi-vue": "^3.0.11",
+    "minify-css-string": "^1.0.0",
     "roboto-fontface": "*",
     "showdown": "^1.9.1",
     "vue-tweet-embed": "^2.4.0",
