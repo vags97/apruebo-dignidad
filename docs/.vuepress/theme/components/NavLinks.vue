@@ -10,6 +10,7 @@
       class="nav-item"
     >
       <NavLink
+          class="white--text"
         :item="item"
       />
     </div>
