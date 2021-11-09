@@ -2,7 +2,7 @@
 core: true
 title: Gregorio Armando Haristoy Charnay
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Concepcion II
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

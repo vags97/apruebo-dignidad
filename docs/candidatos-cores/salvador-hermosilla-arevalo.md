@@ -2,7 +2,7 @@
 core: true
 title: Salvador Hermosilla Arevalo
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Talca
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

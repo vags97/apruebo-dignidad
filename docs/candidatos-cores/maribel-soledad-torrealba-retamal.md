@@ -2,7 +2,7 @@
 core: true
 title: Maribel Soledad Torrealba Retamal
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Linares
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

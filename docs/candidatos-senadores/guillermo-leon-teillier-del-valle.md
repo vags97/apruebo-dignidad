@@ -2,7 +2,7 @@
 senador: true
 title: Guillermo Leon Teillier Del Valle
 description: Candidato/a a Senador/a por la Región Metropolitana de Santiago
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

@@ -2,7 +2,7 @@
 diputado: true
 title: Ninoska Del Pilar Gallardo Peralta
 description: Candidato/a a Diputado/a por el Distrito 24
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

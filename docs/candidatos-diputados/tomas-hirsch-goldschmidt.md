@@ -2,7 +2,7 @@
 diputado: true
 title: Tomas Hirsch Goldschmidt
 description: Candidato/a a Diputado/a por el Distrito 11
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

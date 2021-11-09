@@ -2,7 +2,7 @@
 senador: true
 title: Esteban Velasquez Nuñez
 description: Candidato/a a Senador/a por la II. Región de Antofagasta
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

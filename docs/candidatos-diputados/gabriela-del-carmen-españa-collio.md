@@ -2,7 +2,7 @@
 diputado: true
 title: Gabriela Del Carmen España Collio
 description: Candidato/a a Diputado/a por el Distrito 22
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

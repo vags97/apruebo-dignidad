@@ -2,7 +2,7 @@
 diputado: true
 title: Francisco Alberto Chavez Catepillan
 description: Candidato/a a Diputado/a por el Distrito 26
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

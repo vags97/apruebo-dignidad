@@ -2,7 +2,7 @@
 core: true
 title: Nicole Roman Salas
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Talca
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-img
-        :src="image?image: '/media/noProfile.png'"
+        :src="image?image: '/media/ad-profile.jpg'"
         height="200px"
         :alt="'image' + nombre.toLowerCase().replace(' ', '_')"
     />

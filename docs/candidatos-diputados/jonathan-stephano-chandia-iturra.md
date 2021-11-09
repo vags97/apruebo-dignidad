@@ -2,7 +2,7 @@
 diputado: true
 title: Jonathan Stephano Chandia Iturra
 description: Candidato/a a Diputado/a por el Distrito 19
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

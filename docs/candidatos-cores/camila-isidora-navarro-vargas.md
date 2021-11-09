@@ -2,7 +2,7 @@
 core: true
 title: Camila Isidora Navarro Vargas
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Maipo
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

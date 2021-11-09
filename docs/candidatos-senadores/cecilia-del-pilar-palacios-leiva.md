@@ -2,7 +2,7 @@
 senador: true
 title: Cecilia Del Pilar Palacios Leiva
 description: Candidato/a a Senador/a por la XVI. Región de Ñuble
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

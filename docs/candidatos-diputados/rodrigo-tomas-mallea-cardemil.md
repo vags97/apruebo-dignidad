@@ -2,7 +2,7 @@
 diputado: true
 title: Rodrigo Tomas Mallea Cardemil
 description: Candidato/a a Diputado/a por el Distrito 9
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

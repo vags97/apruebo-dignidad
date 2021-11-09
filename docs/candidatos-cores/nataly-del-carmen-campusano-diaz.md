@@ -2,7 +2,7 @@
 core: true
 title: Nataly Del Carmen Campusano Diaz
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Valparaiso II
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

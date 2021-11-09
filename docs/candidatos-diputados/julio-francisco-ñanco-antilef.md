@@ -2,7 +2,7 @@
 diputado: true
 title: Julio Francisco Ñanco Antilef
 description: Candidato/a a Diputado/a por el Distrito 27
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

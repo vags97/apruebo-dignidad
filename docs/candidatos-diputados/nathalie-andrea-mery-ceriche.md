@@ -2,7 +2,7 @@
 diputado: true
 title: Nathalie Andrea Mery Ceriche
 description: Candidato/a a Diputado/a por el Distrito 4
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

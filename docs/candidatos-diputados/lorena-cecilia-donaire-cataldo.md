@@ -2,7 +2,7 @@
 diputado: true
 title: Lorena Cecilia Donaire Cataldo
 description: Candidato/a a Diputado/a por el Distrito 6
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

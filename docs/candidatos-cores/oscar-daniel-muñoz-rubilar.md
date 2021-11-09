@@ -2,7 +2,7 @@
 core: true
 title: Oscar Daniel Muñoz Rubilar
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Biobio
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

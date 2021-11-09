@@ -2,7 +2,7 @@
 diputado: true
 title: Pablo Alejandro Donoso Christie
 description: Candidato/a a Diputado/a por el Distrito 7
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

@@ -2,7 +2,7 @@
 core: true
 title: Marcela Cecilia Vejar Retamal
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Cautin I
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

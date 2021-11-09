@@ -2,7 +2,7 @@
 senador: true
 title: Daniel Nuñez Arancibia
 description: Candidato/a a Senador/a por la IV. Región de Coquimbo
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

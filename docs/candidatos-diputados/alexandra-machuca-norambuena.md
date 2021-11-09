@@ -2,7 +2,7 @@
 diputado: true
 title: Alexandra Machuca Norambuena
 description: Candidato/a a Diputado/a por el Distrito 20
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

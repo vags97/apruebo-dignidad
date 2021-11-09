@@ -2,7 +2,7 @@
 diputado: true
 title: Lorena Pizarro Sierra
 description: Candidato/a a Diputado/a por el Distrito 13
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

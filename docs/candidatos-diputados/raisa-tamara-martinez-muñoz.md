@@ -2,7 +2,7 @@
 diputado: true
 title: Raisa Tamara Martinez Muñoz
 description: Candidato/a a Diputado/a por el Distrito 15
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

@@ -2,7 +2,7 @@
 diputado: true
 title: Libertad Angela Mendez Nuñez
 description: Candidato/a a Diputado/a por el Distrito 8
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

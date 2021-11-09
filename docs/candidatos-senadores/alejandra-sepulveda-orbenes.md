@@ -2,7 +2,7 @@
 senador: true
 title: Alejandra Sepulveda Orbenes
 description: Candidato/a a Senador/a por la VI. Región del Libertador General Bernardo O'Higgins
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

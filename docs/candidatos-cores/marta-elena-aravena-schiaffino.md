@@ -2,7 +2,7 @@
 core: true
 title: Marta Elena Aravena Schiaffino
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Valparaiso I
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

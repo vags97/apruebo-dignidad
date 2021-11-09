@@ -2,7 +2,7 @@
 core: true
 title: Jose Antonio Diaz Agurto
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Cautin II
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

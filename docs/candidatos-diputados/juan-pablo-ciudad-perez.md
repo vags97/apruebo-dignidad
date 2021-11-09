@@ -2,7 +2,7 @@
 diputado: true
 title: Juan Pablo Ciudad Perez
 description: Candidato/a a Diputado/a por el Distrito 8
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

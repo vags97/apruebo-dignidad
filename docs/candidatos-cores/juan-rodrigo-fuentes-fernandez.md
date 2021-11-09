@@ -2,7 +2,7 @@
 core: true
 title: Juan Rodrigo Fuentes Fernandez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Limari
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

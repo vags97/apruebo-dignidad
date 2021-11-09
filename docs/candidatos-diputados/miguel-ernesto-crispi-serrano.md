@@ -2,7 +2,7 @@
 diputado: true
 title: Miguel Ernesto Crispi Serrano
 description: Candidato/a a Diputado/a por el Distrito 12
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

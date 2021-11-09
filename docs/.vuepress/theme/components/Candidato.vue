@@ -6,7 +6,7 @@
             cols="12"
         >
           <v-img
-              :src="candidato.image?candidato.image: '/media/noProfile.png'"
+              :src="candidato.image?candidato.image: '/media/ad-profile.jpg'"
               class="candidato-image white--text align-end"
               :alt="'image' + candidato.title.toLowerCase().replace(' ', '_')"
           >

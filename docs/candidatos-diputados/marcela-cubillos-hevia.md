@@ -2,7 +2,7 @@
 diputado: true
 title: Marcela Cubillos Hevia
 description: Candidato/a a Diputado/a por el Distrito 11
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

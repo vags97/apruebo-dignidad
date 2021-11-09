@@ -2,7 +2,7 @@
 core: true
 title: Hector Andres Yañez Hernandez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Cachapoal II
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

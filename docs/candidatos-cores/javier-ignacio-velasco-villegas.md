@@ -2,7 +2,7 @@
 core: true
 title: Javier Ignacio Velasco Villegas
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago II
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

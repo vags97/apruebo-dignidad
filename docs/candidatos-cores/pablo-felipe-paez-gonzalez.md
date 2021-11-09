@@ -2,7 +2,7 @@
 core: true
 title: Pablo Felipe Paez Gonzalez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago IV
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 core: true
 title: Carlos Andres Burgos Martinez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Ranco
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

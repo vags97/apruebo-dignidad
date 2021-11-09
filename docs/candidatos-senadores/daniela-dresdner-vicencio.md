@@ -2,7 +2,7 @@
 senador: true
 title: Daniela Dresdner Vicencio
 description: Candidato/a a Senador/a por la VIII. Región del Biobío
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

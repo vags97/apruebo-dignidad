@@ -2,7 +2,7 @@
 core: true
 title: Paulina Antonieta Caniuqueo Millaqueo
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Copiapo
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

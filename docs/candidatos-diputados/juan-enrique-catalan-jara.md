@@ -2,7 +2,7 @@
 diputado: true
 title: Juan Enrique Catalan Jara
 description: Candidato/a a Diputado/a por el Distrito 27
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

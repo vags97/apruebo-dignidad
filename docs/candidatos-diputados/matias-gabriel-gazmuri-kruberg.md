@@ -2,7 +2,7 @@
 diputado: true
 title: Matias Gabriel Gazmuri Kruberg
 description: Candidato/a a Diputado/a por el Distrito 6
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

@@ -2,7 +2,7 @@
 core: true
 title: Laureano Javier Supanta Quispe
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Tamarugal
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 diputado: true
 title: Alejandra Marjorie Ceballos Rojas
 description: Candidato/a a Diputado/a por el Distrito 2
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

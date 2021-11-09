@@ -2,7 +2,7 @@
 diputado: true
 title: Felix Bugueño Sotelo
 description: Candidato/a a Diputado/a por el Distrito 16
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

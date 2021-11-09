@@ -2,7 +2,7 @@
 core: true
 title: Pedro Pablo Leyton Ancachay
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Cautin I
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

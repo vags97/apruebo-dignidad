@@ -2,7 +2,7 @@
 core: true
 title: Edson Dettoni Andrade
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago I
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

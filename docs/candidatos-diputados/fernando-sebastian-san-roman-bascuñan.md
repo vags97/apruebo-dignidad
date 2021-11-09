@@ -2,7 +2,7 @@
 diputado: true
 title: Fernando Sebastian San Roman Bascuñan
 description: Candidato/a a Diputado/a por el Distrito 3
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

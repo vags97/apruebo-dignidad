@@ -2,7 +2,7 @@
 core: true
 title: Maria Jose Murillo De La Torre
 description: Candidato/a a Consejero/a Regional por la Circunscripción de El Loa
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

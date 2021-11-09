@@ -2,7 +2,7 @@
 diputado: true
 title: Gael Fernanda Yeomans Araya
 description: Candidato/a a Diputado/a por el Distrito 13
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

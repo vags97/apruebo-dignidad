@@ -2,7 +2,7 @@
 diputado: true
 title: Alex Fernando Garrido Tapia
 description: Candidato/a a Diputado/a por el Distrito 5
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

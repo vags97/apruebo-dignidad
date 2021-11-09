@@ -2,7 +2,7 @@
 diputado: true
 title: Ricardo Sanzana Oteiza
 description: Candidato/a a Diputado/a por el Distrito 1
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

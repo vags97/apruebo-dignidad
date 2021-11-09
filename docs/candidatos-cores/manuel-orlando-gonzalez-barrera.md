@@ -2,7 +2,7 @@
 core: true
 title: Manuel Orlando Gonzalez Barrera
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Melipilla
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

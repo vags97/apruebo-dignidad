@@ -2,7 +2,7 @@
 diputado: true
 title: Vianney Paola Sierralta Aracena
 description: Candidato/a a Diputado/a por el Distrito 3
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

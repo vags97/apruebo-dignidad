@@ -2,7 +2,7 @@
 core: true
 title: Doris Ximena Catrinahuel Curanahuel
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Valdivia
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

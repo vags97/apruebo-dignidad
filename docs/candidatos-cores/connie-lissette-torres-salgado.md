@@ -2,7 +2,7 @@
 core: true
 title: Connie Lissette Torres Salgado
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Arica
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 core: true
 title: Benjamin Leonardo Figueroa Figueroa
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Marga Marga
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

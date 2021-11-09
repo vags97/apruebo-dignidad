@@ -2,7 +2,7 @@
 diputado: true
 title: Paloma Camila Margott Tapia Barrios
 description: Candidato/a a Diputado/a por el Distrito 1
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

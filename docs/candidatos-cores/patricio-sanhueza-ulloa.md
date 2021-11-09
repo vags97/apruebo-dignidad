@@ -2,7 +2,7 @@
 core: true
 title: Patricio Sanhueza Ulloa
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Coyhaique
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

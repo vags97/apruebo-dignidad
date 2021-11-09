@@ -2,7 +2,7 @@
 core: true
 title: Ricardo Hernan Soto Flores
 description: Candidato/a a Consejero/a Regional por la Circunscripción de 
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

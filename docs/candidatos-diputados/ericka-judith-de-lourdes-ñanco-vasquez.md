@@ -2,7 +2,7 @@
 diputado: true
 title: Ericka Judith De Lourdes Ñanco Vasquez
 description: Candidato/a a Diputado/a por el Distrito 23
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

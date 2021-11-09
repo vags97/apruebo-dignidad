@@ -2,7 +2,7 @@
 core: true
 title: Diego Armando Belaunde Muñoz
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Iquique
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

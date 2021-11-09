@@ -2,7 +2,7 @@
 diputado: true
 title: Maidy Ledy Velasquez Vera
 description: Candidato/a a Diputado/a por el Distrito 10
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

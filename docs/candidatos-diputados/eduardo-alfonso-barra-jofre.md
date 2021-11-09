@@ -2,7 +2,7 @@
 diputado: true
 title: Eduardo Alfonso Barra Jofre
 description: Candidato/a a Diputado/a por el Distrito 20
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

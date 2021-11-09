@@ -2,7 +2,7 @@
 core: true
 title: Jorge Arturo Mora Castro
 description: Candidato/a a Consejero/a Regional por la Circunscripción de San Antonio
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 diputado: true
 title: Alena Maria Gutierrez Moreno
 description: Candidato/a a Diputado/a por el Distrito 14
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

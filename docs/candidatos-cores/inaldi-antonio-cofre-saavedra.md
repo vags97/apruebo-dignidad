@@ -2,7 +2,7 @@
 core: true
 title: Inaldi Antonio Cofre Saavedra
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Choapa
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

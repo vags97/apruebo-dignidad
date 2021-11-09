@@ -2,7 +2,7 @@
 senador: true
 title: Sebastian Depolo Cabrera
 description: Candidato/a a Senador/a por la Región Metropolitana de Santiago
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

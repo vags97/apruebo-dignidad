@@ -2,7 +2,7 @@
 core: true
 title: Maximo Alfonso Contreras Gallardo
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Choapa
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 diputado: true
 title: Priscila Veronica Gonzalez Carrillo
 description: Candidato/a a Diputado/a por el Distrito 18
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

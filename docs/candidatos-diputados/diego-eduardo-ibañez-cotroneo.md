@@ -2,7 +2,7 @@
 diputado: true
 title: Diego Eduardo Ibañez Cotroneo
 description: Candidato/a a Diputado/a por el Distrito 6
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

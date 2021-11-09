@@ -2,7 +2,7 @@
 core: true
 title: Miguel Salvador Troncoso Oyarzun
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Antartica Chilena
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

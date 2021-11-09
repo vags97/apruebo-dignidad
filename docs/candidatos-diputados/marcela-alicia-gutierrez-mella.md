@@ -2,7 +2,7 @@
 diputado: true
 title: Marcela Alicia Gutierrez Mella
 description: Candidato/a a Diputado/a por el Distrito 22
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

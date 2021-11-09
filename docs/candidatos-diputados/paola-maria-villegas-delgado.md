@@ -2,7 +2,7 @@
 diputado: true
 title: Paola Maria Villegas Delgado
 description: Candidato/a a Diputado/a por el Distrito 16
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

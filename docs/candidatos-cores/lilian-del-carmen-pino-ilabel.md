@@ -2,7 +2,7 @@
 core: true
 title: Lilian Del Carmen Pino Ilabel
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Valdivia
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

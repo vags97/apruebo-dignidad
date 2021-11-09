@@ -2,7 +2,7 @@
 senador: true
 title: Jeannette Del Carmen Medina Araya
 description: Candidato/a a Senador/a por la IV. Región de Coquimbo
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

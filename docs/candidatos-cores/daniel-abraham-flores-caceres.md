@@ -2,7 +2,7 @@
 core: true
 title: Daniel Abraham Flores Caceres
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago V
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

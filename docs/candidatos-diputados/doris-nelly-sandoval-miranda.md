@@ -2,7 +2,7 @@
 diputado: true
 title: Doris Nelly Sandoval Miranda
 description: Candidato/a a Diputado/a por el Distrito 28
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

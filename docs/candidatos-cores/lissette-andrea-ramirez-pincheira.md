@@ -2,7 +2,7 @@
 core: true
 title: Lissette Andrea Ramirez Pincheira
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Punilla
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

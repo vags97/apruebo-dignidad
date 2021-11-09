@@ -2,7 +2,7 @@
 diputado: true
 title: Paola Veronica Nahuelhual Catalan
 description: Candidato/a a Diputado/a por el Distrito 24
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

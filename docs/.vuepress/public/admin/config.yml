@@ -32,7 +32,7 @@ collections:
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
       - { label: "Fecha", name: "date", widget: "date" }
-      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/apruebo-dignidad-logo-oficial.jpg" }
       - { label: "Descripción", name: "description", widget: "string" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - label: "Candidatos Diputados"
@@ -44,7 +44,7 @@ collections:
       - { label: "Nombre", name: "title", widget: "string" }
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
       - label: "Distrito"
         name: "distrito"
         widget: "select"
@@ -67,7 +67,7 @@ collections:
       - { label: "Nombre", name: "title", widget: "string" }
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
       - label: "Circunscripcion Senatorial"
         name: "circunscripcionSenatorial"
         widget: "select"
@@ -90,7 +90,7 @@ collections:
       - { label: "Nombre", name: "title", widget: "string" }
       - { label: "Descripción Corta", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/noProfile.png" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
       - label: "Circunscripcion Provincial"
         name: "circunscripcionProvincial"
         widget: "select"

@@ -2,7 +2,7 @@
 diputado: true
 title: Marisela Santibañez Novoa
 description: Candidato/a a Diputado/a por el Distrito 14
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

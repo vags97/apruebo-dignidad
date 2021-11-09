@@ -2,7 +2,7 @@
 diputado: true
 title: German Rodrigo Cartes Oyarzo
 description: Candidato/a a Diputado/a por el Distrito 25
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

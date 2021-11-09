@@ -2,7 +2,7 @@
 core: true
 title: Elsa De Las Mercedes Chacon Alvarez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Los Andes
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

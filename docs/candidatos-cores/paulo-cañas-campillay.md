@@ -2,7 +2,7 @@
 core: true
 title: Paulo Cañas Campillay
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago VI
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

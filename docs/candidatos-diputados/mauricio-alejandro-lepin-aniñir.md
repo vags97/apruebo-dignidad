@@ -2,7 +2,7 @@
 diputado: true
 title: Mauricio Alejandro Lepin Aniñir
 description: Candidato/a a Diputado/a por el Distrito 22
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Diputado
 - Apruebo Dignidad

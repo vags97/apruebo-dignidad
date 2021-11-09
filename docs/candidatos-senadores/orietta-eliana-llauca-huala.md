@@ -2,7 +2,7 @@
 senador: true
 title: Orietta Eliana Llauca Huala
 description: Candidato/a a Senador/a por la X. Región de Los Lagos
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

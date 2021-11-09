@@ -2,7 +2,7 @@
 core: true
 title: Mariel Del Carmen Rubio Sanchez
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Cordillera
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

@@ -2,7 +2,7 @@
 senador: true
 title: Monica Ines Quiroz Reyes
 description: Candidato/a a Senador/a por la XIV. Región de Los Ríos
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

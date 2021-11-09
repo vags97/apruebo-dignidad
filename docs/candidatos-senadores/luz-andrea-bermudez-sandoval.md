@@ -2,7 +2,7 @@
 senador: true
 title: Luz Andrea Bermudez Sandoval
 description: Candidato/a a Senador/a por la XII. Región de Magallanes y la Antártica Chilena
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - Senador
 - Apruebo Dignidad

@@ -2,7 +2,7 @@
 core: true
 title: Sebastian Alejandro Torres Cortes
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Antofagasta
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

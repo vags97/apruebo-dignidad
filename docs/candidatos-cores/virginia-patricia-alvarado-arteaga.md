@@ -2,7 +2,7 @@
 core: true
 title: Virginia Patricia Alvarado Arteaga
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Ultima Esperanza
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional

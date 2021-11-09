@@ -2,7 +2,7 @@
 core: true
 title: Alicia Isabel Acuña Galleguillos
 description: Candidato/a a Consejero/a Regional por la Circunscripción de Elqui
-image: /media/noProfile.png
+image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional
