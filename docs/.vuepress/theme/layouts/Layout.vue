@@ -102,7 +102,11 @@ export default {
       ]
     }
   },
-
+  created() {
+    if (typeof this.$ssrContext !== 'undefined') {
+      this.$ssrContext.userHeadTags+=`<link rel='canonical' href='${this.$site.themeConfig.domain}${this.$page.path}'/>`;
+    }
+  },
   mounted () {
     this.$router.afterEach(() => {
       this.isSidebarOpen = false

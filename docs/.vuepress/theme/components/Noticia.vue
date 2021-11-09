@@ -1,6 +1,5 @@
 <template>
   <main class="blog">
-    <slot name="top" />
     <div class="blog-info">
       <img
           :alt="'image' + data.title.toLowerCase().replace(' ', '_')"
@@ -14,8 +13,6 @@
       </h3>
     </div>
     <Content class="blog-content" />
-
-    <slot name="bottom" />
   </main>
 </template>
 
