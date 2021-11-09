@@ -2,7 +2,7 @@
 blogs: true
 title: Noticias
 description: Página de Noticias Apruebo Dignidad
-image: /media/logo-apruebo-dignidad.png
+image: /media/apruebo-dignidad-logo-oficial.jpg
 tags:
 - Parlamentarias
 - 2021
