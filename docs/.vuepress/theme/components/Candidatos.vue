@@ -74,6 +74,7 @@
 import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import CandidatoCard from "./CandidatoCard";
 import { mdiMapMarkerRadius } from '@mdi/js';
+import { Loader } from "@googlemaps/js-api-loader"
 
 export default {
   name: "Candidatos",
@@ -157,15 +158,30 @@ export default {
       this.buscandoComuna = true;
       if('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition((position) => {
-          const latlng = position.coords.latitude + ',' + position.coords.longitude
+          const latLenFloat = {
+            lat: parseFloat(position.coords.latitude),
+            lng: parseFloat(position.coords.longitude)
+          }
           const key = this.$site.themeConfig.gkey
-          fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng='+latlng+'&key='+key)
-              .then(async (response) => {
-                const res = await response.json()
-                const currentComuna = res.results[0]['address_components'].find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
-                this.buscandoComuna = false;
-                this.setComuna(currentComuna)
-              })
+          const loader = new Loader({
+            apiKey: key,
+            version: "weekly"
+          });
+          loader.load().then(async () => {
+            const latLng = new google.maps.LatLng(latLenFloat)
+            //const request = new google.maps.GeocoderRequest ({
+            //  location: latLng
+            //})
+            const geocoder = new google.maps.Geocoder()
+            const response = await geocoder.geocode({
+              location: latLng
+            });
+            const comuna = response.results[0]['address_components']
+                .find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
+            this.setComuna(comuna);
+            this.buscandoComuna = false;
+          });
+
         }, (error) =>{
           console.log('geoerror: ' + error)
         });

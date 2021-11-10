@@ -9,6 +9,7 @@
     "dev": "vuepress dev docs"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.8",
     "@mdi/font": "5.9.55",
     "directory-tree": "^3.0.0",
     "fs": "^0.0.1-security",
