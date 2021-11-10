@@ -119,6 +119,7 @@ module.exports = {
           lang: 'es',
       },
   },
+  shouldPrefetch: () => false,
   title: "Apruebo Dignidad",
   description: "Página de Conglomerado Apruebo Dignidad",
   image: "/media/apruebo-dignidad-logo-oficial.jpg",
