@@ -10,18 +10,24 @@
     </v-card-title>
 
     <v-card-subtitle>
-      <v-chip
-          :color="colorChip(tipoCandidatura)"
-          small
-          label
-      >
-        <strong>{{ candidaturaDistritoCircunscripcion }}</strong>
-      </v-chip>
-      <br>
-      {{"Vota " + papeleta}}
-      <br>
-      {{ candidaturaTerritorio }}
-      <br>
+      <div v-if="tipoCandidatura && candidaturaDistritoCircunscripcion">
+        <v-chip
+            :color="colorChip(tipoCandidatura)"
+            small
+            label
+        >
+          <strong>{{ candidaturaDistritoCircunscripcion }}</strong>
+        </v-chip>
+        <br>
+      </div>
+      <div v-if="papeleta">
+        {{"Vota " + papeleta}}
+        <br>
+      </div>
+      <div v-if="candidaturaTerritorio">
+        {{ candidaturaTerritorio }}
+        <br>
+      </div>
       <a :href="route">Leer más</a>
     </v-card-subtitle>
   </v-card>
@@ -33,27 +39,27 @@ export default {
   props: {
     image: {
       type: String,
-      default: null
+      default: ''
     },
     nombre: {
       type: String,
-      default: null
+      default: ''
     },
     candidaturaDistritoCircunscripcion: {
       type: String,
-      default: null
+      default: ''
     },
     papeleta: {
       type: String,
-      default: null
+      default: ''
     },
     candidaturaTerritorio: {
       type: String,
-      default: null
+      default: ''
     },
     route: {
       type: String,
-      default: null
+      default: ''
     },
     tipoCandidatura: {
       type: Number,

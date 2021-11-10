@@ -28,6 +28,14 @@
       </header>
       <Content  />
       <v-row>
+        <v-col cols="12" md="6">
+          <ConoceBoric />
+        </v-col>
+        <v-col cols="12" md="6">
+         <ConoceCandidato />
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col
             cols="12"
             md="6"
@@ -83,10 +91,20 @@ import NavLink from '@theme/components/NavLink.vue'
 import mdToHtml from "../util/mdToHtml";
 import {Timeline} from 'vue-tweet-embed'
 import HomeNoticiaCard from "./NoticiaCard";
+import ConoceCandidato from "./ConoceCandidato";
+import CandidatoCard from "./CandidatoCard";
+import ConoceBoric from "./ConoceBoric";
 
 export default {
   name: 'Home',
-  components: {HomeNoticiaCard, NavLink, Timeline },
+  components: {
+    ConoceCandidato,
+    HomeNoticiaCard,
+    NavLink,
+    CandidatoCard,
+    ConoceBoric,
+    Timeline
+  },
   data() {
     return {
       mdToHtml,

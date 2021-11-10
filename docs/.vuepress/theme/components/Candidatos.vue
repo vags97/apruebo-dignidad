@@ -169,9 +169,6 @@ export default {
           });
           loader.load().then(async () => {
             const latLng = new google.maps.LatLng(latLenFloat)
-            //const request = new google.maps.GeocoderRequest ({
-            //  location: latLng
-            //})
             const geocoder = new google.maps.Geocoder()
             const response = await geocoder.geocode({
               location: latLng
