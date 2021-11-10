@@ -1,46 +1,54 @@
 <template>
   <v-row justify="center">
     <v-col cols="12" md="10" lg="8">
-      <header class="hero">
-        <v-carousel
-            height="100%"
-            hide-delimiters
-            v-model="currentVideo"
-        >
-          <v-carousel-item
-              v-for="(item,i) in videos"
-              :key="i"
-              reverse-transition="fade-transition"
-              transition="fade-transition"
-          >
-            <iframe
-                v-if="currentVideo === i"
-                style="width: 100%; aspect-ratio: 16/9"
-                :src="'https://www.youtube.com/embed/'+ getVideoId(item.video) + '?autoplay=1&mute=1'"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-            >
-            </iframe>
-          </v-carousel-item>
-        </v-carousel>
-      </header>
-      <Content  />
       <v-row>
+        <v-col cols="12">
+          <v-card>
+            <v-img>
+              <v-carousel
+                  height="100%"
+                  hide-delimiters
+                  v-model="currentVideo"
+              >
+                <v-carousel-item
+                    v-for="(item,i) in videos"
+                    :key="i"
+                    reverse-transition="fade-transition"
+                    transition="fade-transition"
+                    style="line-height: 0"
+                >
+                  <iframe
+                      v-if="currentVideo === i"
+                      style="width: 100%; aspect-ratio: 16/9"
+                      :src="'https://www.youtube.com/embed/'+ getVideoId(item.video) + '?autoplay=1&mute=1'"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                  >
+                  </iframe>
+                </v-carousel-item>
+              </v-carousel>
+            </v-img>
+          </v-card>
+        </v-col>
+        <v-col
+            cols="12"
+            v-if="data.body"
+        >
+          <Content  />
+        </v-col>
         <v-col cols="12" md="6">
           <ConoceBoric />
         </v-col>
         <v-col cols="12" md="6">
          <ConoceCandidato />
         </v-col>
-      </v-row>
-      <v-row>
         <v-col
             cols="12"
             md="6"
         >
-          <h1 class="pt-2">
+          <h1>
             Noticias
           </h1>
           <v-row>
