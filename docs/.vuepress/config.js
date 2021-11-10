@@ -85,7 +85,7 @@ const candidatos = [
     ...candidaturasDiputados,
     ...candidaturasSenadores,
     ...candidaturasCores
-]
+].sort((a,b)=>a.title.localeCompare(b.title))
 
 const mainPages = [
     {route: '/candidatos'},
