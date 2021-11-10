@@ -160,7 +160,7 @@ export default {
           circunscripcionProvincial: comuna.circunscripcionProvincial
         }
       });
-      return comunas.sort((a, b) => a.value.localeCompare(b.value));
+      return comunas;
     },
     todosTiposCandidaturasSeleccionadas(){
       return this.tiposCandidaturasSeleccionadas.includes(1) &&
@@ -256,7 +256,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
     comunasProvincia(circunscripcionProvincial){
       return divisionElectoral.reduce((acc, comuna)=>{
@@ -265,7 +264,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
     comunasRegion(circunscripcionSenatorial){
       return divisionElectoral.reduce((acc, comuna)=>{
@@ -274,7 +272,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
     candidaturaTerritorio(candidato){
       switch (candidato.tipoCandidatura){

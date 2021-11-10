@@ -230,7 +230,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
     comunasProvincia(circunscripcionProvincial){
       return divisionElectoral.reduce((acc, comuna)=>{
@@ -239,7 +238,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
     comunasRegion(circunscripcionSenatorial){
       return divisionElectoral.reduce((acc, comuna)=>{
@@ -248,7 +246,6 @@ export default {
         }
         return acc;
       }, [])
-          .sort((a,b) => a.localeCompare(b))
     },
   }
 }
