@@ -247,10 +247,6 @@ export default {
           loader.load().then( () => {
               const latLng = new google.maps.LatLng(latLenFloat)
               const geocoder = new google.maps.Geocoder()
-                .catch(()=>{
-                  this.errorComuna = true
-                  this.buscandoComuna = false;
-                })
               geocoder.geocode({
                 location: latLng
               }).then(response =>{
