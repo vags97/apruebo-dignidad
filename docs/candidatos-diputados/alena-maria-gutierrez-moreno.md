@@ -44,6 +44,16 @@ Para eso, quiero que lleguemos al congreso con la fuerza de nuestras comunas, pa
 
 **Propuestas**
 
+* **Protección al medioambiente:** 
+
+  Somos parte de un mismo ecosistema. Por tanto, es urgente responder a la crisis climática. Para enfrentar el saqueo y la sequía, necesitamos un nuevo código de aguas, que garantice la sostenibilidad de las cuencas y el consumo humano. Impulsaremos la creación de áreas verdes comunes y vamos a promover una nueva política de reforestación, con énfasis en las especies nativas ¡Que nunca más nuestro territorio sea zona de sacrificio!
+* **Transporte y Justicia Territorial:** 
+
+  Todos y todas tenemos derecho a habitar en un territorio que nos garantice condiciones de vida digna. Queremos que la salud, la educación o el trabajo no dependan de viajes por horas en micro o colectivo que se llevan nuestros sueldos con su alto costo. Por eso, proponemos una nueva política territorial, que descentralice los servicios, acompañada de un nuevo sistema de transporte doble cero: cero costo y cero emisiones de carbono.
+* **Cuidados**
+
+  A diario niños, niñas y adolescentes, adultos mayores, personas en situación de discapacidad o cursando una enfermedad requieren ser cuidadas. Quienes cuidan mayoritariamente son las mujeres, por lo que se requiere la creación de un *Sistema Nacional de Cuidados* que promueva la corresponsabilidad y garantice el derecho a ser cuidado/a.
+
 Vota AR100.
 
 <!--EndFragment-->
