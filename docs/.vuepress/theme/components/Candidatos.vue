@@ -194,8 +194,8 @@ export default {
     setComuna(userComuna){
       for(let i = 0; i < this.comunas.length; i++){
         const comuna = this.comunas[i];
-        const comunaLower = comuna.value.toLowerCase()
-        const userComunaLower = userComuna.toLowerCase()
+        const comunaLower = comuna.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const userComunaLower = userComuna.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         if(comunaLower.indexOf(userComunaLower) >= 0 || userComunaLower.indexOf(comunaLower) >= 0){
           this.comunaSeleccionada = comuna.value;
           break;
