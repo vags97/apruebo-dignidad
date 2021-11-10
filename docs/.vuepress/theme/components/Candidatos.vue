@@ -67,13 +67,33 @@
         </v-col>
       </v-row>
     </v-col>
+    <v-snackbar
+        v-model="errorComuna"
+        class="pb-0"
+        color="red"
+    >
+      <v-icon left>
+        {{ mdiAlertCircle}}
+      </v-icon>
+      Error al buscar comuna.
+    </v-snackbar>
+    <v-snackbar
+        v-model="advertenciaComuna"
+        class="pb-0"
+        color="yellow"
+    >
+      <v-icon left>
+        {{ mdiAlertCircle}}
+      </v-icon>
+      No se pudo asignar comuna a: {{comunaEncontrada}}.
+    </v-snackbar>
   </v-row>
 </template>
 
 <script>
 import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import CandidatoCard from "./CandidatoCard";
-import { mdiMapMarkerRadius } from '@mdi/js';
+import { mdiMapMarkerRadius, mdiAlertCircle } from '@mdi/js';
 import { Loader } from "@googlemaps/js-api-loader"
 
 export default {
@@ -82,6 +102,7 @@ export default {
   data(){
     return {
       mdiMapMarkerRadius,
+      mdiAlertCircle,
       tiposCandidaturasSeleccionadas: [1,2,3],
       tiposCandidaturas: [
         { value: 1, text: "Diputaciones", candidatura: 'Diputado/a' },
@@ -89,7 +110,10 @@ export default {
         { value: 3, text: "CORES", candidatura: "CORE" }
       ],
       comunaSeleccionada: null,
-      buscandoComuna: false
+      buscandoComuna: false,
+      errorComuna: false,
+      advertenciaComuna: false,
+      comunaEncontrada: ''
     }
   },
   watch: {
@@ -172,14 +196,23 @@ export default {
             version: "weekly"
           });
           loader.load().then(async () => {
-            const latLng = new google.maps.LatLng(latLenFloat)
-            const geocoder = new google.maps.Geocoder()
-            const response = await geocoder.geocode({
-              location: latLng
-            });
-            const comuna = response.results[0]['address_components']
-                .find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
-            this.setComuna(comuna);
+            try{
+              const latLng = new google.maps.LatLng(latLenFloat)
+              const geocoder = new google.maps.Geocoder()
+              const response = await geocoder.geocode({
+                location: latLng
+              });
+              const comuna = response.results[0]['address_components']
+                  .find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
+              this.setComuna(comuna);
+            } catch (error) {
+              throw error
+            }
+          })
+          .catch(()=>{
+            this.errorComuna = true
+          })
+          .finally(()=>{
             this.buscandoComuna = false;
           });
 
@@ -198,8 +231,12 @@ export default {
         const userComunaLower = userComuna.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         if(comunaLower.indexOf(userComunaLower) >= 0 || userComunaLower.indexOf(comunaLower) >= 0){
           this.comunaSeleccionada = comuna.value;
-          break;
+          return;
         }
+      }
+      if(!this.comunaSeleccionada){
+        this.advertenciaComuna = true
+        this.comunaEncontrada = userComuna
       }
     },
     candidaturaDistritoCircunscripcion(candidato){
