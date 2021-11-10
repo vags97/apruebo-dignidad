@@ -95,6 +95,7 @@ import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import CandidatoCard from "./CandidatoCard";
 import { mdiMapMarkerRadius, mdiAlertCircle } from '@mdi/js';
 import { Loader } from "@googlemaps/js-api-loader"
+import {replaceNonAscii} from "../util";
 
 export default {
   name: "Candidatos",
@@ -105,8 +106,8 @@ export default {
       mdiAlertCircle,
       tiposCandidaturasSeleccionadas: [1,2,3],
       tiposCandidaturas: [
-        { value: 1, text: "Diputaciones", candidatura: 'Diputado/a' },
-        { value: 2, text: "Senadores/as", candidatura: "Senador/a" },
+        { value: 1, text: "Diputados", candidatura: 'Diputado/a' },
+        { value: 2, text: "Senadores", candidatura: "Senador/a" },
         { value: 3, text: "CORES", candidatura: "CORE" }
       ],
       comunaSeleccionada: null,
@@ -118,11 +119,18 @@ export default {
   },
   watch: {
     comunaSeleccionada(comuna){
-      this.setLastComuna(comuna)
+      this.saveLastComuna(comuna)
+    },
+    tiposCandidaturasSeleccionadas: {
+      deep: true,
+      handler(tiposCandidaturas){
+        this.saveLastTiposCandidaturas(tiposCandidaturas)
+      }
     }
   },
   mounted(){
-    this.getLastComuna()
+    this.setLastComuna()
+    this.setUrlTiposCandidaturas()
   },
   computed: {
     candidatos(){
@@ -151,7 +159,7 @@ export default {
       return candidaturas;
     },
     comunas(){
-      const comunas = divisionElectoral.map((comuna)=> {
+      return divisionElectoral.map((comuna)=> {
         return {
           value: comuna.comuna,
           text: comuna.comuna,
@@ -160,7 +168,6 @@ export default {
           circunscripcionProvincial: comuna.circunscripcionProvincial
         }
       });
-      return comunas;
     },
     todosTiposCandidaturasSeleccionadas(){
       return this.tiposCandidaturasSeleccionadas.includes(1) &&
@@ -169,18 +176,60 @@ export default {
     }
   },
   methods: {
-    getLastComuna(){
-      const comuna = localStorage.getItem('comunaUsuario')
+    setLastComuna(){
+      const comuna = this.$route.query.comuna?
+          this.$route.query.comuna:
+          localStorage.getItem('comunaUsuario')
       if(comuna){
-        this.comunaSeleccionada = comuna;
+        this.setComuna(comuna)
       }
     },
-    setLastComuna(comuna){
+    saveLastComuna(comuna){
       if(comuna){
-        localStorage.setItem('comunaUsuario', comuna)
+        const formatedComuna = replaceNonAscii(comuna.toLowerCase())
+        const query = { ...this.$route.query, comuna: formatedComuna };
+        this.$router.replace({ query }).catch(() => {});
+        localStorage.setItem('comunaUsuario', formatedComuna)
       } else {
+        let query = {...this.$route.query};
+        delete query.comuna;
+        this.$router.replace({ query }).catch(() => {});
         localStorage.removeItem('comunaUsuario')
       }
+    },
+    setUrlTiposCandidaturas(){
+      if(this.$route.query.diputados === 'false'){
+        this.tiposCandidaturasSeleccionadas = this.tiposCandidaturasSeleccionadas
+            .filter(tipoCandidatura => tipoCandidatura !== 1)
+      }
+      if(this.$route.query.senadores === 'false'){
+        this.tiposCandidaturasSeleccionadas = this.tiposCandidaturasSeleccionadas
+            .filter(tipoCandidatura => tipoCandidatura !== 2)
+      }
+      if(this.$route.query.cores === 'false'){
+        this.tiposCandidaturasSeleccionadas = this.tiposCandidaturasSeleccionadas
+            .filter(tipoCandidatura => tipoCandidatura !== 3)
+      }
+    },
+    saveLastTiposCandidaturas(tiposCandidaturas){
+      tiposCandidaturas.includes(1)?
+          this.removeLastTipoCandidatura('diputados'):
+          this.saveLastTipoCandidatura('diputados')
+      tiposCandidaturas.includes(2)?
+          this.removeLastTipoCandidatura('senadores'):
+          this.saveLastTipoCandidatura('senadores')
+      tiposCandidaturas.includes(3)?
+          this.removeLastTipoCandidatura('cores'):
+          this.saveLastTipoCandidatura('cores')
+    },
+    saveLastTipoCandidatura(tipoCandidatura){
+      const query = { ...this.$route.query, [tipoCandidatura]: false };
+      this.$router.replace({ query }).catch(() => {});
+    },
+    removeLastTipoCandidatura(tipoCandidatura){
+      let query = {...this.$route.query};
+      delete query[tipoCandidatura];
+      this.$router.replace({ query }).catch(() => {});
     },
     getComuna(){
       this.buscandoComuna = true;
@@ -195,19 +244,24 @@ export default {
             apiKey: key,
             version: "weekly"
           });
-          loader.load().then(async () => {
-            try{
+          loader.load().then( () => {
               const latLng = new google.maps.LatLng(latLenFloat)
               const geocoder = new google.maps.Geocoder()
-              const response = await geocoder.geocode({
+                .catch(()=>{
+                  this.errorComuna = true
+                  this.buscandoComuna = false;
+                })
+              geocoder.geocode({
                 location: latLng
+              }).then(response =>{
+                const comuna = response.results[0]['address_components']
+                    .find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
+                this.setComuna(comuna);
+              })
+              .catch(()=>{
+                this.errorComuna = true
+                this.buscandoComuna = false;
               });
-              const comuna = response.results[0]['address_components']
-                  .find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
-              this.setComuna(comuna);
-            } catch (error) {
-              throw error
-            }
           })
           .catch(()=>{
             this.errorComuna = true
@@ -227,8 +281,8 @@ export default {
     setComuna(userComuna){
       for(let i = 0; i < this.comunas.length; i++){
         const comuna = this.comunas[i];
-        const comunaLower = comuna.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        const userComunaLower = userComuna.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const comunaLower = replaceNonAscii(comuna.value.toLowerCase())
+        const userComunaLower = replaceNonAscii(userComuna.toLowerCase())
         if(comunaLower.indexOf(userComunaLower) >= 0 || userComunaLower.indexOf(comunaLower) >= 0){
           this.comunaSeleccionada = comuna.value;
           return;

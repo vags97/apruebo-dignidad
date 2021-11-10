@@ -251,3 +251,7 @@ export function validURL(str) {
       '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
   return !!pattern.test(str);
 }
+
+export function replaceNonAscii(str){
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
