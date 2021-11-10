@@ -152,7 +152,11 @@ export default {
       }
     },
     setLastComuna(comuna){
-      localStorage.setItem('comunaUsuario', comuna)
+      if(comuna){
+        localStorage.setItem('comunaUsuario', comuna)
+      } else {
+        localStorage.removeItem('comunaUsuario')
+      }
     },
     getComuna(){
       this.buscandoComuna = true;
