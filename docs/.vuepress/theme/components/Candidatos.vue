@@ -5,7 +5,7 @@
         md="10"
     >
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-select
               v-model="tiposCandidaturasSeleccionadas"
               :items="tiposCandidaturas"
@@ -23,7 +23,7 @@
             </template>
           </v-select>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="10" sm="5">
           <v-autocomplete
               v-model="comunaSeleccionada"
               :items="comunas"
@@ -32,11 +32,19 @@
               clearable
           />
         </v-col>
-      </v-row>
-      <v-row>
-        <v-card>
-
-        </v-card>
+        <v-col cols="2" sm="1" class="text-center">
+          <v-btn
+              fab
+              small
+              @click="getComuna"
+              color="primary"
+              :loading="buscandoComuna"
+          >
+            <v-icon>
+              {{mdiMapMarkerRadius}}
+            </v-icon>
+          </v-btn>
+        </v-col>
       </v-row>
       <v-row>
         <v-col
@@ -65,20 +73,31 @@
 <script>
 import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import CandidatoCard from "./CandidatoCard";
+import { mdiMapMarkerRadius } from '@mdi/js';
 
 export default {
   name: "Candidatos",
   components: {CandidatoCard},
   data(){
     return {
+      mdiMapMarkerRadius,
       tiposCandidaturasSeleccionadas: [1,2,3],
       tiposCandidaturas: [
         { value: 1, text: "Diputaciones", candidatura: 'Diputado/a' },
         { value: 2, text: "Senadores/as", candidatura: "Senador/a" },
         { value: 3, text: "CORES", candidatura: "CORE" }
       ],
-      comunaSeleccionada: null
+      comunaSeleccionada: null,
+      buscandoComuna: false
     }
+  },
+  watch: {
+    comunaSeleccionada(comuna){
+      this.setLastComuna(comuna)
+    }
+  },
+  mounted(){
+    this.getLastComuna()
   },
   computed: {
     candidatos(){
@@ -125,6 +144,47 @@ export default {
     }
   },
   methods: {
+    getLastComuna(){
+      const comuna = localStorage.getItem('comunaUsuario')
+      if(comuna){
+        this.comunaSeleccionada = comuna;
+      }
+    },
+    setLastComuna(comuna){
+      localStorage.setItem('comunaUsuario', comuna)
+    },
+    getComuna(){
+      this.buscandoComuna = true;
+      if('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          const latlng = position.coords.latitude + ',' + position.coords.longitude
+          const key = this.$site.themeConfig.gkey
+          fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng='+latlng+'&key='+key)
+              .then(async (response) => {
+                const res = await response.json()
+                const currentComuna = res.results[0]['address_components'].find( ac => ac.types.includes('administrative_area_level_3'))['short_name'];
+                this.buscandoComuna = false;
+                this.setComuna(currentComuna)
+              })
+        }, (error) =>{
+          console.log('geoerror: ' + error)
+        });
+      } else {
+        this.buscandoComuna = false;
+        console.log('no geolocation')
+      }
+    },
+    setComuna(userComuna){
+      for(let i = 0; i < this.comunas.length; i++){
+        const comuna = this.comunas[i];
+        const comunaLower = comuna.value.toLowerCase()
+        const userComunaLower = userComuna.toLowerCase()
+        if(comunaLower.indexOf(userComunaLower) >= 0 || userComunaLower.indexOf(comunaLower) >= 0){
+          this.comunaSeleccionada = comuna.value;
+          break;
+        }
+      }
+    },
     candidaturaDistritoCircunscripcion(candidato){
       switch (candidato.tipoCandidatura){
         case 1:

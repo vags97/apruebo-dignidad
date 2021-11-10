@@ -158,6 +158,7 @@ module.exports = {
     logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
     twitter: 'ADignidadCL',
-    instagram: 'adignidadcl'
+    instagram: 'adignidadcl',
+    gkey: 'AIzaSyDXVzczbFe4QYKecXDGZPEfIH3UI3VdFsQ'
   },
 };
