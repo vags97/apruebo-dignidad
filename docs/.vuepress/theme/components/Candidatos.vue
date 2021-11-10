@@ -68,6 +68,16 @@
       </v-row>
     </v-col>
     <v-snackbar
+        v-model="busquedaExitosa"
+        class="pb-0"
+        color="green"
+    >
+      <v-icon left>
+        {{ mdiCheckCircle }}
+      </v-icon>
+      {{ mensajeBusquedaExitosa }}
+    </v-snackbar>
+    <v-snackbar
         v-model="errorComuna"
         class="pb-0"
         color="red"
@@ -93,7 +103,7 @@
 <script>
 import {divisionElectoral, regiones} from "../util/divisionElectoral";
 import CandidatoCard from "./CandidatoCard";
-import { mdiMapMarkerRadius, mdiAlertCircle } from '@mdi/js';
+import { mdiMapMarkerRadius, mdiAlertCircle, mdiCheckCircle  } from '@mdi/js';
 import { Loader } from "@googlemaps/js-api-loader"
 import {replaceNonAscii} from "../util";
 
@@ -104,6 +114,9 @@ export default {
     return {
       mdiMapMarkerRadius,
       mdiAlertCircle,
+      mdiCheckCircle,
+      busquedaExitosa: false,
+      mensajeBusquedaExitosa: '',
       tiposCandidaturasSeleccionadas: [1,2,3],
       tiposCandidaturas: [
         { value: 1, text: "Diputados", candidatura: 'Diputado/a' },
@@ -120,11 +133,14 @@ export default {
   watch: {
     comunaSeleccionada(comuna){
       this.saveLastComuna(comuna)
+      this.showGetComunaExitosoMessage(comuna)
+
     },
     tiposCandidaturasSeleccionadas: {
       deep: true,
       handler(tiposCandidaturas){
         this.saveLastTiposCandidaturas(tiposCandidaturas)
+        this.showGetTipoCandidatosMessage(tiposCandidaturas)
       }
     }
   },
@@ -176,6 +192,38 @@ export default {
     }
   },
   methods: {
+    showGetComunaExitosoMessage(comuna){
+      if(comuna){
+        this.mensajeBusquedaExitosa = 'Candidatos de ' + comuna + ' obtenidos correctamente.';
+      } else {
+        this.mensajeBusquedaExitosa = 'Candidatos obtenidos correctamente.';
+      }
+      this.busquedaExitosa = true;
+    },
+    showGetTipoCandidatosMessage(tiposCandidaturas){
+      this.mensajeBusquedaExitosa = '';
+      if(tiposCandidaturas.includes(1) && tiposCandidaturas.includes(2) && tiposCandidaturas.includes(3)){
+        this.mensajeBusquedaExitosa += 'Candidatos'
+      } else {
+        if(tiposCandidaturas.includes(1)){
+          this.mensajeBusquedaExitosa += 'Diputados'
+          if(tiposCandidaturas.includes(2) || tiposCandidaturas.includes(3)){
+            this.mensajeBusquedaExitosa += ' y '
+          }
+        }
+        if(tiposCandidaturas.includes(2)){
+          this.mensajeBusquedaExitosa += 'Senadores'
+          if(tiposCandidaturas.includes(3)){
+            this.mensajeBusquedaExitosa += ' y '
+          }
+        }
+        if(tiposCandidaturas.includes(3)){
+          this.mensajeBusquedaExitosa += 'Cores'
+        }
+      }
+      this.mensajeBusquedaExitosa +=' obtenidos correctamente.'
+      this.busquedaExitosa = true;
+    },
     setLastComuna(){
       const comuna = this.$route.query.comuna?
           this.$route.query.comuna:
