@@ -160,6 +160,80 @@ module.exports = {
     facebook: 'ADignidadCL',
     twitter: 'ADignidadCL',
     instagram: 'adignidadcl',
-    gkey: 'AIzaSyDXVzczbFe4QYKecXDGZPEfIH3UI3VdFsQ'
+    wikipedia: 'https://es.wikipedia.org/wiki/Apruebo_Dignidad',
+    gkey: 'AIzaSyDXVzczbFe4QYKecXDGZPEfIH3UI3VdFsQ',
+    jsonLd: {
+        boric: {
+            "@type": "Person",
+            "id": "candidatoBoric",
+            "name": "Gabriel Boric",
+            "url": "https://www.boricpresidente.cl",
+            "image": "https://www.apruebo-dignidad.cl/media/gabriel-boric.jpg",
+            "sameAs": [
+                "https://www.facebook.com/gabrielboric",
+                "https://twitter.com/gabrielboric",
+                "https://www.instagram.com/gabrielboric",
+                "https://boricpresidente.cl/",
+                "https://www.youtube.com/user/gabrielboric",
+                "https://es.wikipedia.org/wiki/Gabriel_Boric",
+                "https://www.tiktok.com/@gabrielboric"
+            ],
+            "jobTitle": ["Diputado",  "Candidato Presidente", 'Militante Político'],
+        },
+        chile: {
+            "@type": "Organization",
+            "name": "Chile",
+            "id": "paisChile",
+            "alternateName": "República de Chile",
+            "sameAs": [
+                'https://es.wikipedia.org/wiki/Chile',
+                'https://www.gob.cl/'
+            ]
+        },
+        aprueboDignidad: {
+            "@type": "Organization",
+            "name": "Apruebo Dignidad",
+            "id": "aprueboDignidad",
+            "alternateName": "Conglomerado Apruebo Dignidad",
+            "url": "https://www.apruebo-dignidad.cl",
+            "logo": "https://www.apruebo-dignidad.cl/media/logo-apruebo-dignidad.png",
+            "sameAs": [
+                "https://www.facebook.com/ADignidadCL",
+                "https://www.twitter.com/ADignidadCL",
+                "https://www.instagram.com/adignidadcl",
+                "https://es.wikipedia.org/wiki/Apruebo_Dignidad",
+            ]
+        },
+        convergenciaSocial: {
+            "@type": "Organization",
+            "name": "Convergencia Social",
+            "id": "convergenciaSocial",
+            "alternateName": "Partido Convergencia Social",
+            "url": 'https://convergenciasocial.cl/',
+            "logo": 'https://convergenciasocial.cl/wp-content/uploads/2020/03/logo_vertical-copia.png',
+            "sameAs": [
+                'https://www.facebook.com/laconvergenciasocial/',
+                'https://twitter.com/la_convergencia',
+                'https://www.instagram.com/convergenciasocial/?hl=es-la',
+                'https://www.youtube.com/channel/UC-MNegJS21Q_mZbmI9Fe5mA',
+                'https://es.wikipedia.org/wiki/Convergencia_Social'
+            ]
+        },
+        frenteAmplio: {
+            "@type": "Organization",
+            "name": "Frente Amplio",
+            "id": "frenteAmplio",
+            "alternateName": "Conglomerado Frente Amplio",
+            "url": 'https://www.frente-amplio.cl/',
+            "logo": 'https://www.frente-amplio.cl/sites/default/files/logowebfa.png',
+            "sameAs": [
+                'https://www.facebook.com/FrenteAmpliodeChile',
+                'https://twitter.com/elfrente_amplio',
+                'https://www.youtube.com/channel/UC35UWpLZQchdul3lT4l1soQ/featured',
+                'https://www.instagram.com/frenteamplio_chile/',
+                'https://es.wikipedia.org/wiki/Frente_Amplio_(Chile)'
+            ]
+        }
+    }
   },
 };

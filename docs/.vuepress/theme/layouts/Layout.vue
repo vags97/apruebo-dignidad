@@ -1,36 +1,26 @@
 <template>
-  <v-app>
-    <Navbar
-        v-if="shouldShowNavbar"
-    />
-    <v-main>
-      <v-container class="py-6" fluid>
-        <Home v-if="$page.frontmatter.home" />
-        <Candidatos v-else-if="$page.frontmatter.candidatos" />
-        <Blogs v-else-if="$page.frontmatter.blogs" />
-        <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
-        <Blog
-          v-else
-          :sidebar-items="sidebarItems"
-        >
-          <template #top>
-            <slot name="page-top" />
-          </template>
-          <template #bottom>
-            <slot name="page-bottom" />
-          </template>
-        </Blog>
-      </v-container>
-    </v-main>
-    <Footer />
-  </v-app>
+  <div>
+    <script v-html="jsonLd()" type="application/ld+json"></script>
+    <v-app>
+      <Navbar/>
+      <v-main>
+        <v-container class="py-6" fluid>
+          <Home v-if="$page.frontmatter.home" />
+          <Candidatos v-else-if="$page.frontmatter.candidatos" />
+          <Blogs v-else-if="$page.frontmatter.blogs" />
+          <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
+          <Blog v-else />>
+        </v-container>
+      </v-main>
+      <Footer />
+    </v-app>
+  </div>
 </template>
 
 <script>
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Blog from '@theme/components/Noticia.vue'
-import { resolveSidebarItems } from '../util'
 import Footer from "../components/Footer";
 import Blogs from "../components/Noticias";
 import Candidatos from "../components/Candidatos";
@@ -47,95 +37,38 @@ export default {
     Footer,
     Blogs
   },
-
-  data () {
-    return {
-      isSidebarOpen: false
-    }
-  },
-
-  computed: {
-    shouldShowNavbar () {
-      const { themeConfig } = this.$site
-      const { frontmatter } = this.$page
-      if (
-        frontmatter.navbar === false
-        || themeConfig.navbar === false) {
-        return false
-      }
-      return (
-        this.$title
-        || themeConfig.logo
-        || themeConfig.repo
-        || themeConfig.nav
-        || this.$themeLocaleConfig.nav
-      )
-    },
-
-    shouldShowSidebar () {
-      const { frontmatter } = this.$page
-      return (
-        !frontmatter.home
-        && frontmatter.sidebar !== false
-        && this.sidebarItems.length
-      )
-    },
-
-    sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
-    },
-
-    pageClasses () {
-      const userPageClass = this.$page.frontmatter.pageClass
-      return [
-        {
-          'no-navbar': !this.shouldShowNavbar,
-          'sidebar-open': this.isSidebarOpen,
-          'no-sidebar': !this.shouldShowSidebar
-        },
-        userPageClass
-      ]
-    }
-  },
   created() {
     if (typeof this.$ssrContext !== 'undefined') {
       this.$ssrContext.userHeadTags+=`<link rel='canonical' href='${this.$site.themeConfig.domain}${this.$page.path}'/>`;
     }
   },
-  mounted () {
-    this.$router.afterEach(() => {
-      this.isSidebarOpen = false
-    })
-  },
-
   methods: {
-    toggleSidebar (to) {
-      this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
-      this.$emit('toggle-sidebar', this.isSidebarOpen)
-    },
-
-    // side swipe
-    onTouchStart (e) {
-      this.touchStart = {
-        x: e.changedTouches[0].clientX,
-        y: e.changedTouches[0].clientY
-      }
-    },
-
-    onTouchEnd (e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x
-      const dy = e.changedTouches[0].clientY - this.touchStart.y
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx > 0 && this.touchStart.x <= 80) {
-          this.toggleSidebar(true)
-        } else {
-          this.toggleSidebar(false)
-        }
+    jsonLd(){
+      const jsonLd = this.$site.themeConfig.jsonLd;
+      return {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "id": "aprueboDignidadWebSite",
+        "name": "Apruebo Dignidad",
+        "url": "https://www.apruebo-dignidad.cl",
+        "countryOfOrigin": "Chile",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.apruebo-dignidad.cl/candidatos.html?comuna={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        '@graph': [
+          jsonLd.aprueboDignidad,
+          {
+            ...jsonLd.boric,
+            "worksFor": [
+              jsonLd.chile,
+              jsonLd.aprueboDignidad,
+              jsonLd.convergenciaSocial,
+              jsonLd.frenteAmplio
+            ]
+          }
+        ]
       }
     }
   }

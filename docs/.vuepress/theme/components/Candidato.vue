@@ -1,6 +1,6 @@
 <template>
   <div>
-    <script v-html="getJsonLd()" type="application/ld+json"></script>
+    <script v-html="jsonLd()" type="application/ld+json"></script>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8">
         <v-card>
@@ -171,7 +171,6 @@ export default {
       candidato: null,
       candidaturaDistritoCircunscripcion: '',
       candidaturaTerritorio: '',
-      jsonLd: {}
     }
   },
   created(){
@@ -181,21 +180,38 @@ export default {
     this.candidaturaTerritorio = this.getCandidaturaTerritorio();
   },
   methods: {
-    getJsonLd(){
+    jsonLd(){
+      const jsonLd = this.$site.themeConfig.jsonLd;
+      const candidato = this.candidato;
+      let sameAs = []
+      if(candidato.facebook){
+        sameAs.push(this.rrssUrl(candidato.facebook, 'facebook'))
+      }
+      if(candidato.instagram){
+        sameAs.push(this.rrssUrl(candidato.instagram, 'instagram'))
+      }
+      if(candidato.twitter){
+        sameAs.push(this.rrssUrl(candidato.twitter, 'twitter'))
+      }
+      if(candidato.youtube){
+        sameAs.push(candidato.youtube)
+      }
+      if(candidato.tiktok){
+        sameAs.push(this.rrssUrl(candidato.tiktok, 'tiktok'))
+      }
       return {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Books",
-          "item": "https://example.com/books"
-        }, {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "The Lord of the Rings",
-          "item": "https://example.com/books/the-lord-of-the-rings"
-        }]
+        "@type": "Person",
+        "id": "candidato",
+        "name": candidato.title,
+        "url": candidato.paginaWeb? candidato.paginaWeb: this.$site.themeConfig.domain,
+        "image": this.$site.themeConfig.domain + (candidato.image? candidato.image : '/media/ad-profile.jpg'),
+        "sameAs": sameAs,
+        "jobTitle": ["Candidato", "Candidata", candidato.tipoCandidatura === 1? "Diputado": candidato.tipoCandidatura === 2? "Senador": "Consejero Regional"],
+        "worksFor": [
+          jsonLd.chile,
+          jsonLd.aprueboDignidad
+        ]
       }
     },
     getTwitterUsername(twitter){
