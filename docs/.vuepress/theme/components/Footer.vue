@@ -9,29 +9,41 @@
       <v-row justify="center" class="py-4">
         <v-col cols="8">
           <v-row justify="space-around">
-            <v-icon
+            <v-btn
+                icon
                 color="white"
-                @click="openInNewTab(facebookUrl)"
+                target="_blank"
+                :href="facebookUrl"
             >
-              {{ mdiFacebook }}
-            </v-icon>
-            <v-icon
+              <v-icon>
+                {{ mdiFacebook }}
+              </v-icon>
+            </v-btn>
+            <v-btn
+                icon
                 color="white"
-                @click="openInNewTab(instagramUrl)"
+                target="_blank"
+                :href="instagramUrl"
             >
-              {{ mdiInstagram }}
-            </v-icon>
-            <v-icon
+              <v-icon>
+                {{ mdiInstagram }}
+              </v-icon>
+            </v-btn>
+            <v-btn
+                icon
                 color="white"
-                @click="openInNewTab(twitterUrl)"
+                target="_blank"
+                :href="twitterUrl"
             >
-              {{ mdiTwitter }}
-            </v-icon>
+              <v-icon>
+                {{ mdiTwitter }}
+              </v-icon>
+            </v-btn>
           </v-row>
         </v-col>
       </v-row>
       <v-row justify="space-around" class="pa-2">
-        <a @click="openInNewTab('https://boricpresidente.cl/')">
+        <a href="https://boricpresidente.cl/" target="_blank">
           <div class="boric-logo"/>
         </a>
       </v-row>
@@ -71,12 +83,6 @@ export default {
       if(!profile) return '';
       return url + profile;
     },
-    openInNewTab(href) {
-      Object.assign(document.createElement('a'), {
-        target: '_blank',
-      href: href,
-      }).click();
-    }
   }
 }
 </script>

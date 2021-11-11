@@ -12,6 +12,7 @@
               class="align-center"
               block
               large
+              target="_blank"
           >
             Conoce A Gabriel Boric Presidente
           </v-btn>
