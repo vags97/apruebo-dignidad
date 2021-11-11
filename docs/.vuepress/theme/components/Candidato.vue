@@ -1,123 +1,144 @@
 <template>
-  <v-row justify="center">
-    <v-col cols="12" md="10" lg="8">
-      <v-card>
-        <v-img
-            :src="candidato.image?candidato.image: '/media/ad-profile.jpg'"
-            class="candidato-image white--text align-end"
-            :alt="'image' + candidato.title.toLowerCase().replace(' ', '_')"
-        >
-          <div class="content-text">
-            <v-card-title class="d-none d-md-flex">
-              {{ candidato.title }}
-            </v-card-title>
-            <v-card-subtitle class="d-none d-md-flex">
-              {{ candidaturaDistritoCircunscripcion }}
-              <br>
-              {{"Vota " + candidato.papeleta}}
-              <br>
-              {{ candidaturaTerritorio }}
-              <br>
-              Partido: {{ candidato.partido }}
-            </v-card-subtitle>
-          </div>
-        </v-img>
-        <v-card-title class="d-flex d-md-none">
-          {{ candidato.title }}
-        </v-card-title>
-        <v-card-subtitle class="d-flex d-md-none pb-0">
-          {{ candidaturaDistritoCircunscripcion }}
-          <br>
-          {{"Vota " + candidato.papeleta}}
-          <br>
-          {{ candidaturaTerritorio }}
-          <br>
-          Partido: {{ candidato.partido }}
-        </v-card-subtitle>
-        <v-card-subtitle
-            v-if="candidato.paginaWeb
-            || candidato.facebook
-            || candidato.instagram
-            || candidato.twitter
-            || candidato.youtube
-            || true"
-        >
-          <v-row justify="space-around">
-            <v-col v-if="candidato.paginaWeb" class="text-center">
-              <v-icon
-                  color="primary"
-                  @click="openInNewTab(candidato.paginaWeb)"
-              >
-                {{ mdiWeb }}
-              </v-icon>
-            </v-col>
-            <v-col v-if="candidato.facebook" class="text-center">
-              <v-icon
-                  color="primary"
-                  @click="openInNewTab(rrssUrl(candidato.facebook, 'facebook'))"
-              >
-                {{ mdiFacebook }}
-              </v-icon>
-            </v-col>
-            <v-col v-if="candidato.instagram" class="text-center">
-              <v-icon
-                  v-if="candidato.instagram"
-                  color="primary"
-                  @click="openInNewTab(rrssUrl(candidato.instagram, 'instagram'))"
-              >
-                {{ mdiInstagram }}
-              </v-icon>
-            </v-col>
-            <v-col v-if="candidato.twitter" class="text-center">
-              <v-icon
-                  color="primary"
-                  @click="openInNewTab(rrssUrl(candidato.twitter, 'twitter'))"
-              >
-                {{ mdiTwitter }}
-              </v-icon>
-            </v-col>
-            <v-col v-if="candidato.youtube" class="text-center">
-              <v-icon
-                  color="primary"
-                  @click="openInNewTab(candidato.youtube)"
-              >
-                {{ mdiYoutube }}
-              </v-icon>
-            </v-col>
-            <v-col v-if="candidato.tiktok" class="text-center">
-              <v-icon
-                  color="primary"
-                  @click="openInNewTab(rrssUrl(candidato.tiktok, 'tiktok'))"
-                  class="tiktok-icon primary"
-              >
-              </v-icon>
-            </v-col>
-          </v-row>
-        </v-card-subtitle>
-        <v-card-text>
-          <Content/>
-          <v-row justify="center" v-if="candidato.twitter">
-            <v-col cols="12" md="6">
-              <Timeline
-                  class="twitter"
-                  :id="twitterUsername"
-                  sourceType="profile"
-                  :options="{ tweetLimit: '3' }"
-              >
-                Cargado Twitter ...
-              </Timeline>
-            </v-col>
-          </v-row>
-        </v-card-text>
-        <v-card-text v-if="!candidato.contactado">
-          ¿Eres el/la candidato/a? Escríbenos a <a href="mailto:candidatos.apruebo.dignidad@gmail.com">candidatos.apruebo.dignidad@gmail.com</a>
-        </v-card-text>
-        <v-card-text v-if="candidato.twitter">
-
-        </v-card-text>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <script v-html="getJsonLd()" type="application/ld+json"></script>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8">
+        <v-card>
+          <v-img
+              :src="candidato.image?candidato.image: '/media/ad-profile.jpg'"
+              class="candidato-image white--text align-end"
+              :alt="'image' + candidato.title.toLowerCase().replace(' ', '_')"
+          >
+            <div class="content-text">
+              <v-card-title class="d-none d-md-flex">
+                {{ candidato.title }}
+              </v-card-title>
+              <v-card-subtitle class="d-none d-md-flex">
+                {{ candidaturaDistritoCircunscripcion }}
+                <br>
+                {{"Vota " + candidato.papeleta}}
+                <br>
+                {{ candidaturaTerritorio }}
+                <br>
+                Partido: {{ candidato.partido }}
+              </v-card-subtitle>
+            </div>
+          </v-img>
+          <v-card-title class="d-flex d-md-none">
+            {{ candidato.title }}
+          </v-card-title>
+          <v-card-subtitle class="d-flex d-md-none pb-0">
+            {{ candidaturaDistritoCircunscripcion }}
+            <br>
+            {{"Vota " + candidato.papeleta}}
+            <br>
+            {{ candidaturaTerritorio }}
+            <br>
+            Partido: {{ candidato.partido }}
+          </v-card-subtitle>
+          <v-card-subtitle
+              v-if="candidato.paginaWeb
+              || candidato.facebook
+              || candidato.instagram
+              || candidato.twitter
+              || candidato.youtube
+              || true"
+          >
+            <v-row justify="space-around">
+              <v-col v-if="candidato.paginaWeb" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="candidato.paginaWeb"
+                >
+                  <v-icon>
+                    {{ mdiWeb }}
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col v-if="candidato.facebook" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="rrssUrl(candidato.facebook, 'facebook')"
+                >
+                  <v-icon>
+                    {{ mdiFacebook }}
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col v-if="candidato.instagram" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="rrssUrl(candidato.instagram, 'instagram')"
+                >
+                  <v-icon>
+                    {{ mdiInstagram }}
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col v-if="candidato.twitter" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="rrssUrl(candidato.twitter, 'twitter')"
+                >
+                  <v-icon>
+                    {{ mdiTwitter }}
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col v-if="candidato.youtube" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="candidato.youtube"
+                >
+                  <v-icon>
+                    {{ mdiYoutube }}
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col v-if="candidato.tiktok" class="text-center">
+                <v-btn
+                    icon
+                    color="primary"
+                    target="_blank"
+                    :href="rrssUrl(candidato.tiktok, 'tiktok')"
+                >
+                  <v-icon class="tiktok-icon primary"/>
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-card-subtitle>
+          <v-card-text>
+            <Content/>
+            <v-row justify="center" v-if="candidato.twitter">
+              <v-col cols="12" md="6">
+                <Timeline
+                    class="twitter"
+                    :id="getTwitterUsername(candidato.twitter)"
+                    sourceType="profile"
+                    :options="{ tweetLimit: '3' }"
+                >
+                  Cargado Twitter ...
+                </Timeline>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-card-text v-if="!candidato.contactado">
+            ¿Eres el/la candidato/a? Escríbenos a <a href="mailto:candidatos.apruebo.dignidad@gmail.com">candidatos.apruebo.dignidad@gmail.com</a>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -148,15 +169,36 @@ export default {
       mdiWeb,
       comunas: [],
       candidato: null,
+      candidaturaDistritoCircunscripcion: '',
+      candidaturaTerritorio: '',
+      jsonLd: {}
     }
   },
   created(){
-    this.candidato = this.$page.frontmatter
+    this.candidato = this.$page.frontmatter;
     this.comunas = this.getComunas(this.candidato);
+    this.candidaturaDistritoCircunscripcion = this.getCandidaturaDistritoCircunscripcion();
+    this.candidaturaTerritorio = this.getCandidaturaTerritorio();
   },
-  computed: {
-    twitterUsername(){
-      const twitter = this.candidato.twitter;
+  methods: {
+    getJsonLd(){
+      return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Books",
+          "item": "https://example.com/books"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Lord of the Rings",
+          "item": "https://example.com/books/the-lord-of-the-rings"
+        }]
+      }
+    },
+    getTwitterUsername(twitter){
       if(!validURL(twitter)){
         return twitter[0] === '@'? twitter.substr(1): twitter;
       }
@@ -164,7 +206,7 @@ export default {
       const twitterArray = url.split('/');
       return twitterArray[1];
     },
-    candidaturaDistritoCircunscripcion(){
+    getCandidaturaDistritoCircunscripcion(){
       if(this.candidato.diputado){
         return "Diputado/a Distrito " + this.candidato.distrito;
       } else if (this.candidato.senador) {
@@ -173,7 +215,7 @@ export default {
         return "CORE Circunscripción " + this.candidato.circunscripcionProvincial;
       }
     },
-    candidaturaTerritorio(){
+    getCandidaturaTerritorio(){
       if(this.candidato.diputado){
         return this.comunas
             .join(", ")
@@ -183,9 +225,7 @@ export default {
         return this.comunas
             .join(", ")
       }
-    }
-  },
-  methods: {
+    },
     rrssUrl(userUrl, rrss){
       if(validURL(userUrl)){
         return userUrl
@@ -216,12 +256,6 @@ export default {
       } else if (candidato.core){
         return this.comunasProvincia(candidato.circunscripcionProvincial);
       }
-    },
-    openInNewTab(href) {
-      Object.assign(document.createElement('a'), {
-        target: '_blank',
-        href: href,
-      }).click();
     },
     comunasDistrito(distrito){
       return divisionElectoral.reduce((acc, comuna)=>{
