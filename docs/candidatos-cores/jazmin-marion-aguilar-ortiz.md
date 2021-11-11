@@ -1,30 +1,19 @@
 ---
 core: true
 title: Jazmin Marion Aguilar Ortiz
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago II
+description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago III
 image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
-- Santiago II
+- Santiago III
 - AV183
 - Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Comunes
-- Pudahuel
-- Quilicura
 - Cerrillos
 - Estacion Central
 - Maipu
-- Conchali
-- Huechuraba
-- Renca
-- Cerro Navia
-- Independencia
-- Lo Prado
-- Quinta Normal
-- Recoleta
-- Santiago
-circunscripcionProvincial: Santiago II
+circunscripcionProvincial: Santiago III
 papeleta: AV183
 partido: Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Comunes
 paginaWeb:
@@ -34,6 +23,6 @@ instagram:
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Jazmin Marion Aguilar Ortiz y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago II.
+Hola, mi nombre es Jazmin Marion Aguilar Ortiz y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago III.
 
 Vota AV183.

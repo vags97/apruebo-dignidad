@@ -15,8 +15,6 @@ tags:
 - Melipeuco
 - Perquenco
 - Vilcun
-- Padre Las Casas
-- Temuco
 - Carahue
 - Cholchol
 - Cunco

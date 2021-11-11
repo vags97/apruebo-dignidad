@@ -10,7 +10,6 @@ tags:
 - Cachapoal II
 - AV207
 - Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Independientes
-- Rancagua
 - Codegua
 - Coinco
 - Coltauco

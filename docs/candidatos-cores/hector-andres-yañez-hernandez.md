@@ -10,7 +10,6 @@ tags:
 - Cachapoal II
 - AV205
 - Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
-- Rancagua
 - Codegua
 - Coinco
 - Coltauco

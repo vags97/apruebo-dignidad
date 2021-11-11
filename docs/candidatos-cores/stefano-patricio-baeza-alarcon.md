@@ -1,30 +1,19 @@
 ---
 core: true
 title: Stefano Patricio Baeza Alarcon
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago II
+description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago III
 image: /media/ad-profile.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
-- Santiago II
+- Santiago III
 - AV184
 - Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Revolucion Democratica
-- Pudahuel
-- Quilicura
 - Cerrillos
 - Estacion Central
 - Maipu
-- Conchali
-- Huechuraba
-- Renca
-- Cerro Navia
-- Independencia
-- Lo Prado
-- Quinta Normal
-- Recoleta
-- Santiago
-circunscripcionProvincial: Santiago II
+circunscripcionProvincial: Santiago III
 papeleta: AV184
 partido: Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Revolucion Democratica
 paginaWeb:
@@ -34,6 +23,6 @@ instagram:
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Stefano Patricio Baeza Alarcon y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago II.
+Hola, mi nombre es Stefano Patricio Baeza Alarcon y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago III.
 
 Vota AV184.
