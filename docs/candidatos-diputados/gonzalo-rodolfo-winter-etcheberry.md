@@ -21,9 +21,9 @@ partido: Convergencia Social
 paginaWeb: https://winter2022.cl/
 facebook: https://web.facebook.com/GonzaloWinterDistrito10/
 twitter: gonzalowinter
-instagram: gonzalo.winter
+instagram: "@gonzalo.winter"
 youtube: https://www.youtube.com/channel/UCWzng0MIz5RV0hYenu05bTg/featured?view_as=subscriber
-tiktok: gonzalowinter
+tiktok: "@gonzalowinter"
 ---
 Diputado por San Joaquín/Ñuñoa/La Granja/Providencia/Macul y Santiago.
 

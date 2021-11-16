@@ -247,21 +247,25 @@ export default {
         return userUrl
       }
       let url = ''
+      let userName = ''
       switch (rrss){
         case 'facebook':
+          userName = userUrl[0] === '@'? userUrl.substr(1): userUrl;
           url = 'https://www.facebook.com/'
           break
         case 'twitter':
+          userName = userUrl[0] === '@'? userUrl.substr(1): userUrl;
           url = 'https://twitter.com/'
           break
         case 'instagram':
+          userName = userUrl[0] === '@'? userUrl.substr(1): userUrl;
           url = 'https://www.instagram.com/'
           break
         case 'tiktok':
+          userName = userUrl;
           url = 'https://www.tiktok.com/'
           break
       }
-      const userName = userUrl[0] === '@'? userUrl.substr(1): userUrl;
       return url + userName
     },
     getComunas(candidato){

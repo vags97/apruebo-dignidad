@@ -2,7 +2,7 @@
 diputado: true
 title: Grace Eugenia Schmidt Monje
 description: Candidata a Diputada por el Distrito 11
-image: /media/ad-profile.jpg
+image: /media/candidatos/grace-eugenia-schmidt-monje.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
