@@ -28,7 +28,7 @@ facebook: https://web.facebook.com/luz.bermudez.98229?_rdc=1&_rdr
 twitter: luzsenadora
 instagram: luz_bermudez_senadora
 youtube:
-tiktok: luzbermudezsenadora
+tiktok: @luzbermudezsenadora
 ---
 Hola
 

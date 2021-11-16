@@ -45,11 +45,11 @@ tags:
 circunscripcionSenatorial: 10
 papeleta: AR29
 partido: Convergencia Social
-paginaWeb: https://l.instagram.com/?u=http%3A%2F%2Fwww.bogdanicsenador.cl%2F&e=ATOgVeOHGwmDOi4FlgGxx-AHsBdPIKQUAP2U4ef0l-eMeXQBzvZ5Sjz_4x4NDWP8K5QJGQVwqwIEOLK4hn61Qw&s=1
+paginaWeb: https://www.bogdanicsenador.com/
 facebook: bogdanicsenador
 twitter: bogdanicsenador
 instagram: fabiobogdanic
-youtube: https://youtube.com/bogdanicsenador
+youtube:
 tiktok:
 ---
 Hola!
