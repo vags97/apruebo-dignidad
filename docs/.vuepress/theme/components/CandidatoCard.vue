@@ -6,7 +6,9 @@
         :alt="'image' + nombre.toLowerCase().replace(' ', '_')"
     />
     <v-card-title>
-      {{ nombre }}
+      <a :href="route">
+        {{ nombre }}
+      </a>
     </v-card-title>
 
     <v-card-subtitle>
