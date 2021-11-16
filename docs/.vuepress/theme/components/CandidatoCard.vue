@@ -6,7 +6,7 @@
         :alt="'image' + nombre.toLowerCase().replace(' ', '_')"
     />
     <v-card-title>
-      <a :href="route">
+      <a :href="route" class="candidato-title">
         {{ nombre }}
       </a>
     </v-card-title>
@@ -83,6 +83,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+
+.candidato-title
+  text-decoration none
+
 
 </style>
