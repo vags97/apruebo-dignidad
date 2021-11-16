@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Romina Andrea Maragaño Schmidt
-description: Candidato/a a Diputado/a por el Distrito 7
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 7
+image: /media/candidatos/romina-andrea-maragaño-schmidt.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -25,12 +25,18 @@ distrito: 7
 papeleta: AR127
 partido: Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/rominamaraganod7?_rdc=1&_rdr
+twitter: RominaMaragano
+instagram: romina_maragano
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Romina Andrea Maragaño Schmidt y soy candidato a diputado por el distrito 7.
+CANDIDATA A DIPUTADA, DISTRITO 7 🌳🌱 AR 127
+
+Mamá de Pedro, Profesora de Educación Diferencial
+
+Feminista 💜
+
+Wanderina💚
 
 Vota AR127.

@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Ninoska Del Pilar Gallardo Peralta
-description: Candidato/a a Diputado/a por el Distrito 24
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 24
+image: /media/candidatos/ninoska-del-pilar-gallardo-peralta.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -24,13 +24,18 @@ tags:
 distrito: 24
 papeleta: AR89
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://docs.google.com/document/d/1TgJM70EbLW-ayZH-ScSEzewF597fw8cI/edit
+facebook: https://web.facebook.com/Ninoskagallardodiputada?_rdc=1&_rdr
+twitter: NinoGallardo3
+instagram: https://www.instagram.com/ninodiputada/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Ninoska Del Pilar Gallardo Peralta y soy candidato a diputado por el distrito 24.
+Arquitecta y feminista.
+Delegada Regional Comité Central @la_convergencia
+
+Candidata a Diputada D24
+Muebles en @taller.rustica.
+Sureña🌾
 
 Vota AR89.

@@ -1,8 +1,8 @@
 ---
 senador: true
 title: Fabio Andres Bogdanic Molina
-description: Candidato/a a Senador/a por la VIII. Región del Biobío
-image: /media/ad-profile.jpg
+description: Candidato a Senador por la VIII. Región del Biobío
+image: /media/candidatos/fabio-andres-bogdanic-molina.jpg
 tags:
 - Senador
 - Apruebo Dignidad
@@ -45,13 +45,17 @@ tags:
 circunscripcionSenatorial: 10
 papeleta: AR29
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
-youtube:
+paginaWeb: https://l.instagram.com/?u=http%3A%2F%2Fwww.bogdanicsenador.cl%2F&e=ATOgVeOHGwmDOi4FlgGxx-AHsBdPIKQUAP2U4ef0l-eMeXQBzvZ5Sjz_4x4NDWP8K5QJGQVwqwIEOLK4hn61Qw&s=1
+facebook: bogdanicsenador
+twitter: bogdanicsenador
+instagram: fabiobogdanic
+youtube: https://youtube.com/bogdanicsenador
 tiktok:
 ---
-Hola, mi nombre es Fabio Andres Bogdanic Molina y soy candidato/a a senador/a por la circunscripcion 10, VIII. Región del Biobío.
+Hola!
+
+Soy Fabio Bogdanic Molina, de 38 años, gay, vegetariano, activista por los DDHH de las Diversidades Sexuales y de Géneros, abogado de Familia, Infancia y DDHH.
+
+Conoceme en mi [página web](https://www.bogdanicsenador.com/conoceme).
 
 Vota AR29.

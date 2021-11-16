@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Alexander Oliver Salin Espinoza
-description: Candidato/a a Diputado/a por el Distrito 12
-image: /media/ad-profile.jpg
+description: Candidato a Diputado por el Distrito 12
+image: /media/candidatos/alexander-oliver-salin-espinoza.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -17,13 +17,13 @@ tags:
 distrito: 12
 papeleta: AR125
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://www.alexandersalin.cl/
+facebook: https://web.facebook.com/alexander.salin
+twitter: alexsalin
+instagram: https://www.instagram.com/alexsalin/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Alexander Oliver Salin Espinoza y soy candidato a diputado por el distrito 12.
+Psicólogo. Tesista en Maestría "Problemáticas Sociales Infanto-juveniles" (UBA).
 
 Vota AR125.

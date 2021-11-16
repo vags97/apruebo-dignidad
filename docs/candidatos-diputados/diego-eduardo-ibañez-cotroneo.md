@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Diego Eduardo Ibañez Cotroneo
-description: Candidato/a a Diputado/a por el Distrito 6
-image: /media/ad-profile.jpg
+description: Candidato a Diputado por el Distrito 6
+image: /media/candidatos/diego-eduardo-ibañez-cotroneo.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -38,13 +38,15 @@ tags:
 distrito: 6
 papeleta: AR114
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
-youtube:
+paginaWeb: http://www.diegoibañez.cl/
+facebook: https://web.facebook.com/DiegoIbanezDiputado/
+twitter: diego_ibanezc
+instagram: https://www.instagram.com/diego_ibanezc
+youtube: https://www.youtube.com/channel/UCycjwt_TY1PjPUC5xEAOHBg
 tiktok:
 ---
-Hola, mi nombre es Diego Eduardo Ibañez Cotroneo y soy candidato a diputado por el distrito 6.
+Desde la Quinta Interior un mundo por cambiar
+y preservar 🌱🏔 Distrito 6!
+¡Cantamos porque el río está sonando!
 
 Vota AR114.

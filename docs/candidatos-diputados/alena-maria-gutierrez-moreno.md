@@ -2,7 +2,7 @@
 partido: Convergencia Social
 diputado: true
 title: Alena Maria Gutierrez Moreno
-description: Candidato/a a Diputado/a por el Distrito 14
+description: Candidata a Diputada por el Distrito 14
 tags:
   - Diputado
   - Apruebo Dignidad

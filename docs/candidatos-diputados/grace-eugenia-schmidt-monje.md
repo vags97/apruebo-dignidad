@@ -1,7 +1,7 @@
 ---
 diputado: true
 title: Grace Eugenia Schmidt Monje
-description: Candidato/a a Diputado/a por el Distrito 11
+description: Candidata a Diputada por el Distrito 11
 image: /media/ad-profile.jpg
 tags:
 - Diputado
@@ -17,13 +17,20 @@ tags:
 distrito: 11
 papeleta: AR99
 partido: Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
-youtube:
+paginaWeb: https://gracediputada.cl/
+facebook: https://web.facebook.com/graceSD11?_rdc=1&_rdr
+twitter: graceschm
+instagram: https://www.instagram.com/graceschmidtm/
+youtube: 
 tiktok:
 ---
-Hola, mi nombre es Grace Eugenia Schmidt Monje y soy candidato a diputado por el distrito 11.
+Mujer, mamá, feminista y abogada activista en DDHH y defensa de la niñez
+
+Soy la menor de tres hermanos. Mamá de dos hijos, feminista y abogada Magíster en derecho constitucional. Oriunda de Osorno.
+
+Como abogada por más de 15 años, he representado a víctimas de violencia. Me inicié en la Comisión Valech 2, recibiendo testimonios de víctimas de tortura, prisión política y de familiares de Detenidos Desaparecidos.
+
+He sido abogada de víctimas y sobrevivientes de violencia sexual de parte de integrantes de la iglesia católica, como lo fue el caso Karadima.
+
 
 Vota AR99.
