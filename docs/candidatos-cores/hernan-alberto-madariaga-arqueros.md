@@ -1,29 +1,33 @@
 ---
 core: true
 title: Hernan Alberto Madariaga Arqueros
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Valparaiso I
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Valparaiso I
+image: /media/candidatos/hernan-alberto-madariaga-arqueros.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
 - Valparaiso I
 - AV196
-- Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - Puchuncavi
 - Quintero
 - Concon
 - Viña Del Mar
 circunscripcionProvincial: Valparaiso I
 papeleta: AV196
-partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/hmadariagaa
+twitter: hmadariaga1986
+instagram: https://www.instagram.com/hernanmadariagaa
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Hernan Alberto Madariaga Arqueros y soy candidato/a a Consejero/a Regional por la circunscripcion de Valparaiso I.
+• Candidato a Core por Viña del Mar,Concón,Quintero y Puchuncavi AV-196 ✊🏻
+
+• Vocero de la @corporacionprodefensa 🗣
+
+• Papá de Carlita y Catita 👧🏽❤️
 
 Vota AV196.

@@ -1,8 +1,8 @@
 ---
 core: true
 title: Javier Ignacio Velasco Villegas
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago II
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Santiago II
+image: /media/candidatos/javier-ignacio-velasco-villegas.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -20,12 +20,15 @@ circunscripcionProvincial: Santiago II
 papeleta: AV194
 partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/profile.php?id=100009912702766
+twitter: eljaviervelasco
+instagram: https://www.instagram.com/eljaviervelasco/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Javier Ignacio Velasco Villegas y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago II.
+Candidato a CORE de @la_convergencia
+por Recoleta, independencia, Cerro Navia, Lo Prado, Quinta Normal y Santiago.
+
+Abogado, Master en Derecho e ilustrador
 
 Vota AV194.

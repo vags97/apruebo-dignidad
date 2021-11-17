@@ -1,28 +1,38 @@
 ---
 core: true
 title: Mariel Del Carmen Rubio Sanchez
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Cordillera
-image: /media/ad-profile.jpg
+description: Candidata a Consejera Regional por la Circunscripción de Cordillera
+image: /media/candidatos/mariel-del-carmen-rubio-sanchez.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
 - Cordillera
 - AV179
-- Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - Pirque
 - Puente Alto
 - San Jose De Maipo
 circunscripcionProvincial: Cordillera
 papeleta: AV179
-partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/mariel.rubiosanchez
+twitter: marielrubiosan1
+instagram: https://www.instagram.com/marielrubiosanchez
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Mariel Del Carmen Rubio Sanchez y soy candidato/a a Consejero/a Regional por la circunscripcion de Cordillera.
+Candidata a CORE provincia. Cordillera AV 179
+
+Puente Alto
+
+Feminista de 💚💪
+
+Profesora
+
+Mamá Viajera
+
+"Voy a ser la mujer, que me de la gana de ser"
 
 Vota AV179.

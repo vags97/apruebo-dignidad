@@ -1,7 +1,7 @@
 ---
 core: true
 title: Ximena Peralta Fierro
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago IV
+description: Candidata a Consejera Regional por la Circunscripción de Santiago IV
 image: /media/meni-boric.jpg
 tags:
 - CORE
@@ -9,7 +9,7 @@ tags:
 - Apruebo Dignidad
 - Santiago IV
 - AV187
-- Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - Pudahuel
 - Quilicura
 - Conchali
@@ -23,7 +23,7 @@ tags:
 - Vitacura
 circunscripcionProvincial: Santiago IV
 papeleta: AV187
-partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb: https://ximenaperaltafierro.cl/
 facebook: https://www.facebook.com/ximenaperaltafierro
 twitter: https://twitter.com/ximenaperaltafi

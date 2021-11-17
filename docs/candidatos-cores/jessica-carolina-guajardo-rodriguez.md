@@ -20,11 +20,11 @@ papeleta: AV168
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
 facebook:
-twitter:
-instagram:
+twitter: JESSICA39689285
+instagram: 
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Jessica Carolina Guajardo Rodriguez y soy candidato/a a Consejero/a Regional por la circunscripcion de Melipilla.
+Hola, mi nombre es Jessica Carolina Guajardo Rodriguez y soy candidata a Consejera Regional por la circunscripcion de Melipilla.
 
 Vota AV168.

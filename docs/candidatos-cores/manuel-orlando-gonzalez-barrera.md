@@ -1,8 +1,8 @@
 ---
 core: true
 title: Manuel Orlando Gonzalez Barrera
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Melipilla
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Melipilla
+image: /media/candidatos/manuel-orlando-gonzalez-barrera.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -19,12 +19,14 @@ circunscripcionProvincial: Melipilla
 papeleta: AV169
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
+facebook: https://web.facebook.com/manuelgonzalezcore/
 twitter:
-instagram:
+instagram: https://www.instagram.com/manuelgonzalez_core/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Manuel Orlando Gonzalez Barrera y soy candidato/a a Consejero/a Regional por la circunscripcion de Melipilla.
+🏺Artesano de Pomaire.
+
+🗳AV-169 | Candidato a CORE por la provincia de Melipilla: Melipilla, Alhué, Curacaví, María Pinto y San Pedro 🌱
 
 Vota AV169.

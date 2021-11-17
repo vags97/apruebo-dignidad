@@ -1,8 +1,8 @@
 ---
 core: true
 title: Barbara Casandra Astudillo Delgado
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Petorca
-image: /media/ad-profile.jpg
+description: Candidata a Consejera Regional por la Circunscripción de Petorca
+image: /media/candidatos/barbara-casandra-astudillo-delgado.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -19,12 +19,16 @@ circunscripcionProvincial: Petorca
 papeleta: AV162
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/ConsejeraProvinciaDePetorca/?_rdc=1&_rdr
+twitter: panketacc
+instagram: https://www.instagram.com/panketa/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Barbara Casandra Astudillo Delgado y soy candidato/a a Consejero/a Regional por la circunscripcion de Petorca.
+Ecofeminista #Tens en Salud Coordinadora en @territorioscolectivos
+
+Diplomada de Gestión Ambiental 🌵💗💦
+
+Candidata al Core por la Provincia de Petorca
 
 Vota AV162.

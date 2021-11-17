@@ -1,15 +1,15 @@
 ---
 core: true
 title: Richard Antonio Pozo Pozo
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Elqui
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Elqui
+image: /media/candidatos/richard-antonio-pozo-pozo.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
 - Elqui
 - AV216
-- Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - Andacollo
 - Coquimbo
 - La Higuera
@@ -18,14 +18,24 @@ tags:
 - Vicuña
 circunscripcionProvincial: Elqui
 papeleta: AV216
-partido: Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
+facebook: https://web.facebook.com/corerichardpozo/
 twitter:
-instagram:
+instagram: https://www.instagram.com/corerichardpozo/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Richard Antonio Pozo Pozo y soy candidato/a a Consejero/a Regional por la circunscripcion de Elqui.
+Vota 216
+
+Candidato a CORE por ELQUI 🍀
+
+Coquimbo 📍
+
+Ingeniero comercial , UCN 🤓
+
+Lgbtiqa+ 🏳️‍🌈
+
+Convergencia social ✊🏼
 
 Vota AV216.
