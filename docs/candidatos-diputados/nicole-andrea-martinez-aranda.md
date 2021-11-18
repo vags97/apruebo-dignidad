@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Nicole Andrea Martinez Aranda
-description: Candidato/a a Diputado/a por el Distrito 10
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 10
+image: /media/candidatos/nicole-andrea-martinez-aranda.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -18,13 +18,21 @@ tags:
 distrito: 10
 papeleta: AR130
 partido: Revolucion Democratica
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://www.nicolemartinez.cl/
+facebook: https://web.facebook.com/nicolemartinez.d10/
+twitter: NMartinez_D10
+instagram: https://www.instagram.com/nicolemartinez_d10
 youtube:
-tiktok:
+tiktok: "@nicolemartinez_d10"
 ---
-Hola, mi nombre es Nicole Andrea Martinez Aranda y soy candidato a diputado por el distrito 10.
+💜 • Feminista, ingeniera y militante RD
+
+✊🏼 • Candidata a Diputada D10 - AR 130
+
+🔥 • Ex-dirigenta FECh
+
+📚 • Magíster en Gestión y Políticas Públicas UCh
+
+Basket 🏀
 
 Vota AR130.
