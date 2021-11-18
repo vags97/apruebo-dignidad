@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Miguel Andres Concha Manso
-description: Candidato/a a Diputado/a por el Distrito 11
-image: /media/ad-profile.jpg
+description: Candidato a Diputado por el Distrito 11
+image: /media/candidatos/miguel-andres-concha-manso.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -17,13 +17,20 @@ tags:
 distrito: 11
 papeleta: AR97
 partido: Revolucion Democratica
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://miguelconcha.cl/
+facebook: https://web.facebook.com/Miguelconchadiputado
+twitter: MiguelConcha
+instagram: https://www.instagram.com/miguel.concham/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Miguel Andres Concha Manso y soy candidato a diputado por el distrito 11.
+🌱Candidato a diputado por D11
+
+🌱Periodista y Magíster en Cs. Políticas
+
+🌱Papá de la Flo💚
+
+🌳Militante de @frenteamplio_chile
+
 
 Vota AR97.
