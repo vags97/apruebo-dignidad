@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Doris Nelly Sandoval Miranda
-description: Candidato/a a Diputado/a por el Distrito 28
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 28
+image: /media/candidatos/doris-nelly-sandoval-miranda.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -24,12 +24,14 @@ distrito: 28
 papeleta: AR79
 partido: Independiente Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/dorissandovaladiputada
+twitter: Doris_Diputada
+instagram: https://www.instagram.com/dorissandovaladiputada/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Doris Nelly Sandoval Miranda y soy candidato a diputado por el distrito 28.
+Sindicalista feminista, libre pensadora, ex presidenta regional ANEF y ex Directora Nacional de FENATRAMA.
+
+Candidata a Diputada por Magallanes.
 
 Vota AR79.

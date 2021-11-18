@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Mercedes Bulnes Nuñez
-description: Candidato/a a Diputado/a por el Distrito 17
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 17
+image: /media/candidatos/mercedes-bulnes-nuñez.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -32,12 +32,13 @@ distrito: 17
 papeleta: AR99
 partido: Independiente Revolucion Democratica
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/mercebulnes
+twitter: mercebulnes
+instagram: https://www.instagram.com/mercebulnes/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Mercedes Bulnes Nuñez y soy candidato a diputado por el distrito 17.
+Abogada, candidata a #diputada por el distrito 17
+(Talca y curicó) #AprueboDignidad 💚✊- Vota Nº99
 
 Vota AR99.

@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Veronica Andrea Lopez-Videla Pino
-description: Candidato/a a Diputado/a por el Distrito 23
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 23
+image: /media/candidatos/veronica-andrea-lopez-videla-pino.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -29,12 +29,12 @@ distrito: 23
 papeleta: AR101
 partido: Independiente Revolucion Democratica
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/VeronicaDiputadaD23
+twitter: VeroDiputada
+instagram: https://www.instagram.com/veronicadiputada/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Veronica Andrea Lopez-Videla Pino y soy candidato a diputado por el distrito 23.
+Soy Verónica Lopez-Videla, periodista y candidata a Diputada por el D23, en Wallmapu #AprueboDignidad ##BoricPresidente
 
 Vota AR101.

@@ -1,26 +1,36 @@
 ---
 core: true
 title: Arturo Samuel Bahamondes Bustamante
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Cachapoal I
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Cachapoal I
+image: /media/candidatos/arturo-samuel-bahamondes-bustamante.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
 - Cachapoal I
 - AV196
-- Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - Rancagua
 circunscripcionProvincial: Cachapoal I
 papeleta: AV196
-partido: Pacto Frente Amplio - Subpacto Revolucion Democratica E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
+facebook: https://web.facebook.com/rancaguadetodosytodas
 twitter:
-instagram:
+instagram: https://www.instagram.com/arturo_samuel_corerancagua
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Arturo Samuel Bahamondes Bustamante y soy candidato/a a Consejero/a Regional por la circunscripcion de Cachapoal I.
+Ingeniero en Prevención de Riesgos
+
+Candidato a Consejero Regional Rgua
+
+Activista Social
+
+Locutor de Radio
+
+Militante Convergencia Social
+
+Frente Amplio
 
 Vota AV196.

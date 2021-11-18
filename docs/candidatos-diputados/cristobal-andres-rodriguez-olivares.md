@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Cristobal Andres Rodriguez Olivares
-description: Candidato/a a Diputado/a por el Distrito 11
-image: /media/ad-profile.jpg
+description: Candidato a Diputado por el Distrito 11
+image: /media/candidatos/cristobal-andres-rodriguez-olivares.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -17,13 +17,19 @@ tags:
 distrito: 11
 papeleta: AR100
 partido: Independiente Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://cristobalrodriguezdiputado.cl/
+facebook: https://web.facebook.com/CristobalRodriguezOlivares/
+twitter: candidaturad11
+instagram: https://www.instagram.com/cristobalrodriguezolivares/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Cristobal Andres Rodriguez Olivares y soy candidato a diputado por el distrito 11.
+Profesor🧑‍🏫
+
+36 años
+
+Independiente 💥
+
+Co fundador de @loscamisa
 
 Vota AR100.

@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Marcela Patricia Riquelme Aliaga
-description: Candidato/a a Diputado/a por el Distrito 15
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 15
+image: /media/candidatos/marcela-patricia-riquelme-aliaga.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -26,12 +26,14 @@ distrito: 15
 papeleta: AR88
 partido: Independiente Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/MarcelaRiquelmeAliagaDiputada/
+twitter: Marcemomo
+instagram: https://www.instagram.com/marcela.riquelme.diputada/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Marcela Patricia Riquelme Aliaga y soy candidato a diputado por el distrito 15.
+Madre, Abogada y ciudadana resiliente a las injusticias, obstinadamente idealista y candidata a Diputada por el Distrito15 🖖
+
+Y Lo Haremos Posible
 
 Vota AR88.

@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Javiera Ignacia Morales Alvarado
-description: Candidato/a a Diputado/a por el Distrito 28
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 28
+image: /media/candidatos/javiera-ignacia-morales-alvarado.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -23,13 +23,17 @@ tags:
 distrito: 28
 papeleta: AR78
 partido: Independiente Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://javieramorales.cl/
+facebook: https://web.facebook.com/javieramoralesalvarado
+twitter: javimorales28
+instagram: https://www.instagram.com/javi.morales.a/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Javiera Ignacia Morales Alvarado y soy candidato a diputado por el distrito 28.
+Candidata a Diputada por Magallanes. Apruebo Dignidad 💪🏽🌳💜
+
+Abogada UChile.
+
+En Derecho Umag. Mamá de melligelos. Frenteamplista.
 
 Vota AR78.

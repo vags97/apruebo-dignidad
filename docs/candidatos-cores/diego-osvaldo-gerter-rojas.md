@@ -1,8 +1,8 @@
 ---
 core: true
 title: Diego Osvaldo Gerter Rojas
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Osorno
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Osorno
+image: /media/candidatos/diego-osvaldo-gerter-rojas.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -20,13 +20,17 @@ tags:
 circunscripcionProvincial: Osorno
 papeleta: AV194
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
-paginaWeb:
-facebook:
-twitter:
-instagram:
+paginaWeb: https://www.diegogerter.cl/
+facebook: https://web.facebook.com/dgerterrojas
+twitter: dgerter
+instagram: https://www.instagram.com/diegogerterrojas/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Diego Osvaldo Gerter Rojas y soy candidato/a a Consejero/a Regional por la circunscripcion de Osorno.
+Periodista, Gestor Cultural, Papá y Cruzado.
+
+Candidato a Consejero Regional por la Provincia de Osorno por el Frente Amplio.
+
+Militante de Convergencia Social.
 
 Vota AV194.

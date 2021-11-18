@@ -1,8 +1,8 @@
 ---
 core: true
 title: Juan Rodolfo Recabarren Flores
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Concepcion III
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Concepcion III
+image: /media/candidatos/juan-rodolfo-recabarren-flores.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -19,12 +19,18 @@ circunscripcionProvincial: Concepcion III
 papeleta: AV208
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
+facebook: https://web.facebook.com/juan.recabarren2021
 twitter:
-instagram:
+instagram: https://www.instagram.com/juanrecabarren.core2021
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Juan Rodolfo Recabarren Flores y soy candidato/a a Consejero/a Regional por la circunscripcion de Concepcion III.
+Sociólogo
+
+Educador
+
+Activista por el buen vivir
+
+Candidato a consejero regional por #Lota, #Coronel, #SanPedro, #SantaJuana, #Hualqui 🌿
 
 Vota AV208.

@@ -1,8 +1,8 @@
 ---
 core: true
 title: Danilo Salvador Villegas Minte
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Magallanes
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Magallanes
+image: /media/candidatos/danilo-salvador-villegas-minte.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -19,11 +19,14 @@ papeleta: AV212
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
 facebook:
-twitter:
-instagram:
+twitter: DaniloVM_2022
+instagram: https://www.instagram.com/danilovm_2022/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Danilo Salvador Villegas Minte y soy candidato/a a Consejero/a Regional por la circunscripcion de Magallanes.
+Candidato a consejero regional #CORE 2022
+Desde siempre, comprometido con Magallanes.
+
+PuntaArenas, Porvenir, Puerto Natales  y Puerto Williams
 
 Vota AV212.

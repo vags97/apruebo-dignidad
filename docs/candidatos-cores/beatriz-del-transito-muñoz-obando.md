@@ -1,7 +1,7 @@
 ---
 core: true
 title: Beatriz Del Transito Muñoz Obando
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Magallanes
+description: Candidata a Consejera Regional por la Circunscripción de Magallanes
 image: /media/ad-profile.jpg
 tags:
 - CORE
@@ -24,6 +24,6 @@ instagram:
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Beatriz Del Transito Muñoz Obando y soy candidato/a a Consejero/a Regional por la circunscripcion de Magallanes.
+Hola, mi nombre es Beatriz Del Transito Muñoz Obando y soy candidatoa a Consejera Regional por la circunscripcion de Magallanes.
 
 Vota AV214.

@@ -1,8 +1,8 @@
 ---
 core: true
 title: Rodrigo Esteban Piraces Piraces
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Cachapoal II
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Cachapoal II
+image: /media/candidatos/rodrigo-esteban-piraces-piraces.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -30,12 +30,16 @@ circunscripcionProvincial: Cachapoal II
 papeleta: AV206
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/Rodrigo-Pirac%C3%A9s-Core-AV-206-Cachapoal-2-103052335480183/
+twitter: rpiraces
+instagram: https://www.instagram.com/piracesrodrigo/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Rodrigo Esteban Piraces Piraces y soy candidato/a a Consejero/a Regional por la circunscripcion de Cachapoal II.
+Mi nombre es Rodrigo Piracés, 36 años, Coltauquino, y soy Candidato a Core por Cachapoal 2, en lista Frente Amplio (AV).
+
+Por un Cachapoal más Limpio, más Verde, más Saludable, más Rural, más Equitativo.
+
+¡Súmate a Cambiar Cachapoal!
 
 Vota AV206.

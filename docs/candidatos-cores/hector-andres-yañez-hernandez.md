@@ -1,8 +1,8 @@
 ---
 core: true
 title: Hector Andres Yañez Hernandez
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Cachapoal II
-image: /media/ad-profile.jpg
+description: Candidato a Consejero Regional por la Circunscripción de Cachapoal II
+image: /media/candidatos/hector-andres-yañez-hernandez.jpg
 tags:
 - CORE
 - Consejero Regional
@@ -30,12 +30,18 @@ circunscripcionProvincial: Cachapoal II
 papeleta: AV205
 partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
+facebook: https://web.facebook.com/H%C3%A9ctor-Y%C3%A1%C3%B1ez-CORE-Cachapoal-2-106963718106683/
 twitter:
-instagram:
+instagram: https://www.instagram.com/hector_yanez_core_cachapoal_2/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Hector Andres Yañez Hernandez y soy candidato/a a Consejero/a Regional por la circunscripcion de Cachapoal II.
+Candidato a Core.
+
+Impulsor de Huertos 🌻 y de Casas de Semillas 🌾🌱.
+
+Ingeniero y Agroecólogo 🐞🐝🦋
+
+O'Higgins región Agroecológica. 💚
 
 Vota AV205.

@@ -1,15 +1,15 @@
 ---
 core: true
 title: Karina Andrea Ramos Zapata
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Santiago VI
-image: /media/ad-profile.jpg
+description: Candidata a Consejera Regional por la Circunscripción de Santiago VI
+image: /media/candidatos/karina-andrea-ramos-zapata.jpg
 tags:
 - CORE
 - Consejero Regional
 - Apruebo Dignidad
 - Santiago VI
 - AV194
-- Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Convergencia Social
+- Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 - La Pintana
 - El Bosque
 - La Cisterna
@@ -19,14 +19,24 @@ tags:
 - San Ramon
 circunscripcionProvincial: Santiago VI
 papeleta: AV194
-partido: Pacto Frente Amplio - Subpacto Partido Comunes E Independientes - Convergencia Social
+partido: Pacto Frente Amplio - Subpacto Convergencia Social E Independientes - Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/karinaramoscore/
+twitter: karinaramosz
+instagram: https://www.instagram.com/karinaramoscore
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Karina Andrea Ramos Zapata y soy candidato/a a Consejero/a Regional por la circunscripcion de Santiago VI.
+Feminista, militante de @convergenciasocial
+
+Docente, con magíster en sociología
+
+Sanmiguelina
+
+Huertera de corazón
+
+¡Seguimos!
+
+Candidata a Core por San Miguel, PAC, La Cisterna, San Ramón, El Bosque, La Pintana y Lo Espejo.
 
 Vota AV194.

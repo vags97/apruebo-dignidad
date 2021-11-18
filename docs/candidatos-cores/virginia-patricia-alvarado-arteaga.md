@@ -1,7 +1,7 @@
 ---
 core: true
 title: Virginia Patricia Alvarado Arteaga
-description: Candidato/a a Consejero/a Regional por la Circunscripción de Ultima Esperanza
+description: Candidata a Consejera Regional por la Circunscripción de Ultima Esperanza
 image: /media/ad-profile.jpg
 tags:
 - CORE
@@ -22,6 +22,6 @@ instagram:
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Virginia Patricia Alvarado Arteaga y soy candidato/a a Consejero/a Regional por la circunscripcion de Ultima Esperanza.
+Hola, mi nombre es Virginia Patricia Alvarado Arteaga y soy candidata a Consejera Regional por la circunscripcion de Ultima Esperanza.
 
 Vota AV162.

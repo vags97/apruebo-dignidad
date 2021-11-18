@@ -1,8 +1,8 @@
 ---
 diputado: true
 title: Clara Ines Sagardia Cabezas
-description: Candidato/a a Diputado/a por el Distrito 21
-image: /media/ad-profile.jpg
+description: Candidata a Diputada por el Distrito 21
+image: /media/candidatos/clara-ines-sagardia-cabezas.jpg
 tags:
 - Diputado
 - Apruebo Dignidad
@@ -35,12 +35,16 @@ distrito: 21
 papeleta: AR86
 partido: Independiente Convergencia Social
 paginaWeb:
-facebook:
-twitter:
-instagram:
+facebook: https://web.facebook.com/clara.sagardiacabezas.7
+twitter: clara_sagardia
+instagram: https://www.instagram.com/clara_diputada/
 youtube:
 tiktok:
 ---
-Hola, mi nombre es Clara Ines Sagardia Cabezas y soy candidato a diputado por el distrito 21.
+Abogada y dirigenta social.
+
+Candidata independiente a Diputada por el Distrito 21 apoyada por CS
+
+TejiendoElCambioConLosTerritorios
 
 Vota AR86.
