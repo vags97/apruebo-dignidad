@@ -9,7 +9,7 @@
           <Candidatos v-else-if="$page.frontmatter.candidatos" />
           <Blogs v-else-if="$page.frontmatter.blogs" />
           <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
-          <Blog v-else />>
+          <Blog v-else />
         </v-container>
       </v-main>
       <Footer />
