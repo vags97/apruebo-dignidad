@@ -127,7 +127,8 @@ export default {
       buscandoComuna: false,
       errorComuna: false,
       advertenciaComuna: false,
-      comunaEncontrada: ''
+      comunaEncontrada: '',
+      comunas: []
     }
   },
   watch: {
@@ -144,7 +145,8 @@ export default {
       }
     }
   },
-  mounted(){
+  created(){
+    this.setComunas();
     this.setLastComuna()
     this.setUrlTiposCandidaturas()
   },
@@ -174,8 +176,15 @@ export default {
       }
       return candidaturas;
     },
-    comunas(){
-      return divisionElectoral.map((comuna)=> {
+    todosTiposCandidaturasSeleccionadas(){
+      return this.tiposCandidaturasSeleccionadas.includes(1) &&
+        this.tiposCandidaturasSeleccionadas.includes(2) &&
+        this.tiposCandidaturasSeleccionadas.includes(3)
+    }
+  },
+  methods: {
+    setComunas(){
+      this.comunas = divisionElectoral.map((comuna)=> {
         return {
           value: comuna.comuna,
           text: comuna.comuna,
@@ -185,13 +194,6 @@ export default {
         }
       });
     },
-    todosTiposCandidaturasSeleccionadas(){
-      return this.tiposCandidaturasSeleccionadas.includes(1) &&
-        this.tiposCandidaturasSeleccionadas.includes(2) &&
-        this.tiposCandidaturasSeleccionadas.includes(3)
-    }
-  },
-  methods: {
     showGetComunaExitosoMessage(comuna){
       if(comuna){
         this.mensajeBusquedaExitosa = 'Candidatos de ' + comuna + ' obtenidos correctamente.';
@@ -225,9 +227,15 @@ export default {
       this.busquedaExitosa = true;
     },
     setLastComuna(){
-      const comuna = this.$route.query.comuna?
-          this.$route.query.comuna:
-          localStorage.getItem('comunaUsuario')
+      const inBrowser = typeof window !== 'undefined';
+      let comuna = null;
+      if(inBrowser){
+        comuna = this.$route.query.comuna?
+            this.$route.query.comuna:
+            localStorage.getItem('comunaUsuario')
+      } else {
+        comuna = this.$route.query.comuna
+      }
       if(comuna){
         this.setComuna(comuna)
       }
