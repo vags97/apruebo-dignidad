@@ -3,17 +3,33 @@
     <script v-html="jsonLd()" type="application/ld+json"></script>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8">
-        <v-card>
-          <v-img
-              :src="candidato.image?candidato.image: '/media/ad-profile.jpg'"
-              class="candidato-image white--text align-end"
-              :alt="'image' + candidato.title.toLowerCase().replace(' ', '_')"
-          >
-            <div class="content-text">
-              <v-card-title class="d-none d-md-flex">
+        <v-row>
+          <v-col>
+            <v-card>
+              <v-img
+                  :src="candidato.image?candidato.image: '/media/ad-profile.jpg'"
+                  class="candidato-image white--text align-end"
+                  :alt="'image' + candidato.title.toLowerCase().replace(' ', '_')"
+              >
+                <div class="content-text">
+                  <v-card-title class="d-none d-md-flex">
+                    {{ candidato.title }}
+                  </v-card-title>
+                  <v-card-subtitle class="d-none d-md-flex">
+                    {{ candidaturaDistritoCircunscripcion }}
+                    <br>
+                    {{"Vota " + candidato.papeleta}}
+                    <br>
+                    {{ candidaturaTerritorio }}
+                    <br>
+                    Partido: {{ candidato.partido }}
+                  </v-card-subtitle>
+                </div>
+              </v-img>
+              <v-card-title class="d-flex d-md-none">
                 {{ candidato.title }}
               </v-card-title>
-              <v-card-subtitle class="d-none d-md-flex">
+              <v-card-subtitle class="d-flex d-md-none pb-0">
                 {{ candidaturaDistritoCircunscripcion }}
                 <br>
                 {{"Vota " + candidato.papeleta}}
@@ -22,120 +38,116 @@
                 <br>
                 Partido: {{ candidato.partido }}
               </v-card-subtitle>
-            </div>
-          </v-img>
-          <v-card-title class="d-flex d-md-none">
-            {{ candidato.title }}
-          </v-card-title>
-          <v-card-subtitle class="d-flex d-md-none pb-0">
-            {{ candidaturaDistritoCircunscripcion }}
-            <br>
-            {{"Vota " + candidato.papeleta}}
-            <br>
-            {{ candidaturaTerritorio }}
-            <br>
-            Partido: {{ candidato.partido }}
-          </v-card-subtitle>
-          <v-card-subtitle
-              v-if="candidato.paginaWeb
+              <v-card-subtitle
+                  v-if="candidato.paginaWeb
               || candidato.facebook
               || candidato.instagram
               || candidato.twitter
               || candidato.youtube
               || true"
-          >
-            <v-row justify="space-around">
-              <v-col v-if="candidato.paginaWeb" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="candidato.paginaWeb"
-                >
-                  <v-icon>
-                    {{ mdiWeb }}
-                  </v-icon>
-                </v-btn>
-              </v-col>
-              <v-col v-if="candidato.facebook" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="rrssUrl(candidato.facebook, 'facebook')"
-                >
-                  <v-icon>
-                    {{ mdiFacebook }}
-                  </v-icon>
-                </v-btn>
-              </v-col>
-              <v-col v-if="candidato.instagram" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="rrssUrl(candidato.instagram, 'instagram')"
-                >
-                  <v-icon>
-                    {{ mdiInstagram }}
-                  </v-icon>
-                </v-btn>
-              </v-col>
-              <v-col v-if="candidato.twitter" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="rrssUrl(candidato.twitter, 'twitter')"
-                >
-                  <v-icon>
-                    {{ mdiTwitter }}
-                  </v-icon>
-                </v-btn>
-              </v-col>
-              <v-col v-if="candidato.youtube" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="candidato.youtube"
-                >
-                  <v-icon>
-                    {{ mdiYoutube }}
-                  </v-icon>
-                </v-btn>
-              </v-col>
-              <v-col v-if="candidato.tiktok" class="text-center">
-                <v-btn
-                    icon
-                    color="primary"
-                    target="_blank"
-                    :href="rrssUrl(candidato.tiktok, 'tiktok')"
-                >
-                  <v-icon class="tiktok-icon primary"/>
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-card-subtitle>
-          <v-card-text>
-            <Content/>
-            <v-row justify="center" v-if="candidato.twitter">
-              <v-col cols="12" md="6">
-                <Timeline
-                    class="twitter"
-                    :id="getTwitterUsername(candidato.twitter)"
-                    sourceType="profile"
-                    :options="{ tweetLimit: '3' }"
-                >
-                  Cargado Twitter ...
-                </Timeline>
-              </v-col>
-            </v-row>
-          </v-card-text>
-          <v-card-text v-if="!candidato.contactado">
-            ¿Eres el/la candidato/a? Escríbenos a <a href="mailto:candidatos.apruebo.dignidad@gmail.com">candidatos.apruebo.dignidad@gmail.com</a>
-          </v-card-text>
-        </v-card>
+              >
+                <v-row justify="space-around">
+                  <v-col v-if="candidato.paginaWeb" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="candidato.paginaWeb"
+                    >
+                      <v-icon>
+                        {{ mdiWeb }}
+                      </v-icon>
+                    </v-btn>
+                  </v-col>
+                  <v-col v-if="candidato.facebook" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="rrssUrl(candidato.facebook, 'facebook')"
+                    >
+                      <v-icon>
+                        {{ mdiFacebook }}
+                      </v-icon>
+                    </v-btn>
+                  </v-col>
+                  <v-col v-if="candidato.instagram" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="rrssUrl(candidato.instagram, 'instagram')"
+                    >
+                      <v-icon>
+                        {{ mdiInstagram }}
+                      </v-icon>
+                    </v-btn>
+                  </v-col>
+                  <v-col v-if="candidato.twitter" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="rrssUrl(candidato.twitter, 'twitter')"
+                    >
+                      <v-icon>
+                        {{ mdiTwitter }}
+                      </v-icon>
+                    </v-btn>
+                  </v-col>
+                  <v-col v-if="candidato.youtube" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="candidato.youtube"
+                    >
+                      <v-icon>
+                        {{ mdiYoutube }}
+                      </v-icon>
+                    </v-btn>
+                  </v-col>
+                  <v-col v-if="candidato.tiktok" class="text-center">
+                    <v-btn
+                        icon
+                        color="primary"
+                        target="_blank"
+                        :href="rrssUrl(candidato.tiktok, 'tiktok')"
+                    >
+                      <v-icon class="tiktok-icon primary"/>
+                    </v-btn>
+                  </v-col>
+                </v-row>
+              </v-card-subtitle>
+              <v-card-text>
+                <Content/>
+                <v-row justify="center" v-if="candidato.twitter">
+                  <v-col cols="12" md="6">
+                    <Timeline
+                        class="twitter"
+                        :id="getTwitterUsername(candidato.twitter)"
+                        sourceType="profile"
+                        :options="{ tweetLimit: '3' }"
+                    >
+                      Cargado Twitter ...
+                    </Timeline>
+                  </v-col>
+                </v-row>
+              </v-card-text>
+              <v-card-text v-if="!candidato.contactado">
+                ¿Eres el/la candidato/a? Escríbenos a <a href="mailto:candidatos.apruebo.dignidad@gmail.com">candidatos.apruebo.dignidad@gmail.com</a>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" md="6">
+            <ConoceCandidato />
+          </v-col>
+          <v-col cols="12" md="6">
+            <ConoceBoric />
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </div>
@@ -153,11 +165,15 @@ import {
 } from '@mdi/js';
 import {validURL} from "../util";
 import Timeline from "vue-tweet-embed/src/timeline";
+import ConoceCandidato from "./ConoceCandidato";
+import ConoceBoric from "./ConoceBoric";
 
 export default {
   name: 'Candidato',
   components: {
-    Timeline
+    Timeline,
+    ConoceCandidato,
+    ConoceBoric
   },
   data(){
     return {
