@@ -1,7 +1,6 @@
 import Vuetify from 'vuetify'
 import "vuetify/dist/vuetify.min.css";
-import minifyTheme from "minify-css-string";
-import es from 'vuetify/lib/locale/es'
+import vuetifyConfig from "./plugins/vuetifyConfig";
 
 export default ({
                     Vue,      // the version of Vue being used in the VuePress app
@@ -10,25 +9,5 @@ export default ({
                     siteData,  // site metadata
                 }) => {
     Vue.use(Vuetify)
-    options.vuetify = new Vuetify({
-        lang: {
-            locales: {es},
-            current: 'es'
-        },
-        icons: {
-            iconfont: 'mdiSvg',
-        },
-        theme: {
-            options: {
-                minifyTheme,
-                customProperties: true
-            },
-            themes: {
-                light: {
-                    primary: '#ff1f81',
-                    secondary: '#00d6ff'
-                }
-            }
-        }
-    })
+    options.vuetify = new Vuetify(vuetifyConfig)
 }

@@ -4,11 +4,13 @@
     <v-app>
       <Navbar/>
       <v-main>
-        <v-container class="py-6" fluid>
+        <v-container fluid>
+          <Contador/>
           <Home v-if="$page.frontmatter.home" />
-          <Candidatos v-else-if="$page.frontmatter.candidatos" />
           <Blogs v-else-if="$page.frontmatter.blogs" />
-          <Candidato v-else-if="$page.frontmatter.diputado || $page.frontmatter.core || $page.frontmatter.senador" />
+          <Articulos v-else-if="$page.frontmatter.articulos" />
+          <Articulo v-else-if="$page.frontmatter.articulo" />
+          <Actividades v-else-if="$page.frontmatter.actividades" />
           <Blog v-else />
         </v-container>
       </v-main>
@@ -23,19 +25,23 @@ import Navbar from '@theme/components/Navbar.vue'
 import Blog from '@theme/components/Noticia.vue'
 import Footer from "../components/Footer";
 import Blogs from "../components/Noticias";
-import Candidatos from "../components/Candidatos";
-import Candidato from "../components/Candidato";
+import Contador from "../components/Contador";
+import Articulos from "../components/Articulos";
+import Articulo from "../components/Articulo";
+import Actividades from "../components/Actividades";
 
 export default {
   name: 'Layout',
   components: {
-    Candidatos,
-    Candidato,
+    Contador,
     Home,
     Blog,
     Navbar,
     Footer,
-    Blogs
+    Blogs,
+    Articulos,
+    Articulo,
+    Actividades
   },
   created() {
     if (typeof this.$ssrContext !== 'undefined') {
@@ -58,14 +64,15 @@ export default {
           "query-input": "required name=search_term_string"
         },
         '@graph': [
-          jsonLd.aprueboDignidad,
           {
-            ...jsonLd.boric,
+            ...jsonLd.aprueboDignidad,
             "worksFor": [
+              jsonLd.boric,
               jsonLd.chile,
               jsonLd.aprueboDignidad,
               jsonLd.convergenciaSocial,
-              jsonLd.frenteAmplio
+              jsonLd.frenteAmplio,
+              jsonLd.convencion
             ]
           }
         ]
@@ -74,3 +81,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.timer{
+  width: 100px;
+}
+</style>

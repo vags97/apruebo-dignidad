@@ -43,8 +43,8 @@
         </v-col>
       </v-row>
       <v-row justify="space-around" class="pa-2">
-        <a href="https://boricpresidente.cl/" target="_blank">
-          <div class="boric-logo"/>
+        <a href="https://www.chileconvencion.cl/" target="_blank">
+          <div class="cc-logo"/>
         </a>
       </v-row>
     </v-container>

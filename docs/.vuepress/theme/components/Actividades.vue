@@ -7,7 +7,7 @@
       <v-row>
         <v-col>
           <h1>
-            Noticias
+            Actividades
           </h1>
         </v-col>
       </v-row>
@@ -17,15 +17,17 @@
             sm="6"
             md="4"
             lg="3"
-            v-for="(noticia, index) in noticias"
+            v-for="(actividad, index) in actividades"
             :key="index"
         >
-          <HomeNoticiaCard
-              :title="noticia.title"
-              :description="noticia.description"
-              :image="noticia.image"
-              :route="noticia.route"
-              :date="noticia.date"
+          <ActividadCard
+              :title="actividad.title"
+              :description="actividad.description"
+              :direccion="actividad.direccion"
+              :organizador="actividad.organizador"
+              :route="actividad.route"
+              :date="actividad.date"
+              :image="actividad.image"
           />
         </v-col>
       </v-row>
@@ -47,14 +49,14 @@
 </template>
 
 <script>
-import HomeNoticiaCard from "./NoticiaCard";
+import ActividadCard from "./ActividadCard";
 import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 
 export default {
   name: "Blogs",
   components: {
-    HomeNoticiaCard,
+    ActividadCard,
     MdiIcon
   },
   data(){
@@ -66,12 +68,12 @@ export default {
     }
   },
   computed: {
-    noticias() {
+    actividades() {
       const limit = this.itemsPerPage;
       const offset = this.page - 1;
       const firstBlog = limit * offset;
       const lastBlog = (limit * (offset + 1)) - 1;
-      return this.$site.themeConfig.noticias.slice(firstBlog, lastBlog);
+      return this.$site.themeConfig.actividades.slice(firstBlog, lastBlog);
     },
   },
   methods: {
@@ -89,7 +91,7 @@ export default {
       }
     },
     lastPage(){
-      return parseInt(this.$site.themeConfig.noticias.length / this.itemsPerPage) + 1;
+      return parseInt(this.$site.themeConfig.actividades.length / this.itemsPerPage) + 1;
     }
   },
   mounted(){

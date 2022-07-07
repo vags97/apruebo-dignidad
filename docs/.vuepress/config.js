@@ -36,67 +36,56 @@ const noticias = getFiles('../noticias')
     })
     .sort((a,b) => Date.parse(b.date)- Date.parse(a.date))
 
-const candidaturasDiputados = getFiles('../candidatos-diputados')
+const articulos = getFiles('../articulos')
     .map(file => {
-      const fileInfo = fileToMdMetaFileName(file);
-      if ( fileInfo.fileName === 'README') return;
-      const mdMeta = fileInfo.mdMeta;
-      return {
-        tipoCandidatura: 1,
-        route: '/candidatos-diputados/' + fileInfo.fileName + '.html',
-        title: mdMeta.title,
-        papeleta: mdMeta.papeleta,
-        image: mdMeta.image,
-        distrito: mdMeta.distrito
-      }
+        const fileInfo = fileToMdMetaFileName(file);
+        if ( fileInfo.fileName === 'README') return;
+        const mdMeta = fileInfo.mdMeta;
+        return {
+            route: '/articulos/' + fileInfo.fileName + '.html',
+            title: mdMeta.title,
+            description: mdMeta.description,
+            image: mdMeta.image,
+            date: mdMeta.date,
+        }
     })
+    .sort((a,b) => Date.parse(b.date)- Date.parse(a.date))
 
-const candidaturasSenadores = getFiles('../candidatos-senadores')
-    .map(file => {
-      const fileInfo = fileToMdMetaFileName(file);
-      if ( fileInfo.fileName === 'README') return;
-      const mdMeta = fileInfo.mdMeta;
-      return {
-        tipoCandidatura: 2,
-        route: '/candidatos-senadores/' + fileInfo.fileName + '.html',
-        title: mdMeta.title,
-        papeleta: mdMeta.papeleta,
-        image: mdMeta.image,
-        circunscripcionSenatorial: mdMeta.circunscripcionSenatorial
-      }
-    })
-
-const candidaturasCores = getFiles('../candidatos-cores')
-    .map(file => {
-      const fileInfo = fileToMdMetaFileName(file);
-      if ( fileInfo.fileName === 'README') return;
-      const mdMeta = fileInfo.mdMeta;
-      return {
-        tipoCandidatura: 3,
-        route: '/candidatos-cores/' + fileInfo.fileName + '.html',
-        title: mdMeta.title,
-        papeleta: mdMeta.papeleta,
-        image: mdMeta.image,
-        circunscripcionProvincial: mdMeta.circunscripcionProvincial
-      }
-    })
-
-const candidatos = [
-    ...candidaturasDiputados,
-    ...candidaturasSenadores,
-    ...candidaturasCores
-].sort((a,b)=>a.title.localeCompare(b.title))
+const actividades = getFiles('../actividades')
+  .map(file => {
+    const fileInfo = fileToMdMetaFileName(file);
+    if ( fileInfo.fileName === 'README') return;
+    const mdMeta = fileInfo.mdMeta;
+    const ubicacionJson = mdMeta.ubicacion? JSON.parse(mdMeta.ubicacion): null;
+    const ubicacion = {
+      lat: ubicacionJson? ubicacionJson.coordinates[1]: null,
+      lng: ubicacionJson? ubicacionJson.coordinates[0]: null
+    }
+    return {
+      route: '/actividades/' + fileInfo.fileName + '.html',
+      title: mdMeta.title,
+      description: mdMeta.description,
+      image: mdMeta.image,
+      date: mdMeta.date,
+      organizador: mdMeta.organizador,
+      direccion: mdMeta.direccion,
+      ubicacion
+    }
+  })
+  .sort((a,b) => Date.parse(b.date)- Date.parse(a.date))
 
 const mainPages = [
-    {route: '/candidatos.html'},
-    {route: '/noticias.html'},
-    {route: '/'}
+  {route: '/actividades.html'},
+  {route: '/articulos.html'},
+  {route: '/noticias.html'},
+  {route: '/'}
 ]
 
 const allPages = [
-    ...candidatos,
-    ...noticias,
-    ...mainPages
+  ...actividades,
+  ...articulos,
+  ...noticias,
+  ...mainPages
 ]
 
 const googleAnalyticsId = 'G-HX30FV5WLV'
@@ -148,13 +137,13 @@ module.exports = {
     title: "Apruebo Dignidad",
     nav: [
       { text: "Noticias", link: "/noticias" },
-      { text: "Candidatos", link: "/candidatos" },
-      { text: "Apoderados", link: "https://boricpresidente.cl/apoderados" },
-      { text: "Propuestas", link: "https://boricpresidente.cl/propuestas" },
-      { text: "Aporta", link: "https://boricpresidente.cl/aporta" },
+      { text: "Artículos", link: "/articulos" },
+      { text: "Actividades", link: "/actividades" },
+      { text: "Kit Gráfico", link: "/kit-grafico" },
     ],
     noticias,
-    candidatos,
+    articulos,
+    actividades,
     domain: "https://www.apruebo-dignidad.cl",
     logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
@@ -233,7 +222,22 @@ module.exports = {
                 'https://www.instagram.com/frenteamplio_chile/',
                 'https://es.wikipedia.org/wiki/Frente_Amplio_(Chile)'
             ]
-        }
+        },
+      convencion: {
+        "@type": "Organization",
+        "name": "Frente Amplio",
+        "id": "frenteAmplio",
+        "alternateName": "Conglomerado Frente Amplio",
+        "url": 'https://www.chileconvencion.cl/',
+        "logo": 'https://www.chileconvencion.cl/wp-content/themes/convencionconstitucional/assets/images/logo_cc.svg',
+        "sameAs": [
+          'https://www.instagram.com/convencioncl/',
+          'https://twitter.com/convencioncl',
+          'https://web.facebook.com/convencioncl?_rdc=1&_rdr',
+          'https://www.youtube.com/channel/UCRlIWVAxQdAnCl4D4UR9r3Q',
+          'https://es.wikipedia.org/wiki/Convenci%C3%B3n_Constitucional_(Chile)'
+        ]
+      }
     }
   },
 };

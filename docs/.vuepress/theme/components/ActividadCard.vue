@@ -1,25 +1,28 @@
 <template>
   <v-card tile>
     <v-img
-        height="200px"
         :alt="'image' + title.toLowerCase().replace(' ', '_')"
         :src="image"
     />
-    <v-card-title>
-      {{ title}}
+    <v-card-title class="pb-0">
+      {{ title }}
     </v-card-title>
-    <v-card-subtitle>
-      {{ dateLocal(date) }} Hrs.
-    </v-card-subtitle>
     <v-card-text>
-      <p>
-        {{ description.slice(0,200) + (description.length>200? '...':'') }}
+      <p class="mb-0">
+        <strong>Fecha: </strong>{{ dateLocal(date) }} Hrs.
+        <br>
+        <strong>Organizador: </strong>{{ organizador }}
+        <br>
+        <strong>Dirección: </strong>{{ direccion }}
+        <br>
+        <strong>Descripción: </strong>{{ description.slice(0,200) + (description.length>200? '...':'') }}
       </p>
       <v-btn
           text
           color="primary"
           :to="route"
           class="pa-0"
+          small
       >
         Leer más
       </v-btn>
@@ -29,7 +32,7 @@
 
 <script>
 export default {
-  name: "HomeBlogCard",
+  name: "ActividadesHomeCard",
   props: {
     title: {
       type: String,
@@ -43,6 +46,14 @@ export default {
       type: String,
       default: 'Sin Descripción'
     },
+    direccion: {
+      type: String,
+      default: 'Sin Dirección'
+    },
+    organizador: {
+      type: String,
+      default: 'Sin Organizador'
+    },
     route: {
       type: String,
       default: null
@@ -50,11 +61,11 @@ export default {
     date: {
       type: String,
       default: null
-    }
+    },
   },
-  methods:{
+  methods: {
     dateLocal (dateTime) {
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'};
       return dateTime
           ? new Date(dateTime).toLocaleString('es-CL', options)
           : ''
@@ -63,5 +74,6 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style scoped>
+
 </style>

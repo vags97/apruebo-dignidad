@@ -1,36 +1,12 @@
 <template>
   <v-row justify="center">
+    <v-col cols="0" md="1" lg="2" class="py-0"/>
     <v-col cols="12" md="10" lg="8">
       <v-row>
-        <v-col cols="12">
-          <v-card>
-            <v-img>
-              <v-carousel
-                  height="100%"
-                  hide-delimiters
-                  v-model="currentVideo"
-              >
-                <v-carousel-item
-                    v-for="(item,i) in videos"
-                    :key="i"
-                    reverse-transition="fade-transition"
-                    transition="fade-transition"
-                    style="line-height: 0"
-                >
-                  <iframe
-                      v-if="currentVideo === i"
-                      style="width: 100%; aspect-ratio: 16/9"
-                      :src="'https://www.youtube.com/embed/'+ getVideoId(item.video) + '?autoplay=1&mute=1'"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                  >
-                  </iframe>
-                </v-carousel-item>
-              </v-carousel>
-            </v-img>
-          </v-card>
+        <v-col cols="12" class="px-0">
+          <HeroSection
+              :videos="videos"
+          />
         </v-col>
         <v-col
             cols="12"
@@ -38,94 +14,64 @@
         >
           <Content  />
         </v-col>
-        <v-col cols="12" md="6">
-          <ConoceBoric />
+        <v-col cols="12" class="px-0">
+          <NoticiasSection
+              :noticias="noticias"
+          />
         </v-col>
-        <v-col cols="12" md="6">
-         <ConoceCandidato />
+        <v-col cols="12" class="px-0">
+          <ArticulosSection
+              :articulos="articulos"
+          />
         </v-col>
-        <v-col
-            cols="12"
-            md="6"
-        >
-          <h1>
-            Noticias
-          </h1>
-          <v-row>
-            <v-col
-                cols="12"
-                sm="6"
-                md="12"
-                v-for="(noticia, index) in noticias"
-                :key="index"
-            >
-              <HomeNoticiaCard
-                  :title="noticia.title"
-                  :description="noticia.description"
-                  :image="noticia.image"
-                  :route="noticia.route"
-              />
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col>
-              <a href="/noticias" class="px-4">
-                Ver todas las Noticias
-              </a>
-            </v-col>
-          </v-row>
-        </v-col>
-        <v-col
-            cols="12"
-            md="6"
-        >
-          <Timeline
-              class="twitter"
-              v-if="twitter"
-              :id="twitter"
-              sourceType="profile"
-              :options="{ tweetLimit: '3' }"
-          >
-            Cargado Twitter ...
-          </Timeline>
+        <v-col cols="12" class="px-0">
+          <ActividadesSection
+              :actividades="actividades"
+          />
         </v-col>
       </v-row>
+    </v-col>
+    <v-col cols="12" md="9" lg="2">
+      <Timeline
+          class="twitter"
+          v-if="twitter"
+          :id="twitter"
+          sourceType="profile"
+          :options="{ tweetLimit: '3' }"
+      >
+        Cargado Twitter ...
+      </Timeline>
     </v-col>
   </v-row>
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue'
 import mdToHtml from "../util/mdToHtml";
 import {Timeline} from 'vue-tweet-embed'
-import HomeNoticiaCard from "./NoticiaCard";
-import ConoceCandidato from "./ConoceCandidato";
-import CandidatoCard from "./CandidatoCard";
-import ConoceBoric from "./ConoceBoric";
+import NoticiasSection from "./Home/NoticiasSection";
+import ArticulosSection from "./Home/ArticulosSection";
+import ActividadesSection from "./Home/ActividadesSection";
+import HeroSection from "./Home/HeroSection";
 
 export default {
   name: 'Home',
   components: {
-    ConoceCandidato,
-    HomeNoticiaCard,
-    NavLink,
-    CandidatoCard,
-    ConoceBoric,
+    HeroSection,
+    NoticiasSection,
+    ArticulosSection,
+    ActividadesSection,
     Timeline
   },
   data() {
     return {
-      mdToHtml,
-      currentVideo: 0
+      mdToHtml
     }
   },
   computed: {
     currentBreakpoint() {
       return this.$vuetify.breakpoint.name;
     },
-    noticias () {
-      return this.$site.themeConfig.noticias.slice(0,3);
-    },
+
     twitter () {
       return this.$site.themeConfig.twitter;
     },
@@ -135,84 +81,17 @@ export default {
     videos(){
       return this.data.carruselVideo;
     },
-    video(){
-      return this.data.carruselVideo[this.currentVideo].video;
+    noticias () {
+      return this.$site.themeConfig.noticias.slice(0,3);
     },
-  },
-  methods:{
-    getVideoId(youtubeUrl){
-      const url = new URL(youtubeUrl);
-      const urlParams = new URLSearchParams(url.search);
-      return urlParams.get('v');
+    articulos () {
+      return this.$site.themeConfig.articulos.slice(0,4);
+    },
+    actividades () {
+      return this.$site.themeConfig.actividades;
     }
-  }
+  },
 }
 </script>
 
-<style lang="stylus">
-.overlay-video {
-  position: absolute;
-  top: 0;
-  color: #FFF;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  padding: 10px 0;
-  z-index: 2147483647;
-}
 
-.fade-out {
-  opacity: 0;
-  animation: fadeOut ease 8s;
-  -webkit-animation: fadeOut ease 8s;
-  -moz-animation: fadeOut ease 8s;
-  -o-animation: fadeOut ease 8s;
-  -ms-animation: fadeOut ease 8s;
-}
-
-@keyframes fadeOut {
- 0% {
-   opacity:1;
- }
- 100% {
-   opacity:0;
- }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-</style>

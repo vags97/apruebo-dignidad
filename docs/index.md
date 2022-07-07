@@ -6,6 +6,7 @@ image: /media/apruebo-dignidad-logo-oficial.jpg
 tags: 
 - Parlamentarias
 - 2021
+- 2022
 - Diputados
 - Senadores
 - Elecciones
@@ -13,8 +14,7 @@ tags:
 - Gabriel Boric
 - Apruebo Dignidad
 - CORES
+- Constitucion
 carruselVideo:
-  - video: "https://www.youtube.com/watch?v=qjkW8M_E7do"
-  - video: "https://www.youtube.com/watch?v=VRPMALNLfzU"
-  - video: "https://www.youtube.com/watch?v=ZX2WW5E--bw"
+- "https://www.youtube.com/watch?v=eP18_IuUeUE"
 ---

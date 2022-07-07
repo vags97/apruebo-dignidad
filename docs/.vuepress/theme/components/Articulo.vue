@@ -25,27 +25,27 @@
       </v-card>
     </v-col>
     <v-col cols="12" sm="10" md="8" lg="7">
-      <NoticiasSection
-          :noticias="noticias"
+      <ArticulosSection
+          :articulos="articulos"
       />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import NoticiasSection from "./Home/NoticiasSection";
+import ArticulosSection from "./Home/ArticulosSection";
 
 export default {
-  name: 'Noticia',
+  name: 'Articulo',
   components: {
-    NoticiasSection
+    ArticulosSection
   },
   computed: {
     data() {
       return this.$page.frontmatter
     },
-    noticias () {
-      return this.$site.themeConfig.noticias.slice(0,3);
+    articulos () {
+      return this.$site.themeConfig.articulos.slice(0,3);
     },
   },
   methods:{

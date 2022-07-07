@@ -26,6 +26,7 @@
     <v-app-bar
         app
         color="primary"
+        flat
     >
       <v-app-bar-nav-icon
           color="white"

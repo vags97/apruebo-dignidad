@@ -14,6 +14,7 @@
     "directory-tree": "^3.0.0",
     "fs": "^0.0.1-security",
     "glob": "^7.2.0",
+    "leaflet": "^1.8.0",
     "markdown-it": "^12.2.0",
     "markdown-it-meta": "^0.0.1",
     "materialize-css": "^1.0.0-rc.2",
@@ -22,6 +23,7 @@
     "roboto-fontface": "*",
     "showdown": "^1.9.1",
     "vue-tweet-embed": "^2.4.0",
+    "vue2-leaflet": "^2.7.1",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuetify": "^2.5.12"
   },

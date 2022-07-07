@@ -7,7 +7,7 @@
       <v-row>
         <v-col>
           <h1>
-            Noticias
+            Artículos de la Constitución
           </h1>
         </v-col>
       </v-row>
@@ -17,15 +17,15 @@
             sm="6"
             md="4"
             lg="3"
-            v-for="(noticia, index) in noticias"
+            v-for="(articulo, index) in articulos"
             :key="index"
         >
-          <HomeNoticiaCard
-              :title="noticia.title"
-              :description="noticia.description"
-              :image="noticia.image"
-              :route="noticia.route"
-              :date="noticia.date"
+          <ArticuloCard
+              :title="articulo.title"
+              :description="articulo.description"
+              :image="articulo.image"
+              :route="articulo.route"
+              :date="articulo.date"
           />
         </v-col>
       </v-row>
@@ -47,14 +47,14 @@
 </template>
 
 <script>
-import HomeNoticiaCard from "./NoticiaCard";
+import ArticuloCard from "./ArticuloCard";
 import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 
 export default {
   name: "Blogs",
   components: {
-    HomeNoticiaCard,
+    ArticuloCard,
     MdiIcon
   },
   data(){
@@ -66,12 +66,12 @@ export default {
     }
   },
   computed: {
-    noticias() {
+    articulos() {
       const limit = this.itemsPerPage;
       const offset = this.page - 1;
       const firstBlog = limit * offset;
       const lastBlog = (limit * (offset + 1)) - 1;
-      return this.$site.themeConfig.noticias.slice(firstBlog, lastBlog);
+      return this.$site.themeConfig.articulos.slice(firstBlog, lastBlog);
     },
   },
   methods: {
@@ -89,7 +89,7 @@ export default {
       }
     },
     lastPage(){
-      return parseInt(this.$site.themeConfig.noticias.length / this.itemsPerPage) + 1;
+      return parseInt(this.$site.themeConfig.articulos.length / this.itemsPerPage) + 1;
     }
   },
   mounted(){

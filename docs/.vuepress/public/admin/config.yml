@@ -17,12 +17,19 @@ collections:
           - { label: "Titulo", name: "title", widget: "string" }
           - { label: "Imagen", name: "image", widget: "image", default: "/media/apruebo-dignidad-logo-oficial.jpg" }
           - { label: "Descripción", name: "description", widget: "string" }
-          - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+          - label: "Tags"
+            name: "tags"
+            widget: "list"
+            required: false
+            default: [ 'Apruebo Dignidad' ]
+            summary: '{{fields.tag}}'
+            field: { label: "Tag", name: "tag", widget: "string" }
           - label: "Videos Youtube URL"
             name: "carruselVideo"
             required: false
-            fields:
-              - { label: "Video Youtube URL", name: "video", widget: "string" }
+            widget: "list"
+            summary: '{{fields.video}}'
+            field: { label: "Video Youtube URL", name: "video", widget: "string" }
           - { label: "Cuerpo", name: body, widget: markdown, required: false }
   - label: "Noticias"
     name: "noticias"
@@ -30,152 +37,53 @@ collections:
     create: true
     fields:
       - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        default: [ 'Apruebo Dignidad' ]
+        summary: '{{fields.tag}}'
+        field: { label: "Tag", name: "tag", widget: "string" }
       - { label: "Fecha", name: "date", widget: "date" }
       - { label: "Imagen", name: "image", widget: "image", default: "/media/apruebo-dignidad-logo-oficial.jpg" }
       - { label: "Descripción", name: "description", widget: "string" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos Diputados"
-    name: "diputados"
-    folder: "docs/candidatos-diputados"
+  - label: "Articulos Nueva Constitución"
+    name: "articulos"
+    folder: "docs/articulos"
     create: true
     fields:
-      - { label: "Diputado", name: "diputado", widget: "hidden", default: true }
-      - { label: "Nombre", name: "title", widget: "string" }
-      - { label: "Descripción Corta", name: "description", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false, default: ['Apruebo Dignidad'] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
-      - label: "Distrito"
-        name: "distrito"
-        widget: "number"
-        default: 1
-        value_type: "int"
-        min: 1
-        max: 28
-        step: 1
-      - { label: "Papeleta", name: "papeleta", widget: "string" }
-      - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
-      - { label: "Facebook", name: "facebook", widget: "string", required: false }
-      - { label: "Twitter", name: "twitter", widget: "string", required: false }
-      - { label: "Instagram", name: "instagram", widget: "string", required: false }
-      - { label: "Youtube", name: "youtube", widget: "string", required: false }
-      - { label: "TikTok", name: "tiktok", widget: "string", required: false }
-      - { label: "Contactado", name: "contactado",  widget: "boolean" }
+      - { label: "Articulo", name: "articulo", widget: "hidden", default: true }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        default: [ 'Apruebo Dignidad' ]
+        summary: '{{fields.tag}}'
+        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "date" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/apruebo-dignidad-logo-oficial.jpg" }
+      - { label: "Descripción", name: "description", widget: "string" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos Senadores"
-    name: "senadores"
-    folder: "docs/candidatos-senadores"
+  - label: "Actividades"
+    name: "actividades"
+    folder: "docs/actividades"
     create: true
     fields:
-      - { label: "Senador", name: "senador", widget: "hidden", default: true }
-      - { label: "Nombre", name: "title", widget: "string" }
-      - { label: "Descripción Corta", name: "description", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
-      - label: "Circunscripcion Senatorial"
-        name: "circunscripcionSenatorial"
-        widget: "number"
-        default: 1
-        value_type: "int"
-        min: 1
-        max: 16
-        step: 1
-      - { label: "Papeleta", name: "papeleta", widget: "string" }
-      - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
-      - { label: "Facebook", name: "facebook", widget: "string", required: false }
-      - { label: "Twitter", name: "twitter", widget: "string", required: false }
-      - { label: "Instagram", name: "instagram", widget: "string", required: false }
-      - { label: "Youtube", name: "youtube", widget: "string", required: false }
-      - { label: "TikTok", name: "tiktok", widget: "string", required: false }
-      - { label: "Contactado", name: "contactado",  widget: "boolean" }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - label: "Candidatos CORES"
-    name: "cores"
-    folder: "docs/candidatos-cores"
-    create: true
-    fields:
-      - { label: "CORE", name: "core", widget: "hidden", default: true }
-      - { label: "Nombre", name: "title", widget: "string" }
-      - { label: "Descripción Corta", name: "description", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", required: false, default: [ 'Apruebo Dignidad' ] }
-      - { label: "Imagen", name: "image", widget: "image", default: "/media/ad-profile.jpg" }
-      - label: "Circunscripcion Provincial"
-        name: "circunscripcionProvincial"
-        widget: "select"
-        options: [
-            'Antartica Chilena',
-            'Antofagasta',
-            'Arauco',
-            'Arica',
-            'Aysen',
-            'Biobio',
-            'Cachapoal I',
-            'Cachapoal II',
-            'Capitan Prat',
-            'Cardenal Caro',
-            'Cauquenes',
-            'Cautin I',
-            'Cautin II',
-            'Chacabuco',
-            'Chañaral',
-            'Chiloe',
-            'Choapa',
-            'Colchagua',
-            'Concepcion I',
-            'Concepcion II',
-            'Concepcion III',
-            'Copiapo',
-            'Cordillera',
-            'Coyhaique',
-            'Curico',
-            'Diguillin',
-            'El Loa',
-            'Elqui',
-            'General Carrera',
-            'Huasco',
-            'Iquique',
-            'Isla De Pascua',
-            'Itata',
-            'Limari',
-            'Linares',
-            'Llanquihue',
-            'Los Andes',
-            'Magallanes',
-            'Maipo',
-            'Malleco',
-            'Marga Marga',
-            'Melipilla',
-            'Osorno',
-            'Palena',
-            'Parinacota',
-            'Petorca',
-            'Punilla',
-            'Quillota',
-            'Ranco',
-            'San Antonio',
-            'San Felipe',
-            'Santiago I',
-            'Santiago II',
-            'Santiago III',
-            'Santiago IV',
-            'Santiago V',
-            'Santiago VI',
-            'Talagante',
-            'Talca',
-            'Tamarugal',
-            'Tierra Del Fuego',
-            'Tocopilla',
-            'Ultima Esperanza',
-            'Valdivia',
-            'Valparaiso I',
-            'Valparaiso II'
-        ]
-      - { label: "Papeleta", name: "papeleta", widget: "string" }
-      - { label: "Página Web", name: "paginaWeb", widget: "string", required: false }
-      - { label: "Facebook", name: "facebook", widget: "string", required: false }
-      - { label: "Twitter", name: "twitter", widget: "string", required: false }
-      - { label: "Instagram", name: "instagram", widget: "string", required: false }
-      - { label: "Youtube", name: "youtube", widget: "string", required: false }
-      - { label: "TikTok", name: "tiktok", widget: "string", required: false }
-      - { label: "Contactado", name: "contactado",  widget: "boolean" }
+      - { label: "Actividad", name: "actividad", widget: "hidden", default: true }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        default: [ 'Apruebo Dignidad' ]
+        summary: '{{fields.tag}}'
+        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen", name: "image", widget: "image", default: "/media/apruebo-dignidad-logo-oficial.jpg" }
+      - { label: "Organizador", name: "organizador", widget: "string" }
+      - { label: "Dirección", name: "direccion", widget: "string" }
+      - { label: "Ubicación", name: "ubicacion", widget: "map", type: "Point", default: '{"type":"Point","coordinates":[-70.6536074,-33.4442716]}' }
+      - { label: "Descripción", name: "description", widget: "string" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
