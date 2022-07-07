@@ -139,7 +139,7 @@ module.exports = {
       { text: "Noticias", link: "/noticias" },
       { text: "Artículos", link: "/articulos" },
       { text: "Actividades", link: "/actividades" },
-      { text: "Kit Gráfico", link: "/kit-grafico" },
+      { text: "Kit Gráfico", link: "https://drive.google.com/drive/folders/1h0IpZDSzC3x32sCpW8Sao9wcKxUyW5TG?usp=sharing" },
     ],
     noticias,
     articulos,

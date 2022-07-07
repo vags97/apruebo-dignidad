@@ -10,6 +10,7 @@
           <Blogs v-else-if="$page.frontmatter.blogs" />
           <Articulos v-else-if="$page.frontmatter.articulos" />
           <Articulo v-else-if="$page.frontmatter.articulo" />
+          <Actividad v-else-if="$page.frontmatter.actividad" />
           <Actividades v-else-if="$page.frontmatter.actividades" />
           <Blog v-else />
         </v-container>
@@ -22,26 +23,28 @@
 <script>
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
+import Footer from "@theme/components/Footer";
+import Contador from "@theme/components/Contador";
+import Blogs from "@theme/components/Noticias";
 import Blog from '@theme/components/Noticia.vue'
-import Footer from "../components/Footer";
-import Blogs from "../components/Noticias";
-import Contador from "../components/Contador";
-import Articulos from "../components/Articulos";
-import Articulo from "../components/Articulo";
-import Actividades from "../components/Actividades";
+import Articulos from "@theme/components/Articulos";
+import Articulo from "@theme/components/Articulo";
+import Actividades from "@theme/components/Actividades";
+import Actividad from '@theme/components/Actividad';
 
 export default {
   name: 'Layout',
   components: {
-    Contador,
     Home,
-    Blog,
     Navbar,
     Footer,
+    Contador,
     Blogs,
+    Blog,
     Articulos,
     Articulo,
-    Actividades
+    Actividades,
+    Actividad
   },
   created() {
     if (typeof this.$ssrContext !== 'undefined') {

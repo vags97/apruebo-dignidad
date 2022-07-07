@@ -52,7 +52,7 @@ import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 
 export default {
-  name: "Blogs",
+  name: "Noticias",
   components: {
     HomeNoticiaCard,
     MdiIcon

@@ -16,9 +16,9 @@
     <v-card-text>
       <v-row>
         <v-col cols="12" md="6">
-          <MapaActividades
-              :actividades="actividades"
-          />
+          <ClientOnly>
+            <MapaActividades :actividades="actividades"/>
+          </ClientOnly>
         </v-col>
         <v-col cols="12" md="6">
           <ActividadesHomeCard
