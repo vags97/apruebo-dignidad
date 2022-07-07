@@ -1,5 +1,7 @@
 <template>
-  <v-card tile>
+  <v-card
+      tile
+  >
     <v-img
         height="200px"
         :alt="'image' + title.toLowerCase().replace(' ', '_')"

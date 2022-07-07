@@ -4,7 +4,7 @@
         app
         v-model="drawer"
         temporary
-        absolute
+        fixed
     >
       <v-list
           nav

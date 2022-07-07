@@ -1,9 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col
-        cols="12"
-        md="10"
-    >
+    <v-col cols="12">
       <v-row>
         <v-col>
           <h1>
@@ -47,7 +44,7 @@
 </template>
 
 <script>
-import HomeNoticiaCard from "./NoticiaCard";
+import HomeNoticiaCard from "@theme/components/NoticiaCard";
 import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
 

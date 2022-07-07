@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" sm="10" md="8" lg="7">
+    <v-col cols="12">
       <v-card tile>
         <v-img
             :alt="'image' + data.title.toLowerCase().replace(' ', '_')"
@@ -25,27 +25,27 @@
       </v-card>
     </v-col>
     <v-col cols="12" sm="10" md="8" lg="7">
-      <ActividadesSection
-          :actividades="actividades"
+      <NoticiasSection
+          :noticias="noticias"
       />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import ActividadesSection from "./Home/ActividadesSection";
+import NoticiasSection from "@theme/components/Home/NoticiasSection";
 
 export default {
-  name: 'Actividad',
+  name: 'Noticia',
   components: {
-    ActividadesSection
+    NoticiasSection
   },
   computed: {
     data() {
       return this.$page.frontmatter
     },
-    actividades () {
-      return this.$site.themeConfig.actividades.slice(0,3);
+    noticias () {
+      return this.$site.themeConfig.noticias.slice(0,3);
     },
   },
   methods:{

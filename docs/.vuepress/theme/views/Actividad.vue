@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" sm="10" md="8" lg="7">
+    <v-col cols="12">
       <v-card tile>
         <v-img
             :alt="'image' + data.title.toLowerCase().replace(' ', '_')"
@@ -24,28 +24,28 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="12" sm="10" md="8" lg="7">
-      <ArticulosSection
-          :articulos="articulos"
+    <v-col cols="12">
+      <ActividadesSection
+          :actividades="actividades"
       />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import ArticulosSection from "./Home/ArticulosSection";
+import ActividadesSection from "@theme/components/Home/ActividadesSection";
 
 export default {
-  name: 'Articulo',
+  name: 'Actividad',
   components: {
-    ArticulosSection
+    ActividadesSection
   },
   computed: {
     data() {
       return this.$page.frontmatter
     },
-    articulos () {
-      return this.$site.themeConfig.articulos.slice(0,3);
+    actividades () {
+      return this.$site.themeConfig.actividades.slice(0,3);
     },
   },
   methods:{

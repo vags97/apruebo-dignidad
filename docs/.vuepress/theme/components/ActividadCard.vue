@@ -1,8 +1,12 @@
 <template>
-  <v-card tile>
+  <v-card
+      tile
+  >
     <v-img
         :alt="'image' + title.toLowerCase().replace(' ', '_')"
         :src="image"
+        max-height="320px"
+        contain
     />
     <v-card-title class="pb-0">
       {{ title }}
