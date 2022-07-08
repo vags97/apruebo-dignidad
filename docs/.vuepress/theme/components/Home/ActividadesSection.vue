@@ -1,6 +1,9 @@
 <template>
   <v-card flat color="#f87519">
     <v-card-title class="text-h4 white--text">
+      <v-icon color="white" left large>
+        {{ mdiCalendar }}
+      </v-icon>
       Actividades
       <v-spacer/>
       <v-btn
@@ -40,6 +43,7 @@
 <script>
 import MapaActividades from "../MapaActividades";
 import ActividadesHomeCard from "./ActividadesHomeCard";
+import { mdiCalendar  } from '@mdi/js'
 export default {
   name: "ActividadesSection",
   components: {ActividadesHomeCard, MapaActividades},
@@ -47,6 +51,11 @@ export default {
     actividades: {
       type: Array,
       default: () =>[]
+    }
+  },
+  data(){
+    return {
+      mdiCalendar
     }
   }
 }

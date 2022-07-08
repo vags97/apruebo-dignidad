@@ -1,6 +1,9 @@
 <template>
   <v-card flat color="#008ef6">
     <v-card-title class="text-h4 white--text">
+      <v-icon color="white" left large>
+        {{ mdiNewspaperVariant  }}
+      </v-icon>
       Noticias
     </v-card-title>
     <v-card-text>
@@ -39,7 +42,7 @@
 
 <script>
 import HomeNoticiaCard from "../NoticiaCard";
-
+import { mdiNewspaperVariant   } from '@mdi/js'
 export default {
   name: "NoticiasSection",
   components: {
@@ -49,6 +52,11 @@ export default {
     noticias: {
       type: Array,
       default: () => []
+    }
+  },
+  data(){
+    return {
+      mdiNewspaperVariant
     }
   }
 }

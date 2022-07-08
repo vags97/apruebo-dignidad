@@ -1,6 +1,9 @@
 <template>
   <v-card flat color="#2fb083">
     <v-card-title class="text-h4 white--text">
+      <v-icon color="white" left large>
+        {{ mdiBookOpenPageVariant  }}
+      </v-icon>
       Artículos de la Constitución
     </v-card-title>
     <v-card-text>
@@ -38,7 +41,7 @@
 
 <script>
 import ArticuloCard from "../ArticuloCard";
-
+import { mdiBookOpenPageVariant   } from '@mdi/js'
 export default {
   name: "ArticulosSection",
   components: {
@@ -48,6 +51,11 @@ export default {
     articulos: {
       type: Array,
       default: () => []
+    }
+  },
+  data(){
+    return {
+      mdiBookOpenPageVariant
     }
   }
 }

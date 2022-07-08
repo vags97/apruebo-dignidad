@@ -7,7 +7,17 @@
         <v-container fluid>
           <Contador/>
           <v-row justify="center">
-            <v-col cols="0" sm="6" md="5" lg="2" class="py-0" order="2" order-lg="1"/>
+            <v-col cols="12" sm="6" md="5" lg="2" order="2" order-lg="1" :class="{'px-0': $vuetify.breakpoint.mdAndDown}">
+              <MusicLateral
+                  :audios="audios"
+                  :playing.sync="playing"
+                  :current-audio-id.sync="currentAudioId"
+                  :current-audio-time.sync="currentAudioTime"
+                  :current-audio-duration.sync="currentAudioDuration"
+                  :current-audio="currentAudio"
+                  style="z-index: 200"
+              />
+            </v-col>
             <v-col cols="12" md="10" lg="8" order="1" order-lg="2">
               <Home v-if="$page.frontmatter.home" />
               <Blogs v-else-if="$page.frontmatter.blogs" />
@@ -31,7 +41,16 @@
           </v-row>
         </v-container>
       </v-main>
-      <Footer />
+      <MusicPlayer
+          :audios="audios"
+          :playing.sync="playing"
+          :current-audio-id.sync="currentAudioId"
+          :current-audio-time.sync="currentAudioTime"
+          :current-audio-duration.sync="currentAudioDuration"
+          :current-audio="currentAudio"
+          style="z-index: 10"
+      />
+      <Footer class="pb-sm-16 pb-md-10" style="padding-bottom: 110px" />
     </v-app>
   </div>
 </template>
@@ -48,6 +67,8 @@ import Articulo from "@theme/views/Articulo";
 import Actividades from "@theme/views/Actividades";
 import Actividad from '@theme/views/Actividad';
 import {Timeline} from "vue-tweet-embed";
+import MusicLateral from "../components/Music/MusicLateral";
+import MusicPlayer from "../components/Music/MusicPlayer";
 
 export default {
   name: 'Layout',
@@ -62,11 +83,39 @@ export default {
     Articulo,
     Actividades,
     Actividad,
-    Timeline
+    Timeline,
+    MusicPlayer,
+    MusicLateral
+  },
+  data(){
+    return {
+      playing: false,
+      currentAudioId: null,
+      currentAudioTime: 0,
+      currentAudioDuration: 0,
+      audios: [
+        { id: 1, name: 'Capítulo 1', url: 'https://ondacorta.cl/convencion/capitulo-1-es-US-Wavenet-B.mp3'},
+        { id: 2, name: 'Capítulo 2', url: 'https://ondacorta.cl/convencion/capitulo-2-es-US-Wavenet-B.mp3'},
+        { id: 3, name: 'Capítulo 3', url: 'https://ondacorta.cl/convencion/capitulo-3-es-US-Wavenet-B.mp3'},
+        { id: 4, name: 'Capítulo 4', url: 'https://ondacorta.cl/convencion/capitulo-4-es-US-Wavenet-B.mp3'},
+        { id: 5, name: 'Capítulo 5', url: 'https://ondacorta.cl/convencion/capitulo-5-es-US-Wavenet-B.mp3'},
+        { id: 6, name: 'Capítulo 6', url: 'https://ondacorta.cl/convencion/capitulo-6-es-US-Wavenet-B.mp3'},
+        { id: 7, name: 'Capítulo 7', url: 'https://ondacorta.cl/convencion/capitulo-7-es-US-Wavenet-B.mp3'},
+        { id: 8, name: 'Capítulo 8', url: 'https://ondacorta.cl/convencion/capitulo-8-es-US-Wavenet-B.mp3'},
+        { id: 9, name: 'Capítulo 9', url: 'https://ondacorta.cl/convencion/capitulo-9-es-US-Wavenet-B.mp3'},
+        { id: 10, name: 'Capítulo 10', url: 'https://ondacorta.cl/convencion/capitulo-10-es-US-Wavenet-B.mp3'},
+        { id: 11, name: 'Capítulo 11', url: 'https://ondacorta.cl/convencion/capitulo-11-es-US-Wavenet-B.mp3'},
+        { id: 12, name: 'Disposiciones Transitorias', url: 'https://ondacorta.cl/convencion/disposiciones-transitorias-es-US-Wavenet-B.mp3'}
+      ]
+    }
   },
   computed: {
     twitter () {
       return this.$site.themeConfig.twitter;
+    },
+    currentAudio(){
+      const currentAudio = this.audios.find(({id})=> id === this.currentAudioId)
+      return currentAudio? currentAudio: { id: null, name: 'Seleccione', url: null}
     }
   },
   created() {
