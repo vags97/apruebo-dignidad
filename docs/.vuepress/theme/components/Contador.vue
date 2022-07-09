@@ -1,44 +1,60 @@
 <template>
   <v-row class="secondary" justify="center">
-    <v-col cols="auto">
-      <v-row justify="center">
-        <v-col cols="auto" class="pa-4">
-          <v-row class="time-number" justify="center">
-            {{ time.days }}
-          </v-row>
-          <v-row class="time-text" justify="center">
-            Días
-          </v-row>
+    <v-col cols="12" md="10" class="py-0">
+      <v-row justify="center" no-gutters>
+        <v-col
+            class="py-1 votacion"
+            :class="{'text-center': $vuetify.breakpoint.smAndDown, 'text-right': $vuetify.breakpoint.mdAndUp}"
+            cols="12"
+            md="3"
+            lg="4"
+        >
+          Faltan
         </v-col>
-        <v-col cols="auto" class="pa-4">
-          <v-row justify="center" class="time-number">
-            {{ time.hours }}
-          </v-row>
-          <v-row class="time-text" justify="center">
-            Horas
-          </v-row>
-        </v-col>
-        <v-col cols="auto" class="pa-4">
-          <v-row justify="center" class="time-number">
-            {{ time.minutes }}
-          </v-row>
-          <v-row class="time-text" justify="center">
-            Minutos
-          </v-row>
-        </v-col>
-        <v-col cols="auto" class="pa-4">
-          <v-row justify="center" class="time-number">
-            {{ time.seconds }}
-          </v-row>
-          <v-row class="time-text" justify="center">
-            Segundos
+        <v-col class="py-1 " cols="12" md="6" lg="4">
+          <v-row justify="center">
+            <v-col cols="auto">
+              <v-row class="time-number" justify="center" no-gutters>
+                {{ time.days }}
+              </v-row>
+              <v-row class="time-text" justify="center" no-gutters>
+                Días
+              </v-row>
+            </v-col>
+            <v-col cols="auto">
+              <v-row justify="center" class="time-number" no-gutters>
+                {{ time.hours }}
+              </v-row>
+              <v-row class="time-text" justify="center" no-gutters>
+                Horas
+              </v-row>
+            </v-col>
+            <v-col cols="auto">
+              <v-row justify="center" class="time-number" no-gutters>
+                {{ time.minutes }}
+              </v-row>
+              <v-row class="time-text" justify="center" no-gutters>
+                Minutos
+              </v-row>
+            </v-col>
+            <v-col cols="auto">
+              <v-row justify="center" class="time-number" no-gutters>
+                {{ time.seconds }}
+              </v-row>
+              <v-row class="time-text" justify="center" no-gutters>
+                Segundos
+              </v-row>
+            </v-col>
           </v-row>
         </v-col>
         <v-col
-            cols="auto" class="py-1 votacion"
-            v-if="false"
+            cols="12"
+            md="3"
+            lg="4"
+            class="py-1 votacion" :class="{'text-center': $vuetify.breakpoint.smAndDown}"
+            ref="votacion2"
         >
-          Para la Votación
+          para elegir una nueva constitución
         </v-col>
       </v-row>
     </v-col>

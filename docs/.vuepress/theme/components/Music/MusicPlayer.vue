@@ -10,11 +10,31 @@
     </audio>
     <v-row class="controls pt-0 pb-3 primary" justify="center">
       <v-col cols="auto" class="px-3 font-weight-bold white--text v-align">
+        <v-switch
+            :input-value="currentAudioVoz"
+            :value="currentAudioVoz"
+            @change="updateAudioVoz"
+            true-value="a"
+            false-value="b"
+            color="secondary"
+            hide-details
+            flat
+            dense
+            class="mt-0 mb-1"
+        >
+          <template #label>
+            <span class="white--text">
+              Voz: <span class="text-uppercase">{{currentAudioVoz}}</span>
+            </span>
+          </template>
+        </v-switch>
+      </v-col>
+      <v-col cols="auto" class="px-3 font-weight-bold white--text v-align">
         {{ currentAudio.name }}
       </v-col>
       <v-col cols="auto" class=" v-align">
         <v-row>
-          <v-btn @click="playBtn" color="transparent" tile elevation="0">
+          <v-btn @click="playBtn" color="transparent" tile elevation="0" :loading="loading">
             <v-icon color="white">
               {{ playing? icons.mdiPause: icons.mdiPlay }}
             </v-icon>
@@ -40,16 +60,40 @@
       </v-col>
       <v-col cols="auto" class="v-align">
         <v-row>
-          <v-btn @click="prev" color="transparent" tile elevation="0">
-            <v-icon color="white">
-              {{ icons.mdiRewind  }}
-            </v-icon>
-          </v-btn>
-          <v-btn @click="next" color="transparent" tile elevation="0">
-            <v-icon color="white">
-              {{ icons.mdiFastForward  }}
-            </v-icon>
-          </v-btn>
+          <v-tooltip top color="black">
+            <template #activator="{ on, attrs }">
+              <v-btn @click="prev" color="transparent" tile elevation="0" v-bind="attrs" v-on="on">
+                <v-icon color="white">
+                  {{ icons.mdiSkipPrevious }}
+                </v-icon>
+              </v-btn>
+            </template>
+            Capítulo Previo
+          </v-tooltip>
+          <v-tooltip top color="black">
+            <template #activator="{ on, attrs }">
+              <v-btn @click="next" color="transparent" tile elevation="0" v-bind="attrs" v-on="on">
+                <v-icon color="white">
+                  {{ icons.mdiSkipNext }}
+                </v-icon>
+              </v-btn>
+            </template>
+            Capítulo Siguiente
+          </v-tooltip>
+        </v-row>
+      </v-col>
+      <v-col cols="auto" class="v-align">
+        <v-row>
+          <v-tooltip top color="black">
+            <template #activator="{ on, attrs }">
+              <v-btn @click="close" color="transparent" tile elevation="0" v-bind="attrs" v-on="on">
+                <v-icon color="white">
+                  {{ icons.mdiClose }}
+                </v-icon>
+              </v-btn>
+            </template>
+            Cierra el reproductor y pausa el audio
+          </v-tooltip>
         </v-row>
       </v-col>
     </v-row>
@@ -57,7 +101,7 @@
 </template>
 
 <script>
-import { mdiPlay, mdiPause, mdiFastForward, mdiRewind   } from '@mdi/js'
+import { mdiPlay, mdiPause, mdiSkipNext , mdiSkipPrevious, mdiClose } from '@mdi/js'
 
 export default {
   name: "MusicPlayer",
@@ -73,6 +117,10 @@ export default {
     currentAudioId: {
       type: Number,
       default: 1
+    },
+    currentAudioVoz: {
+      type: String,
+      default: 'a'
     },
     currentAudio: {
       type: Object,
@@ -94,10 +142,12 @@ export default {
       icons: {
         mdiPlay,
         mdiPause,
-        mdiFastForward,
-        mdiRewind
+        mdiSkipNext,
+        mdiSkipPrevious,
+        mdiClose
       },
-      changingAudioTime: false
+      changingAudioTime: false,
+      loading: true
     }
   },
   computed: {
@@ -133,6 +183,9 @@ export default {
   },
   mounted(){
     if(localStorage.getItem('audioId')){
+      if(localStorage.getItem('currentAudioVoz')){
+        this.$emit('update:current-audio-voz', localStorage.getItem('currentAudioVoz'))
+      }
       this.$emit('update:current-audio-id', parseInt(localStorage.getItem('audioId')))
       this.changeAudioTime(parseInt(localStorage.getItem('currentTime')))
     }
@@ -148,6 +201,13 @@ export default {
     })
     audio.addEventListener('playing', ()=>{
       this.$emit('update:playing', !audio.paused)
+    })
+    audio.addEventListener('ended', this.next)
+    audio.addEventListener('loadstart', ()=>{
+      this.loading = true;
+    })
+    audio.addEventListener('loadeddata', ()=>{
+      this.loading = false;
     })
   },
   methods: {
@@ -185,6 +245,18 @@ export default {
     upAudioTime(){
       this.changingAudioTime=false
       this.$refs.audio.currentTime = this.currentAudioTime
+    },
+    updateAudioVoz(event){
+      console.log(event)
+      localStorage.setItem('currentAudioVoz', event)
+      this.$emit('update:current-audio-voz', event)
+      this.$refs.audio.load()
+      this.$refs.audio.currentTime = this.currentAudioTime
+      this.$refs.audio.play()
+    },
+    close(){
+      this.$refs.audio.pause()
+      this.$emit('update:current-audio-id', null)
     }
   }
 }

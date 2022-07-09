@@ -16,6 +16,18 @@
             v-for="(actividad, index) in actividades"
             :key="index"
         >
+          <ClientOnly>
+            <MapaActividades :actividades="actividadesFull"/>
+
+          </ClientOnly>
+        </v-col>
+        <v-col
+            cols="12"
+            sm="6"
+            md="4"
+            v-for="(actividad, index) in actividades"
+            :key="index"
+        >
           <ActividadCard
               :title="actividad.title"
               :description="actividad.description"
@@ -48,12 +60,14 @@
 import ActividadCard from "@theme/components/ActividadCard";
 import MdiIcon from "../global-components/MdiIcon";
 import {mdiChevronLeft, mdiChevronRight} from "@mdi/js";
+import MapaActividades from "../components/MapaActividades";
 
 export default {
   name: "Actividades",
   components: {
     ActividadCard,
-    MdiIcon
+    MdiIcon,
+    MapaActividades
   },
   data(){
     return {
@@ -64,6 +78,9 @@ export default {
     }
   },
   computed: {
+    actividadesFull(){
+      return this.$site.themeConfig.actividades
+    },
     actividades() {
       const limit = this.itemsPerPage;
       const offset = this.page - 1;

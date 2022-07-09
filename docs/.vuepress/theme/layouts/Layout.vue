@@ -7,9 +7,9 @@
         <v-container fluid>
           <Contador/>
           <v-row justify="center">
-            <v-col cols="12" sm="6" md="5" lg="2" order="2" order-lg="1" :class="{'px-0': $vuetify.breakpoint.mdAndDown}">
+            <v-col cols="12" sm="6" md="5" lg="2" order="2" order-lg="1" class="px-0 px-lg-2">
               <MusicLateral
-                  :audios="audios"
+                  :audios="currentAudios"
                   :playing.sync="playing"
                   :current-audio-id.sync="currentAudioId"
                   :current-audio-time.sync="currentAudioTime"
@@ -42,12 +42,13 @@
         </v-container>
       </v-main>
       <MusicPlayer
-          :audios="audios"
+          :audios="currentAudios"
           :playing.sync="playing"
           :current-audio-id.sync="currentAudioId"
           :current-audio-time.sync="currentAudioTime"
           :current-audio-duration.sync="currentAudioDuration"
           :current-audio="currentAudio"
+          :current-audio-voz.sync="currentAudioVoz"
           style="z-index: 10"
       />
       <Footer class="pb-sm-16 pb-md-10" style="padding-bottom: 110px" />
@@ -93,28 +94,48 @@ export default {
       currentAudioId: null,
       currentAudioTime: 0,
       currentAudioDuration: 0,
-      audios: [
-        { id: 1, name: 'Capítulo 1', url: 'https://ondacorta.cl/convencion/capitulo-1-es-US-Wavenet-B.mp3'},
-        { id: 2, name: 'Capítulo 2', url: 'https://ondacorta.cl/convencion/capitulo-2-es-US-Wavenet-B.mp3'},
-        { id: 3, name: 'Capítulo 3', url: 'https://ondacorta.cl/convencion/capitulo-3-es-US-Wavenet-B.mp3'},
-        { id: 4, name: 'Capítulo 4', url: 'https://ondacorta.cl/convencion/capitulo-4-es-US-Wavenet-B.mp3'},
-        { id: 5, name: 'Capítulo 5', url: 'https://ondacorta.cl/convencion/capitulo-5-es-US-Wavenet-B.mp3'},
-        { id: 6, name: 'Capítulo 6', url: 'https://ondacorta.cl/convencion/capitulo-6-es-US-Wavenet-B.mp3'},
-        { id: 7, name: 'Capítulo 7', url: 'https://ondacorta.cl/convencion/capitulo-7-es-US-Wavenet-B.mp3'},
-        { id: 8, name: 'Capítulo 8', url: 'https://ondacorta.cl/convencion/capitulo-8-es-US-Wavenet-B.mp3'},
-        { id: 9, name: 'Capítulo 9', url: 'https://ondacorta.cl/convencion/capitulo-9-es-US-Wavenet-B.mp3'},
-        { id: 10, name: 'Capítulo 10', url: 'https://ondacorta.cl/convencion/capitulo-10-es-US-Wavenet-B.mp3'},
-        { id: 11, name: 'Capítulo 11', url: 'https://ondacorta.cl/convencion/capitulo-11-es-US-Wavenet-B.mp3'},
-        { id: 12, name: 'Disposiciones Transitorias', url: 'https://ondacorta.cl/convencion/disposiciones-transitorias-es-US-Wavenet-B.mp3'}
-      ]
+      currentAudioVoz: 'a',
+      audios :{
+        a: [
+          { id: 1, name: 'Capítulo 1', url: 'https://ondacorta.cl/convencion/capitulo-1-es-US-Wavenet-A.mp3'},
+          { id: 2, name: 'Capítulo 2', url: 'https://ondacorta.cl/convencion/capitulo-2-es-US-Wavenet-A.mp3'},
+          { id: 3, name: 'Capítulo 3', url: 'https://ondacorta.cl/convencion/capitulo-3-es-US-Wavenet-A.mp3'},
+          { id: 4, name: 'Capítulo 4', url: 'https://ondacorta.cl/convencion/capitulo-4-es-US-Wavenet-A.mp3'},
+          { id: 5, name: 'Capítulo 5', url: 'https://ondacorta.cl/convencion/capitulo-5-es-US-Wavenet-A.mp3'},
+          { id: 6, name: 'Capítulo 6', url: 'https://ondacorta.cl/convencion/capitulo-6-es-US-Wavenet-A.mp3'},
+          { id: 7, name: 'Capítulo 7', url: 'https://ondacorta.cl/convencion/capitulo-7-es-US-Wavenet-A.mp3'},
+          { id: 8, name: 'Capítulo 8', url: 'https://ondacorta.cl/convencion/capitulo-8-es-US-Wavenet-A.mp3'},
+          { id: 9, name: 'Capítulo 9', url: 'https://ondacorta.cl/convencion/capitulo-9-es-US-Wavenet-A.mp3'},
+          { id: 10, name: 'Capítulo 10', url: 'https://ondacorta.cl/convencion/capitulo-10-es-US-Wavenet-A.mp3'},
+          { id: 11, name: 'Capítulo 11', url: 'https://ondacorta.cl/convencion/capitulo-11-es-US-Wavenet-A.mp3'},
+          { id: 12, name: 'Disposiciones Transitorias', url: 'https://ondacorta.cl/convencion/disposiciones-transitorias-es-US-Wavenet-A.mp3'}
+        ],
+        b: [
+          { id: 1, name: 'Capítulo 1', url: 'https://ondacorta.cl/convencion/capitulo-1-es-US-Wavenet-B.mp3'},
+          { id: 2, name: 'Capítulo 2', url: 'https://ondacorta.cl/convencion/capitulo-2-es-US-Wavenet-B.mp3'},
+          { id: 3, name: 'Capítulo 3', url: 'https://ondacorta.cl/convencion/capitulo-3-es-US-Wavenet-B.mp3'},
+          { id: 4, name: 'Capítulo 4', url: 'https://ondacorta.cl/convencion/capitulo-4-es-US-Wavenet-B.mp3'},
+          { id: 5, name: 'Capítulo 5', url: 'https://ondacorta.cl/convencion/capitulo-5-es-US-Wavenet-B.mp3'},
+          { id: 6, name: 'Capítulo 6', url: 'https://ondacorta.cl/convencion/capitulo-6-es-US-Wavenet-B.mp3'},
+          { id: 7, name: 'Capítulo 7', url: 'https://ondacorta.cl/convencion/capitulo-7-es-US-Wavenet-B.mp3'},
+          { id: 8, name: 'Capítulo 8', url: 'https://ondacorta.cl/convencion/capitulo-8-es-US-Wavenet-B.mp3'},
+          { id: 9, name: 'Capítulo 9', url: 'https://ondacorta.cl/convencion/capitulo-9-es-US-Wavenet-B.mp3'},
+          { id: 10, name: 'Capítulo 10', url: 'https://ondacorta.cl/convencion/capitulo-10-es-US-Wavenet-B.mp3'},
+          { id: 11, name: 'Capítulo 11', url: 'https://ondacorta.cl/convencion/capitulo-11-es-US-Wavenet-B.mp3'},
+          { id: 12, name: 'Disposiciones Transitorias', url: 'https://ondacorta.cl/convencion/disposiciones-transitorias-es-US-Wavenet-B.mp3'}
+        ]
+      }
     }
   },
   computed: {
     twitter () {
       return this.$site.themeConfig.twitter;
     },
+    currentAudios(){
+      return this.audios[this.currentAudioVoz];
+    },
     currentAudio(){
-      const currentAudio = this.audios.find(({id})=> id === this.currentAudioId)
+      const currentAudio = this.currentAudios.find(({id})=> id === this.currentAudioId)
       return currentAudio? currentAudio: { id: null, name: 'Seleccione', url: null}
     }
   },

@@ -1,6 +1,6 @@
 ---
 title: Feministas y Disidencias por una Nueva Constitución
-articulo: actividad
+actividad: true
 tags:
   - Apruebo Dignidad
   - Programa

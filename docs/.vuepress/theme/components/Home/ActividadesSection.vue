@@ -9,11 +9,11 @@
       <v-btn
           to="/actividades"
           color="#008ef6"
-          class="font-weight-bold"
+          class="font-weight-bold my-2"
           dark
           tile
       >
-        Ver todas
+        Ver todas las actividades
       </v-btn>
     </v-card-title>
     <v-card-text>
