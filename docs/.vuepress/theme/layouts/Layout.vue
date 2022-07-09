@@ -5,7 +5,7 @@
       <Navbar/>
       <v-main>
         <v-container fluid>
-          <Contador/>
+          <Contador ref="contador" id="contador"/>
           <v-row justify="center">
             <v-col cols="12" sm="6" md="5" lg="2" order="2" order-lg="1" class="px-0 px-lg-2">
               <MusicLateral

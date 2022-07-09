@@ -45,7 +45,7 @@ export default {
     currentAudioId: {
       type: Number,
       default: 1
-    },
+    }
   },
   data(){
     return {
@@ -67,6 +67,7 @@ export default {
   mounted(){
     this.width = this.$refs.containerdiv.clientWidth + 'px'
     window.addEventListener("resize", this.resizeWidth);
+    window.addEventListener("scroll", this.reapplyMargin);
   },
   destroyed() {
     window.removeEventListener("resize", this.resizeWidth);
@@ -74,6 +75,14 @@ export default {
   methods: {
     resizeWidth(){
       this.width = this.$refs.containerdiv.clientWidth + 'px'
+    },
+    reapplyMargin(){
+      this.$nextTick(()=>{
+        const contador = document.getElementById('contador')
+        const bcr = contador.getBoundingClientRect()
+        const marginTop = (bcr.y < -16) && this.$vuetify.breakpoint.lgAndUp? -bcr.height : 0
+        this.$refs.containerdiv.style['margin-top'] = marginTop+'px'
+      })
     }
   }
 }
