@@ -88,12 +88,12 @@ const allPages = [
   ...mainPages
 ]
 
-const googleAnalyticsId = 'G-HX30FV5WLV'
+const GTM_ID = 'GTM-NPD82DC'
 
 module.exports = {
   plugins: [
       ['sitemap', {
-          hostname: 'https://www.apruebo-dignidad.cl/',
+          hostname: 'https://www.apruebodignidad.cl/',
           urls: allPages.map(page=> {
               return {
                   url: page.route,
@@ -101,6 +101,9 @@ module.exports = {
               }
           })
       }],
+    ['vuepress-plugin-google-tag-manager', {
+      gtm: GTM_ID
+    }]
   ],
   locales: {
       /* This is where you place your general locale config */
@@ -116,21 +119,7 @@ module.exports = {
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/media/favicons/apple-touch-icon.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/media/favicons/favicon-32x32.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/media/favicons/favicon-16x16.png"}],
-    ['meta', { name: "viewport", content: "width=device-width, initial-scale=1.0"} ],
-    [
-        'script',
-        {
-            async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id='+googleAnalyticsId,
-        },
-    ],
-    [
-        'script',
-        {},
-        [
-            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '" + googleAnalyticsId + "');",
-        ],
-    ],
+    ['meta', { name: "viewport", content: "width=device-width, initial-scale=1.0"} ]
   ],
   themeConfig: {
     author: 'Apruebo Dignidad',
@@ -144,7 +133,7 @@ module.exports = {
     noticias,
     articulos,
     actividades,
-    domain: "https://www.apruebo-dignidad.cl",
+    domain: "https://www.apruebodignidad.cl",
     logo: '/media/logo-apruebo-dignidad.png',
     facebook: 'ADignidadCL',
     twitter: 'ADignidadCL',
@@ -157,7 +146,7 @@ module.exports = {
             "id": "candidatoBoric",
             "name": "Gabriel Boric",
             "url": "https://www.boricpresidente.cl",
-            "image": "https://www.apruebo-dignidad.cl/media/gabriel-boric.jpg",
+            "image": "https://www.apruebodignidad.cl/media/gabriel-boric.jpg",
             "sameAs": [
                 "https://www.facebook.com/gabrielboric",
                 "https://twitter.com/gabrielboric",
@@ -184,8 +173,8 @@ module.exports = {
             "name": "Apruebo Dignidad",
             "id": "aprueboDignidad",
             "alternateName": "Conglomerado Apruebo Dignidad",
-            "url": "https://www.apruebo-dignidad.cl",
-            "logo": "https://www.apruebo-dignidad.cl/media/logo-apruebo-dignidad.png",
+            "url": "https://www.apruebodignidad.cl",
+            "logo": "https://www.apruebodignidad.cl/media/logo-apruebo-dignidad.png",
             "sameAs": [
                 "https://www.facebook.com/ADignidadCL",
                 "https://www.twitter.com/ADignidadCL",

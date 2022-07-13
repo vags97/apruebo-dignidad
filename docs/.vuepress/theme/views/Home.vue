@@ -12,6 +12,9 @@
         <Content  />
       </v-col>
       <v-col cols="12" class="px-0">
+        <DescargasSection/>
+      </v-col>
+      <v-col cols="12" class="px-0">
         <NoticiasSection
             :noticias="noticias"
         />
@@ -35,6 +38,7 @@ import NoticiasSection from "@theme/components/Home/NoticiasSection";
 import ArticulosSection from "@theme/components/Home/ArticulosSection";
 import ActividadesSection from "@theme/components/Home/ActividadesSection";
 import HeroSection from "@theme/components/Home/HeroSection";
+import DescargasSection from "../components/Home/DescargasSection";
 
 export default {
   name: 'Home',
@@ -42,7 +46,8 @@ export default {
     HeroSection,
     NoticiasSection,
     ArticulosSection,
-    ActividadesSection
+    ActividadesSection,
+    DescargasSection
   },
   data() {
     return {
