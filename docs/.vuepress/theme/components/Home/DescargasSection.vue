@@ -7,7 +7,10 @@
           target="_blank"
           flat
       >
-        <v-img src="/media/ad-descarga-propuesta-constitucion.jpg"/>
+        <v-img
+            :src="'/media/ad-descarga-propuesta-constitucion.jpg'"
+            alt="descarga propuesta constitucion"
+        />
       </v-card>
     </v-col>
     <v-col cols="12" md="6">
@@ -16,7 +19,10 @@
           target="_blank"
           flat
       >
-        <v-img src="/media/ad-descarga-guia-practica-constitucion.jpg"/>
+        <v-img
+            :src="'/media/ad-descarga-guia-practica-constitucion.jpg'"
+            alt="descarga guía practica constitucion"
+        />
       </v-card>
     </v-col>
   </v-row>
