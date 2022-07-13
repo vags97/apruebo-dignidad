@@ -88,8 +88,6 @@ const allPages = [
   ...mainPages
 ]
 
-const GTM_ID = 'GTM-NPD82DC'
-
 module.exports = {
   plugins: [
       ['sitemap', {
@@ -100,10 +98,7 @@ module.exports = {
                   changeFreq: 'daily'
               }
           })
-      }],
-    ['vuepress-plugin-google-tag-manager', {
-      gtm: GTM_ID
-    }]
+      }]
   ],
   locales: {
       /* This is where you place your general locale config */

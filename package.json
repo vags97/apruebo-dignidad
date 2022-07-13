@@ -24,7 +24,6 @@
     "showdown": "^1.9.1",
     "vue-tweet-embed": "^2.4.0",
     "vue2-leaflet": "^2.7.1",
-    "vuepress-plugin-google-tag-manager": "^0.0.5",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuetify": "^2.5.12"
   },
