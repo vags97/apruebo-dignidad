@@ -12,6 +12,21 @@
         <Content  />
       </v-col>
       <v-col cols="12" class="px-0">
+        <v-btn
+          depressed
+          color="secondary"
+          block
+          href="https://conteo.apruebodignidad.cl"
+          target="_blank"
+          large
+        >
+          <v-icon left large>
+            {{ mdiArchive }}
+          </v-icon>
+          <strong>Herramienta de Conteo de Votos</strong>
+        </v-btn>
+      </v-col>
+      <v-col cols="12" class="px-0">
         <DescargasSection/>
       </v-col>
       <v-col cols="12" class="px-0">
@@ -39,6 +54,7 @@ import ArticulosSection from "@theme/components/Home/ArticulosSection";
 import ActividadesSection from "@theme/components/Home/ActividadesSection";
 import HeroSection from "@theme/components/Home/HeroSection";
 import DescargasSection from "../components/Home/DescargasSection";
+import { mdiArchive } from '@mdi/js';
 
 export default {
   name: 'Home',
@@ -51,6 +67,7 @@ export default {
   },
   data() {
     return {
+      mdiArchive,
       mdToHtml
     }
   },
