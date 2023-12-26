@@ -1,5 +1,6 @@
 ---
-title: Apruebo Dignidad realizó jornada nacional de formación de cara al plebiscito de salida
+title: Apruebo Dignidad realizó jornada nacional de formación de cara al
+  plebiscito de salida
 tags:
   - Apruebo Dignidad
   - Programa
@@ -13,11 +14,18 @@ tags:
   - FrenteAmplio
 date: 2022-05-07T23:18:24.548Z
 image: https://pcchile.cl/wp-content/uploads/2022/05/pantallazo-jornada-apruebo-digninidad-por-plebisicto-1280x640.jpeg
-description: Con participación de casi 800 personas de toda la regiones de Chile y también de chilen@s residentes en el extranjero, se desarrolló la jornada nacional de formación y capacitación por el Apruebo, primera actividad del comando amplio formado de cara al plebiscito constitucional del 4 de septiembre próximo. Además, se señaló que es la primera de varias actividades descentralizadas donde están comprometidas todas las fuerzas políticas que conforman la coalición con gran participación también del mundo social e independiente.
+description: Con participación de casi 800 personas de toda la regiones de Chile
+  y también de chilen@s residentes en el extranjero, se desarrolló la jornada
+  nacional de formación y capacitación por el Apruebo, primera actividad del
+  comando amplio formado de cara al plebiscito constitucional del 4 de
+  septiembre próximo. Además, se señaló que es la primera de varias actividades
+  descentralizadas donde están comprometidas todas las fuerzas políticas que
+  conforman la coalición con gran participación también del mundo social e
+  independiente.
 ---
 <!--StartFragment-->
 
-Con participación de casi 800 personas de toda la regiones de Chile y también de chilen@s residentes en el extranjero, se desarrolló la jornada nacional de formación y capacitación por el Apruebo, primera actividad del comando amplio formado de cara al plebiscito constitucional del 4 de septiembre próximo. Además, se señaló que es la primera de varias actividades descentralizadas donde están comprometidas todas las fuerzas políticas que conforman la coalición con gran participación también del mundo social e independiente.
+**Con participación de casi 800** personas de toda la regiones de Chile y también de chilen@s residentes en el extranjero, se desarrolló la jornada nacional de formación y capacitación por el Apruebo, primera actividad del comando amplio formado de cara al plebiscito constitucional del 4 de septiembre próximo. Además, se señaló que es la primera de varias actividades descentralizadas donde están comprometidas todas las fuerzas políticas que conforman la coalición con gran participación también del mundo social e independiente.
 
 En un saludo inicial, el presidente del Partido Comunista, Guillermo Teillier, señaló que la campaña del rechazo comenzó en la práctica desde el mismo día en que perdieron la elección de convencionales. «Ha sido una campaña en base a mentiras, con boicot desde un comienzo, con muchos recursos y también aprovechando los errores de un de un órgano nuevo, que no tenía precedentes en Chile», sostuvo.
 
